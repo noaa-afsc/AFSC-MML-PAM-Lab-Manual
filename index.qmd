@@ -1,12 +1,12 @@
 ---
 title: "Home"
-subtitle: "Template for development of regional lab manuals as part of the Passive Acoustic Monitoring Strategic Initiative"
+
 page-layout: full
 ---
 
-## PAM SI Lab Manual Template
+## Alaska Fisheries Science Center/Marine Mammal Laboratory/Passive Acoustics Group Lab Manual
 
-A key priority of the PAM SI is to build an open science culture across the agency by leveraging GitHub as a collaboration, coordination, and project management tool. To achieve this we will develop national and regional lab manuals that follow a parallel structure and link to each other. These manuals will serve as the primary storage location for all lab related information, including methods and data management, and will be a single access resource to support coordination across science center PAM programs.
+The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program of the Marine Mammal Laboratory at the Alaska Fisheries Science Center.
 
 ## Required Pages
 

@@ -1,4 +1,4 @@
-Template for development of regional lab manuals as part of the PAM SI
+Lab manual for Alaska Fisheries Science Center/Marine Mammal Laboratory/Passive Acoustics Group
 
 ### Disclaimer
 
