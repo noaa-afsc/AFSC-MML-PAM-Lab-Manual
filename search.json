@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program of the Marine Mammal Laboratory at the Alaska Fisheries Science Center.",
+    "text": "The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program of the Marine Mammal Laboratory at the Alaska Fisheries Science Center.\nI think we will want to split this into Manolo and my groups - we function independently, with different instruments, and field and analysis methods.",
     "crumbs": [
       "Home"
     ]
@@ -14,7 +14,7 @@
     "href": "index.html#alaska-fisheries-science-centermarine-mammal-laboratorypassive-acoustics-group-lab-manual",
     "title": "Home",
     "section": "",
-    "text": "The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program of the Marine Mammal Laboratory at the Alaska Fisheries Science Center.",
+    "text": "The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program of the Marine Mammal Laboratory at the Alaska Fisheries Science Center.\nI think we will want to split this into Manolo and my groups - we function independently, with different instruments, and field and analysis methods.",
     "crumbs": [
       "Home"
     ]
@@ -107,7 +107,40 @@
     "href": "content/Hardware.html",
     "title": "Hardware",
     "section": "",
-    "text": "A hardware section is required and should include the following information;\n\nInformation on your recorders\nArray configurations and diagrams\nPlatform information (towed, moored, drifting, etc.)\nOther sensors included (GPS devices, depth senors, etc.)\n\nThis will be variable for each center and may change from project to project. You should list all hardware, present and past.\nYou can also link to a separate hardware repository if needed (SAEL example)\nThis can be a section with subpages or a qmd",
+    "text": "POC: Catherine/Brynn What: Instruments, Moorings (how it is all put together)",
+    "crumbs": [
+      "Lab Management",
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "content/Hardware.html#moorings",
+    "href": "content/Hardware.html#moorings",
+    "title": "Hardware",
+    "section": "",
+    "text": "POC: Catherine/Brynn What: Instruments, Moorings (how it is all put together)",
+    "crumbs": [
+      "Lab Management",
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "content/Hardware.html#sonobuoys",
+    "href": "content/Hardware.html#sonobuoys",
+    "title": "Hardware",
+    "section": "Sonobuoys",
+    "text": "Sonobuoys\nPOC: Jess Crance/Catherine",
+    "crumbs": [
+      "Lab Management",
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "content/Hardware.html#towed-hydrophone-arrays",
+    "href": "content/Hardware.html#towed-hydrophone-arrays",
+    "title": "Hardware",
+    "section": "Towed hydrophone Arrays",
+    "text": "Towed hydrophone Arrays\nPOC: Jess Crance\nA hardware section is required and should include the following information;\n\nInformation on your recorders\nArray configurations and diagrams\nPlatform information (towed, moored, drifting, etc.)\nOther sensors included (GPS devices, depth senors, etc.)\n\nThis will be variable for each center and may change from project to project. You should list all hardware, present and past.\nYou can also link to a separate hardware repository if needed (SAEL example)\nThis can be a section with subpages or a qmd",
     "crumbs": [
       "Lab Management",
       "Hardware"
@@ -303,7 +336,84 @@
     "href": "content/Safety.html",
     "title": "Safety",
     "section": "",
-    "text": "Include the following information on this page\n\nLab safety\nField safety\nLink to your centers safety website\nIncident reporting directions\nChemical inventory (if applicable)\nLithium battery safety\n\nThis is an essential section to include if your lab uses these. Work with your lab safety manager to develop handling and storage instructions. See SAEL lab manual lithium battery page\n\nSAEL Lab Example & Glider Lab Manual",
+    "text": "Could also be divided into",
+    "crumbs": [
+      "Lab Management",
+      "Safety"
+    ]
+  },
+  {
+    "objectID": "content/Safety.html#chemicals",
+    "href": "content/Safety.html#chemicals",
+    "title": "Safety",
+    "section": "Chemicals",
+    "text": "Chemicals\nLithium Batteries (But opening AURAL with alkalines could also be dangerous)",
+    "crumbs": [
+      "Lab Management",
+      "Safety"
+    ]
+  },
+  {
+    "objectID": "content/Safety.html#physical",
+    "href": "content/Safety.html#physical",
+    "title": "Safety",
+    "section": "Physical",
+    "text": "Physical",
+    "crumbs": [
+      "Lab Management",
+      "Safety"
+    ]
+  },
+  {
+    "objectID": "content/Safety.html#psychological-safety",
+    "href": "content/Safety.html#psychological-safety",
+    "title": "Safety",
+    "section": "Psychological safety",
+    "text": "Psychological safety\nor",
+    "crumbs": [
+      "Lab Management",
+      "Safety"
+    ]
+  },
+  {
+    "objectID": "content/Safety.html#lab-safety",
+    "href": "content/Safety.html#lab-safety",
+    "title": "Safety",
+    "section": "Lab safety",
+    "text": "Lab safety\nPOC: JLC, BMK, SLG What to put here: Do we have a guidance document for how to work safely in the lab? Also what requirements we have for storing chemicals and batteries/storing close to ceiling, etc. Also link to wherever our list of chemicals are (Maybe the Katie Luxa sheet). A link to all current MSDS sheets too? Link to the AFSC safety/incident reporting page (Include cheat sheet here)",
+    "crumbs": [
+      "Lab Management",
+      "Safety"
+    ]
+  },
+  {
+    "objectID": "content/Safety.html#field-safety",
+    "href": "content/Safety.html#field-safety",
+    "title": "Safety",
+    "section": "Field safety",
+    "text": "Field safety\nPOC: CLB, JLC, SLG, DLW, BMK What to put here: How to work safely on back deck - when deploying/recovering; how to carry things safely; climbing safety; Link to the incident report page (maybe a cheat sheet on this page?).",
+    "crumbs": [
+      "Lab Management",
+      "Safety"
+    ]
+  },
+  {
+    "objectID": "content/Safety.html#interpersonal-safety",
+    "href": "content/Safety.html#interpersonal-safety",
+    "title": "Safety",
+    "section": "Interpersonal safety",
+    "text": "Interpersonal safety\nPOC: JLC, SLG, BMK, DLW: What to put here: Link to the safety at sea and harassment and psychological safety. List of contacts",
+    "crumbs": [
+      "Lab Management",
+      "Safety"
+    ]
+  },
+  {
+    "objectID": "content/Safety.html#lithium-battery-safety",
+    "href": "content/Safety.html#lithium-battery-safety",
+    "title": "Safety",
+    "section": "Lithium battery safety",
+    "text": "Lithium battery safety\nPOC: JLC and CLB - not sure where to put this because it is a Lab and field thing. -\nThis is an essential section to include if your lab uses these. Work with your lab safety manager to develop handling and storage instructions. See SAEL lab manual lithium battery page - SAEL Lab Example & Glider Lab Manual",
     "crumbs": [
       "Lab Management",
       "Safety"
@@ -473,7 +583,40 @@
     "href": "content/Inventory.html",
     "title": "Inventory",
     "section": "",
-    "text": "An inventory page is highly recommended to keep track of equipment, loans, and gear beingin the field. This can be a link to a Google sheet or embedded in the website\n\nSAEL Lab Example",
+    "text": "I think the best way to organize this is this way",
+    "crumbs": [
+      "Lab Management",
+      "Inventory"
+    ]
+  },
+  {
+    "objectID": "content/Inventory.html#accountable-property",
+    "href": "content/Inventory.html#accountable-property",
+    "title": "Inventory",
+    "section": "Accountable property",
+    "text": "Accountable property\nPOC: CLB What: this will include Hard drive list and any equipment lists Maybe: would be good to have everyone’s lists here too (e.g., Jess has some drives on her list now, and maybe ST600s?) But would be good to know who has what assigned computer.",
+    "crumbs": [
+      "Lab Management",
+      "Inventory"
+    ]
+  },
+  {
+    "objectID": "content/Inventory.html#lab-inventory",
+    "href": "content/Inventory.html#lab-inventory",
+    "title": "Inventory",
+    "section": "Lab inventory",
+    "text": "Lab inventory\nPOC: CLB/BMK/JLC What: The is the lab inventory - will include supplies, all equipment (whether on accountable property list or not), And it would be good for this to also serve as the to purchase spot somehow",
+    "crumbs": [
+      "Lab Management",
+      "Inventory"
+    ]
+  },
+  {
+    "objectID": "content/Inventory.html#master-data-drives-inventory",
+    "href": "content/Inventory.html#master-data-drives-inventory",
+    "title": "Inventory",
+    "section": "Master data drives inventory",
+    "text": "Master data drives inventory\nPOC: CLB/EKB What: THis is sort of the same as accountable property - but are those drives that got taken off the list and should continue to be tracked. Eric has already sorted the drives into boxes. Do I want to have a sensitive data list for those I have locked up??\nAn inventory page is highly recommended to keep track of equipment, loans, and gear beingin the field. This can be a link to a Google sheet or embedded in the website\n\nSAEL Lab Example",
     "crumbs": [
       "Lab Management",
       "Inventory"
