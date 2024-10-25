@@ -1,6 +1,19 @@
 ---
 title: Hardware
 ---
+## Moorings
+POC: Catherine/Brynn
+What: Instruments, Moorings (how it is all put together)
+
+
+
+## Sonobuoys
+POC: Jess Crance/Catherine
+
+
+## Towed hydrophone Arrays
+POC: Jess Crance
+
 
 A hardware section is required and should include the following information;
 

@@ -8,6 +8,8 @@ page-layout: full
 
 The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program of the Marine Mammal Laboratory at the Alaska Fisheries Science Center.
 
+I think we will want to split this into Manolo and my groups - we function independently, with different instruments, and field and analysis methods.
+
 ## Required Pages
 
 In order to keep consistency between science centers, the following sections/pages will be required in all lab manuals. These will be directly linked to the National PAM Repository. The links will direct you to the associated template page with more directions on what to include.

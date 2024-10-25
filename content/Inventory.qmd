@@ -1,6 +1,22 @@
 ---
 title: Inventory
 ---
+I think the best way to organize this is this way
+
+## Accountable property
+POC: CLB
+What: this will include Hard drive list and any equipment lists
+Maybe: would be good to have everyone's lists here too (e.g., Jess has some drives on her list now, and maybe ST600s?) But would be good to know who has what assigned computer.
+
+## Lab inventory
+POC: CLB/BMK/JLC
+What: The is the lab inventory - will include supplies, all equipment (whether on accountable property list or not), And it would be good for this to also serve as the to purchase spot somehow
+
+## Master data drives inventory
+POC: CLB/EKB
+What: THis is sort of the same as accountable property - but are those drives that got taken off the list and should continue to be tracked. Eric has already sorted the drives into boxes.  Do I want to have a sensitive data list for those I have locked up??
+
+
 
 An inventory page is highly recommended to keep track of equipment, loans, and gear beingin the field. This can be a link to a Google sheet or embedded in the website
 

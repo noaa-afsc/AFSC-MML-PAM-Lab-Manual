@@ -2,13 +2,32 @@
 title: Safety
 ---
 
-Include the following information on this page
+Could also be divided into
 
--   Lab safety
--   Field safety
--   Link to your centers safety website
--   Incident reporting directions
--   Chemical inventory (if applicable)
--   Lithium battery safety
-    -   This is an essential section to include if your lab uses these. Work with your lab safety manager to develop handling and storage instructions. See [SAEL lab manual lithium battery page](https://sael-swfsc.github.io/SAEL-lab-manual/content/Safety_Lithium-Batteries.html)
--   [SAEL Lab Example](https://sael-swfsc.github.io/SAEL-lab-manual/content/Safety-Lab.html) & [Glider Lab Manual](https://swfsc.github.io/glider-lab-manual/content/best-practices.html#safety)
+## Chemicals
+
+Lithium Batteries (But opening AURAL with alkalines could also be dangerous)
+
+## Physical
+
+## Psychological safety
+
+or
+
+## Lab safety
+
+POC: JLC, BMK, SLG What to put here: Do we have a guidance document for how to work safely in the lab? Also what requirements we have for storing chemicals and batteries/storing close to ceiling, etc. Also link to wherever our list of chemicals are (Maybe the Katie Luxa sheet). A link to all current MSDS sheets too? Link to the AFSC safety/incident reporting page (Include cheat sheet here)
+
+## Field safety
+
+POC: CLB, JLC, SLG, DLW, BMK What to put here: How to work safely on back deck - when deploying/recovering; how to carry things safely; climbing safety; Link to the incident report page (maybe a cheat sheet on this page?).
+
+## Interpersonal safety
+
+POC: JLC, SLG, BMK, DLW: What to put here: Link to the safety at sea and harassment and psychological safety. List of contacts
+
+## Lithium battery safety
+
+POC: JLC and CLB - not sure where to put this because it is a Lab and field thing. -
+
+This is an essential section to include if your lab uses these. Work with your lab safety manager to develop handling and storage instructions. See [SAEL lab manual lithium battery page](https://sael-swfsc.github.io/SAEL-lab-manual/content/Safety_Lithium-Batteries.html) - [SAEL Lab Example](https://sael-swfsc.github.io/SAEL-lab-manual/content/Safety-Lab.html) & [Glider Lab Manual](https://swfsc.github.io/glider-lab-manual/content/best-practices.html#safety)
