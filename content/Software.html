@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.43">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,12 +37,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-4379b0ccadffce622b03caf4c46266b3.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-a4f09a128564692efbd2e4b7986dbcea.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-8f4cbf19915c7ede4ee9758edf4cc63c.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -306,8 +306,17 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sonobuoy-codes" id="toc-sonobuoy-codes" class="nav-link active" data-scroll-target="#sonobuoy-codes">Sonobuoy Codes</a>
+  <ul class="collapse">
+  <li><a href="#sonobuoy-raw-to-b-drive-conversion-process" id="toc-sonobuoy-raw-to-b-drive-conversion-process" class="nav-link" data-scroll-target="#sonobuoy-raw-to-b-drive-conversion-process">Sonobuoy Raw to B drive conversion process</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/noaa-afsc/AFSC-MML-PAM-Lab-Manual/edit/main/content/Software.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/noaa-afsc/AFSC-MML-PAM-Lab-Manual/blob/main/content/Software.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/noaa-afsc/AFSC-MML-PAM-Lab-Manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -331,16 +340,67 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>A software section is required and should include the following information;</p>
+<section id="sonobuoy-codes" class="level1">
+<h1>Sonobuoy Codes</h1>
+<p><em>This part will most likely move elsewhere with just the code living here, but this is easier for my brain at the moment</em></p>
+<ol type="1">
+<li>You will need to make sure you have named the deployment folder and files correctly. It’s better to have it right before you start recording, but this can be fixed afterwards. These will be in the same format as the moorings, towed arrays, dipping phones, saildrones, etc.</li>
+</ol>
+<!-- -->
+<ol type="a">
+<li>Deployment folder will be in the format: <strong><em>PPXX_SB_CCLL</em></strong>, where:</li>
+</ol>
 <ul>
-<li>List of software you use and their applications (R, Matlab/Triton, Python, PAMGuard, Raven, etc.)</li>
-<li>Software packages or tools your team has built (PAMPal, PAMmisc, Banter, PAMscapes, Driftwatch, etc.)
-<ul>
-<li><a href="https://sael-swfsc.github.io/SAEL-lab-manual/content/Analysis-software.html">SAEL example</a></li>
-</ul></li>
+<li>PP is project code (e.g., POWER = PW; CHAOZ = CZ; Haida Gwaii = HG; ALTIMA = AL)<br>
+(I will make a list that lives here, or is linked to Google drive folder; for the moment verify with Crance or Berchok).</li>
+<li>XX is the 2 digit year</li>
+<li>SB is sonobuoy</li>
+<li>CC is the Vessel name (e.g., AQ = Aquila, DY = Dyson, YM = Yushin Maru)</li>
+<li>LL is the cruise leg (if you just have 1 big leg, then the whole thing is just 01).</li>
+<li>Underscores are important here</li>
+<li>Examples: PW24_SB_YM01, HG24_SB_TU01, CZ14_SB_AQ02, BC24_SB_AS01</li>
 </ul>
+<ol start="2" type="a">
+<li>Once you have the Deployment Folder name, the files follow the same codes just in a slightly different order:</li>
+</ol>
+<ul>
+<li><strong><em>SB-PPCCLL-YYMMDD-HHMMSS.wav</em></strong>, where - YYMMDD-HHMMSS is the year, month, day, 24hour, minute, second <strong>local</strong> field time. - Dashes are important here. - Examples: SB-PWYM01-240813-182113.wav, SB-HGTU01-240528-211538.wav</li>
+</ul>
+<ol start="2" type="1">
+<li>A drive data: Back up the data in 2 places:</li>
+</ol>
+<ul>
+<li>An A drive</li>
+<li>A SB Backup drive</li>
+<li>Both these locations should have all the wave files + all the .mat files from BoatTrackPosns and SONOstationPosns + the sonoExcel file.</li>
+<li>Once you have made sure the same number of files are in all places, you can delete the files from your field drives.</li>
+<li>Also make a new row in the Where the files are excel here: ADD LINK TO GOOGLE DRIVE, and note the A and SB backup drive numbers.</li>
+</ul>
+<section id="sonobuoy-raw-to-b-drive-conversion-process" class="level2">
+<h2 class="anchored" data-anchor-id="sonobuoy-raw-to-b-drive-conversion-process">Sonobuoy Raw to B drive conversion process</h2>
+<p><em>(You have come back from sea and have successfully collected sonobuoy data, now what?)</em></p>
+<p><strong>Things you’ll need:</strong></p>
+<pre><code>- Correctly named project folder and files
+- Fully completed recording log
+- Matlab version 2023b or higher (maybe 2023a will work)
+- SonoRename_v1.m code</code></pre>
+<ul>
+<li>You can change the pathing in lines 11, 13, and 15 of the code, or you can just browse to the folders while running code.</li>
+</ul>
+<ol type="1">
+<li>You will first point to the folder that contains your raw wave files.</li>
+<li>Then you will point to a fast external drive (just the drive letter).</li>
+<li>Then you need to choose which location the sonobuoy recordings were deployed in (Matlab can handle the time zone and daylight savings business). If one is missing, let CB know.<br>
+</li>
+</ol>
+<!-- -->
+<ol type="a">
+<li>But the way to add is typing <em>timezones</em> into the command window to get the table, then you add that info in the tz= line (around line 20) of the code. If you alter the code, please be sure to make a backup following that procedure.</li>
+</ol>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -569,8 +629,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -681,7 +739,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -927,7 +984,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/noaa-afsc/AFSC-MML-PAM-Lab-Manual/edit/main/content/Software.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/noaa-afsc/AFSC-MML-PAM-Lab-Manual/blob/main/content/Software.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/noaa-afsc/AFSC-MML-PAM-Lab-Manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/noaa-afsc/AFSC-MML-PAM-Lab-Manual/edit/main/content/Software.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/noaa-afsc/AFSC-MML-PAM-Lab-Manual/blob/main/content/Software.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/noaa-afsc/AFSC-MML-PAM-Lab-Manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
