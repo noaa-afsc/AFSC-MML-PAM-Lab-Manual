@@ -44,7 +44,7 @@ title: Software
 
 -   Fully completed recording log *(times are in local time)*
 
-![Example of a sonobuoy recording log](/content/images/SonobuoyRecordingLogExample.png){fig-align="center" width="460"}
+![Example of a sonobuoy recording log](images/actions.png){fig-align="center" width="460"}
 
 -   Matlab version 2023b or higher (maybe 2023a will work)
 
