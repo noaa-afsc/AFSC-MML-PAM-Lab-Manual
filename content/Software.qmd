@@ -2,57 +2,68 @@
 title: Software
 ---
 
-# Sonobuoy Codes
+# Sonobuoy Data
 
-*This part will most likely move elsewhere with just the code living here, but this is easier for my brain at the moment*
-
-1.  You will need to make sure you have named the deployment folder and files correctly. It's better to have it right before you start recording, but this can be fixed afterwards. These will be in the same format as the moorings, towed arrays, dipping phones, saildrones, etc.
-
-<!-- -->
-
-a)  Deployment folder will be in the format: ***PPXX_SB_CCLL***, where:
-
--   PP is project code (e.g., POWER = PW; CHAOZ = CZ; Haida Gwaii = HG; ALTIMA = AL)\
-    (I will make a list that lives here, or is linked to Google drive folder; for the moment verify with Crance or Berchok).
--   XX is the 2 digit year
--   SB is sonobuoy
--   CC is the Vessel name (e.g., AQ = Aquila, DY = Dyson, YM = Yushin Maru)
--   LL is the cruise leg (if you just have 1 big leg, then the whole thing is just 01).
--   Underscores are important here
--   Examples: PW24_SB_YM01, HG24_SB_TU01, CZ14_SB_AQ02, BC24_SB_AS01
-
-b)  Once you have the Deployment Folder name, the files follow the same codes just in a slightly different order:
-
--   ***SB-PPCCLL-YYMMDD-HHMMSS.wav***, where - YYMMDD-HHMMSS is the year, month, day, 24hour, minute, second **local** field time. - Dashes are important here. - Examples: SB-PWYM01-240813-182113.wav, SB-HGTU01-240528-211538.wav
-
-2.  A drive data: Back up the data in 2 places:
-
--   An A drive
--   A SB Backup drive
--   Both these locations should have all the wave files + all the .mat files from BoatTrackPosns and SONOstationPosns + the sonoExcel file.
--   Once you have made sure the same number of files are in all places, you can delete the files from your field drives.
--   Also make a new row in the Where the files are excel here: ADD LINK TO GOOGLE DRIVE, and note the A and SB backup drive numbers.
-
-## Sonobuoy Raw to B drive conversion process
+*This part will most likely move elsewhere with just the code living here, but this is easier for my brain at the moment (CB)*
 
 *(You have come back from sea and have successfully collected sonobuoy data, now what?)*
 
+**FILENAMING**: You will need to make sure you have named the deployment folder and files correctly. It's better to have it right before you start recording, but this can be fixed afterwards.
+
+-   Deployment folder will be in the format: ***PPXX_SB_CCLL***, where:
+
+    -   **PP** is project code (e.g., POWER = PW; CHAOZ = CZ; Haida Gwaii = HG; ALTIMA = AL)\
+        (I will make a list that lives here, or is linked to Google drive folder; for the moment verify with Crance or Berchok).
+    -   **XX** is the 2 digit year
+    -   **SB** is sonobuoy
+    -   **CC** is the Vessel name (e.g., AQ = Aquila, DY = Dyson, YM = Yushin Maru)
+    -   **LL** is the cruise leg (if you just have 1 big leg, then the whole thing is just 01).
+    -   Underscores are important here
+    -   Examples: PW24_SB_YM01, HG24_SB_TU01, CZ14_SB_AQ02, BC24_SB_AS01
+
+-   Once you have the Deployment Folder name, the wave file names follow the same codes just in a slightly different order:
+
+    -   ***SB-PPCCLL-YYMMDD-HHMMSS.wav***, where - YYMMDD-HHMMSS is the year, month, day, 24hour, minute, second **local** field time.
+    -   Dashes are important here.
+    -   Examples: SB-PWYM01-240813-182113.wav, SB-HGTU01-240528-211538.wav
+    -   You can bulk rename files using [wildren.exe](https://docs.google.com/spreadsheets/d/1RpmjOlCqFDe659S66fnUeXO9hj6CRjOzEslgZDZZaug/edit?gid=0#gid=0&range=2:2)
+
+**BACKING UP DATA** You need to back up the raw data in 2 places: A drive & SB_Backup drive
+
+-   Both these locations should have all the wave files + all the .mat files from BoatTrackPosns and SONOstationPosns + the sonoExcel file.
+-   Once you have made sure the same number of files are in all places, you can delete the files from your field drives.
+-   Also make a new row in the [Where the files are excel](https://docs.google.com/spreadsheets/d/1RpmjOlCqFDe659S66fnUeXO9hj6CRjOzEslgZDZZaug/edit?gid=0#gid=0&range=3:3), and note the A and SB backup drive numbers in that row (this file will be cleaned up soon - CB).
+
+## Sonobuoy Raw to B drive conversion process
+
+*\[Splits the raw sonobuoy files into single channels and converts the local to UTC time\]*
+
 **Things you'll need:**
 
-```         
-- Correctly named project folder and files
-- Fully completed recording log
-- Matlab version 2023b or higher (maybe 2023a will work)
-- SonoRename_v1.m code
-```
+-   Correctly named project folder and files (see above - link to section CB)
+
+-   Fully completed recording log *(times are in local time)*
+
+![Example of a sonobuoy recording log](images\AFSCimages\SonobuoyRecordingLogExample.png){fig-align="center" width="460"}
+
+-   Matlab version 2023b or higher (maybe 2023a will work)
+
+-   [SonobuoyRename_v1.m](https://docs.google.com/spreadsheets/d/1RpmjOlCqFDe659S66fnUeXO9hj6CRjOzEslgZDZZaug/edit?gid=0#gid=0&range=4:4)
+
+**Running SonobuoyRename_v1.m**
 
 -   You can change the pathing in lines 11, 13, and 15 of the code, or you can just browse to the folders while running code.
+-   First point to the specific deployment folder that contains your raw wave files.
+-   Then point to a fast external drive (just the drive letter).
+-   Then to the folder with the recording log excels
+-   Choose geographic region where the sonobuoy recordings were deployed in
+    -   Matlab can handle the time zone and daylight savings business.
+    -   If one is missing, let CB know so she can update backup files.
+        -   The way to add is typing *timezones* into the Matlab command window to get the table, then you add that info in the tz= line (around line 20) of the code.
+-   The resulting wavefiles have sonobuoy number as part of their filename: (e.g., SB-PWYM01_014-240813-182113.wav)
 
-1.  You will first point to the folder that contains your raw wave files.
-2.  Then you will point to a fast external drive (just the drive letter).
-3.  Then you need to choose which location the sonobuoy recordings were deployed in (Matlab can handle the time zone and daylight savings business). If one is missing, let CB know.\
+**BACKING UP DATA**
 
-```{=html}
-<!-- -->
-```
-a)  But the way to add is typing *timezones* into the command window to get the table, then you add that info in the tz= line (around line 20) of the code. If you alter the code, please be sure to make a backup following that procedure.
+-   Copy all files from fast external drive to a B external drive and the Audio_Data2 folder in the [NAS2](https://docs.google.com/spreadsheets/d/1RpmjOlCqFDe659S66fnUeXO9hj6CRjOzEslgZDZZaug/edit?gid=0#gid=0&range=5:5) drive
+
+-   In the [Where the files are excel](https://docs.google.com/spreadsheets/d/1RpmjOlCqFDe659S66fnUeXO9hj6CRjOzEslgZDZZaug/edit?gid=0#gid=0&range=3:3) note the B and and NAS drives in the row for that cruise (this file will be cleaned up soon - CB).
