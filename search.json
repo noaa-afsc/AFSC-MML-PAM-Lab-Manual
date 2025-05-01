@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Alaska Fisheries Science Center, Passive Acoustics Group",
     "section": "",
-    "text": "The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program (CAEP) at the Alaska Fisheries Science Center’s Marine Mammal Lab. We are one of five regional science centers that are part of the National PAM Network\n\n\n\n\n\n\n\n\n\n\nOur main mission is to use recordings of ocean sounds to monitor the timing and distribution of marine mammals and human activities in Alaskan waters. We also monitor noise levels from biological, anthropogenic, and environmental sources. Our group is made up of two teams who work independently of each other. Each team’s lab manual can be accessed from the following links:\n\n\n\n\nTeam Berchok\n\n\n\n\n\n\n\n\nTeam Castellote\n\n\n\n\nShipping Address: Alaska Fisheries Science Center, Marine Mammal Lab, 7600 Sand Point Way NE, Seattle, WA 98115",
+    "text": "The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program (CAEP) at the Alaska Fisheries Science Center’s Marine Mammal Lab. We are one of five regional science centers that are part of the National PAM Network\n\n\n\n\n\n\n\n\nOur main mission is to use recordings of ocean sounds to monitor the timing and distribution of marine mammals and human activities in Alaskan waters. We also monitor noise levels from biological, anthropogenic, and environmental sources. Our group is made up of two teams who work independently of each other. Each team’s lab manual can be accessed from the following links:\n\n\n\n\nTeam Berchok\n\n\n\n\n\n\n\n\nTeam Castellote\n\n\n\n\n\n\nShipping Address: Alaska Fisheries Science Center, Marine Mammal Lab, 7600 Sand Point Way NE, Seattle, WA 98115",
     "crumbs": [
       "Home"
     ]
@@ -152,32 +152,21 @@
     "href": "content/Software.html",
     "title": "Software",
     "section": "",
-    "text": "This part will most likely move elsewhere with just the code living here, but this is easier for my brain at the moment (CB)\n(You have come back from sea and have successfully collected sonobuoy data, now what?)\nFILENAMING: You will need to make sure you have named the deployment folder and files correctly. It’s better to have it right before you start recording, but this can be fixed afterwards.\n\nDeployment folder will be in the format: PPXX_SB_CCLL, where:\n\nPP is project code (e.g., POWER = PW; CHAOZ = CZ; Haida Gwaii = HG; ALTIMA = AL)\n(I will make a list that lives here, or is linked to Google drive folder; for the moment verify with Crance or Berchok).\nXX is the 2 digit year\nSB is sonobuoy\nCC is the Vessel name (e.g., AQ = Aquila, DY = Dyson, YM = Yushin Maru)\nLL is the cruise leg (if you just have 1 big leg, then the whole thing is just 01).\nUnderscores are important here\nExamples: PW24_SB_YM01, HG24_SB_TU01, CZ14_SB_AQ02, BC24_SB_AS01\n\nOnce you have the Deployment Folder name, the wave file names follow the same codes just in a slightly different order:\n\nSB-PPCCLL-YYMMDD-HHMMSS.wav, where - YYMMDD-HHMMSS is the year, month, day, 24hour, minute, second local field time.\nDashes are important here.\nExamples: SB-PWYM01-240813-182113.wav, SB-HGTU01-240528-211538.wav\nYou can bulk rename files using wildren.exe\n\n\nBACKING UP DATA You need to back up the raw data in 2 places: A drive & SB_Backup drive\n\nBoth these locations should have all the wave files + all the .mat files from BoatTrackPosns and SONOstationPosns + the sonoExcel file.\nOnce you have made sure the same number of files are in all places, you can delete the files from your field drives.\nAlso make a new row in the Where the files are excel, and note the A and SB backup drive numbers in that row (this file will be cleaned up soon - CB).\n\n\n\n[Splits the raw sonobuoy files into single channels and converts the local to UTC time]\nThings you’ll need:\n\nCorrectly named project folder and files (see above - link to section CB)\nFully completed recording log (times are in local time)\n\n\n\n\nExample of a sonobuoy recording log\n\n\n\nMatlab version 2023b or higher (maybe 2023a will work)\nSonobuoyRename_v1.m\n\nRunning SonobuoyRename_v1.m\n\nYou can change the pathing in lines 11, 13, and 15 of the code, or you can just browse to the folders while running code.\nFirst point to the specific deployment folder that contains your raw wave files.\nThen point to a fast external drive (just the drive letter).\nThen to the folder with the recording log excels\nChoose geographic region where the sonobuoy recordings were deployed in\n\nMatlab can handle the time zone and daylight savings business.\nIf one is missing, let CB know so she can update backup files.\n\nThe way to add is typing timezones into the Matlab command window to get the table, then you add that info in the tz= line (around line 20) of the code.\n\n\nThe resulting wavefiles have sonobuoy number as part of their filename: (e.g., SB-PWYM01_014-240813-182113.wav)\n\nBACKING UP DATA\n\nCopy all files from fast external drive to a B external drive and the Audio_Data2 folder in the NAS2 drive\nIn the Where the files are excel note the B and and NAS drives in the row for that cruise (this file will be cleaned up soon - CB).",
-    "crumbs": [
-      "Software & Analysis Methods",
-      "Software"
-    ]
+    "text": "This part will most likely move elsewhere with just the code living here, but this is easier for my brain at the moment (CB)\n(You have come back from sea and have successfully collected sonobuoy data, now what?)\nFILENAMING: You will need to make sure you have named the deployment folder and files correctly. It’s better to have it right before you start recording, but this can be fixed afterwards.\n\nDeployment folder will be in the format: PPXX_SB_CCLL, where:\n\nPP is project code (e.g., POWER = PW; CHAOZ = CZ; Haida Gwaii = HG; ALTIMA = AL)\n(I will make a list that lives here, or is linked to Google drive folder; for the moment verify with Crance or Berchok).\nXX is the 2 digit year\nSB is sonobuoy\nCC is the Vessel name (e.g., AQ = Aquila, DY = Dyson, YM = Yushin Maru)\nLL is the cruise leg (if you just have 1 big leg, then the whole thing is just 01).\nUnderscores are important here\nExamples: PW24_SB_YM01, HG24_SB_TU01, CZ14_SB_AQ02, BC24_SB_AS01\n\nOnce you have the Deployment Folder name, the wave file names follow the same codes just in a slightly different order:\n\nSB-PPCCLL-YYMMDD-HHMMSS.wav, where - YYMMDD-HHMMSS is the year, month, day, 24hour, minute, second local field time.\nDashes are important here.\nExamples: SB-PWYM01-240813-182113.wav, SB-HGTU01-240528-211538.wav\nYou can bulk rename files using wildren.exe\n\n\nBACKING UP DATA You need to back up the raw data in 2 places: A drive & SB_Backup drive\n\nBoth these locations should have all the wave files + all the .mat files from BoatTrackPosns and SONOstationPosns + the sonoExcel file.\nOnce you have made sure the same number of files are in all places, you can delete the files from your field drives.\nAlso make a new row in the Where the files are excel, and note the A and SB backup drive numbers in that row (this file will be cleaned up soon - CB).\n\n\n\n[Splits the raw sonobuoy files into single channels and converts the local to UTC time]\nThings you’ll need:\n\nCorrectly named project folder and files (see above - link to section CB)\nFully completed recording log (times are in local time)\n\n\n\n\nExample of a sonobuoy recording log\n\n\n\nMatlab version 2023b or higher (maybe 2023a will work)\nSonobuoyRename_v1.m\n\nRunning SonobuoyRename_v1.m\n\nYou can change the pathing in lines 11, 13, and 15 of the code, or you can just browse to the folders while running code.\nFirst point to the specific deployment folder that contains your raw wave files.\nThen point to a fast external drive (just the drive letter).\nThen to the folder with the recording log excels\nChoose geographic region where the sonobuoy recordings were deployed in\n\nMatlab can handle the time zone and daylight savings business.\nIf one is missing, let CB know so she can update backup files.\n\nThe way to add is typing timezones into the Matlab command window to get the table, then you add that info in the tz= line (around line 20) of the code.\n\n\nThe resulting wavefiles have sonobuoy number as part of their filename: (e.g., SB-PWYM01_014-240813-182113.wav)\n\nBACKING UP DATA\n\nCopy all files from fast external drive to a B external drive and the Audio_Data2 folder in the NAS2 drive\nIn the Where the files are excel note the B and and NAS drives in the row for that cruise (this file will be cleaned up soon - CB)."
   },
   {
     "objectID": "content/Software.html#sonobuoy-raw-to-b-drive-conversion-process",
     "href": "content/Software.html#sonobuoy-raw-to-b-drive-conversion-process",
     "title": "Software",
     "section": "",
-    "text": "[Splits the raw sonobuoy files into single channels and converts the local to UTC time]\nThings you’ll need:\n\nCorrectly named project folder and files (see above - link to section CB)\nFully completed recording log (times are in local time)\n\n\n\n\nExample of a sonobuoy recording log\n\n\n\nMatlab version 2023b or higher (maybe 2023a will work)\nSonobuoyRename_v1.m\n\nRunning SonobuoyRename_v1.m\n\nYou can change the pathing in lines 11, 13, and 15 of the code, or you can just browse to the folders while running code.\nFirst point to the specific deployment folder that contains your raw wave files.\nThen point to a fast external drive (just the drive letter).\nThen to the folder with the recording log excels\nChoose geographic region where the sonobuoy recordings were deployed in\n\nMatlab can handle the time zone and daylight savings business.\nIf one is missing, let CB know so she can update backup files.\n\nThe way to add is typing timezones into the Matlab command window to get the table, then you add that info in the tz= line (around line 20) of the code.\n\n\nThe resulting wavefiles have sonobuoy number as part of their filename: (e.g., SB-PWYM01_014-240813-182113.wav)\n\nBACKING UP DATA\n\nCopy all files from fast external drive to a B external drive and the Audio_Data2 folder in the NAS2 drive\nIn the Where the files are excel note the B and and NAS drives in the row for that cruise (this file will be cleaned up soon - CB).",
-    "crumbs": [
-      "Software & Analysis Methods",
-      "Software"
-    ]
+    "text": "[Splits the raw sonobuoy files into single channels and converts the local to UTC time]\nThings you’ll need:\n\nCorrectly named project folder and files (see above - link to section CB)\nFully completed recording log (times are in local time)\n\n\n\n\nExample of a sonobuoy recording log\n\n\n\nMatlab version 2023b or higher (maybe 2023a will work)\nSonobuoyRename_v1.m\n\nRunning SonobuoyRename_v1.m\n\nYou can change the pathing in lines 11, 13, and 15 of the code, or you can just browse to the folders while running code.\nFirst point to the specific deployment folder that contains your raw wave files.\nThen point to a fast external drive (just the drive letter).\nThen to the folder with the recording log excels\nChoose geographic region where the sonobuoy recordings were deployed in\n\nMatlab can handle the time zone and daylight savings business.\nIf one is missing, let CB know so she can update backup files.\n\nThe way to add is typing timezones into the Matlab command window to get the table, then you add that info in the tz= line (around line 20) of the code.\n\n\nThe resulting wavefiles have sonobuoy number as part of their filename: (e.g., SB-PWYM01_014-240813-182113.wav)\n\nBACKING UP DATA\n\nCopy all files from fast external drive to a B external drive and the Audio_Data2 folder in the NAS2 drive\nIn the Where the files are excel note the B and and NAS drives in the row for that cruise (this file will be cleaned up soon - CB)."
   },
   {
     "objectID": "content/FieldMethods.html",
     "href": "content/FieldMethods.html",
     "title": "Field Methods",
     "section": "",
-    "text": "A field methods section is highly recommended to help your team keep track of all current and past fieldwork documentation. Things to include here can include hardware specifications, checklists for fieldwork prep, deployment and recovery methods, etc.\nYou can make this a section with subpages or link directly to a separate repository that includes more detailed methods.\nADRIFT example",
-    "crumbs": [
-      "Field Methods"
-    ]
+    "text": "A field methods section is highly recommended to help your team keep track of all current and past fieldwork documentation. Things to include here can include hardware specifications, checklists for fieldwork prep, deployment and recovery methods, etc.\nYou can make this a section with subpages or link directly to a separate repository that includes more detailed methods.\nADRIFT example"
   },
   {
     "objectID": "content/SoftwareAnalysis.html",
@@ -186,7 +175,8 @@
     "section": "",
     "text": "A software and analysis methods section is required and should include subpages for both topics (analysis methods can be a subsection with pages for different anaylsis methods topics).",
     "crumbs": [
-      "Software & Analysis Methods"
+      "Berchok Lab Manual",
+      "Software & Analysis"
     ]
   },
   {
@@ -196,7 +186,8 @@
     "section": "",
     "text": "A lab management section is required and should include the following information;\n\nSafety\nInventory\nHardware",
     "crumbs": [
-      "Lab Management"
+      "Berchok Lab Manual",
+      "Lab Management.qmd"
     ]
   },
   {
@@ -204,99 +195,63 @@
     "href": "content/Safety.html",
     "title": "Safety",
     "section": "",
-    "text": "Could also be divided into",
-    "crumbs": [
-      "Lab Management",
-      "Safety"
-    ]
+    "text": "Could also be divided into"
   },
   {
     "objectID": "content/Safety.html#chemicals",
     "href": "content/Safety.html#chemicals",
     "title": "Safety",
     "section": "Chemicals",
-    "text": "Chemicals\nLithium Batteries (But opening AURAL with alkalines could also be dangerous)",
-    "crumbs": [
-      "Lab Management",
-      "Safety"
-    ]
+    "text": "Chemicals\nLithium Batteries (But opening AURAL with alkalines could also be dangerous)"
   },
   {
     "objectID": "content/Safety.html#physical",
     "href": "content/Safety.html#physical",
     "title": "Safety",
     "section": "Physical",
-    "text": "Physical",
-    "crumbs": [
-      "Lab Management",
-      "Safety"
-    ]
+    "text": "Physical"
   },
   {
     "objectID": "content/Safety.html#psychological-safety",
     "href": "content/Safety.html#psychological-safety",
     "title": "Safety",
     "section": "Psychological safety",
-    "text": "Psychological safety\nor",
-    "crumbs": [
-      "Lab Management",
-      "Safety"
-    ]
+    "text": "Psychological safety\nor"
   },
   {
     "objectID": "content/Safety.html#lab-safety",
     "href": "content/Safety.html#lab-safety",
     "title": "Safety",
     "section": "Lab safety",
-    "text": "Lab safety\nPOC: JLC, BMK, SLG What to put here: Do we have a guidance document for how to work safely in the lab? Also what requirements we have for storing chemicals and batteries/storing close to ceiling, etc. Also link to wherever our list of chemicals are (Maybe the Katie Luxa sheet). A link to all current MSDS sheets too? Link to the AFSC safety/incident reporting page (Include cheat sheet here)",
-    "crumbs": [
-      "Lab Management",
-      "Safety"
-    ]
+    "text": "Lab safety\nPOC: JLC, BMK, SLG What to put here: Do we have a guidance document for how to work safely in the lab? Also what requirements we have for storing chemicals and batteries/storing close to ceiling, etc. Also link to wherever our list of chemicals are (Maybe the Katie Luxa sheet). A link to all current MSDS sheets too? Link to the AFSC safety/incident reporting page (Include cheat sheet here)"
   },
   {
     "objectID": "content/Safety.html#field-safety",
     "href": "content/Safety.html#field-safety",
     "title": "Safety",
     "section": "Field safety",
-    "text": "Field safety\nPOC: CLB, JLC, SLG, DLW, BMK What to put here: How to work safely on back deck - when deploying/recovering; how to carry things safely; climbing safety; Link to the incident report page (maybe a cheat sheet on this page?).",
-    "crumbs": [
-      "Lab Management",
-      "Safety"
-    ]
+    "text": "Field safety\nPOC: CLB, JLC, SLG, DLW, BMK What to put here: How to work safely on back deck - when deploying/recovering; how to carry things safely; climbing safety; Link to the incident report page (maybe a cheat sheet on this page?)."
   },
   {
     "objectID": "content/Safety.html#interpersonal-safety",
     "href": "content/Safety.html#interpersonal-safety",
     "title": "Safety",
     "section": "Interpersonal safety",
-    "text": "Interpersonal safety\nPOC: JLC, SLG, BMK, DLW: What to put here: Link to the safety at sea and harassment and psychological safety. List of contacts",
-    "crumbs": [
-      "Lab Management",
-      "Safety"
-    ]
+    "text": "Interpersonal safety\nPOC: JLC, SLG, BMK, DLW: What to put here: Link to the safety at sea and harassment and psychological safety. List of contacts"
   },
   {
     "objectID": "content/Safety.html#lithium-battery-safety",
     "href": "content/Safety.html#lithium-battery-safety",
     "title": "Safety",
     "section": "Lithium battery safety",
-    "text": "Lithium battery safety\nPOC: JLC and CLB - not sure where to put this because it is a Lab and field thing. -\nThis is an essential section to include if your lab uses these. Work with your lab safety manager to develop handling and storage instructions. See SAEL lab manual lithium battery page - SAEL Lab Example & Glider Lab Manual",
-    "crumbs": [
-      "Lab Management",
-      "Safety"
-    ]
+    "text": "Lithium battery safety\nPOC: JLC and CLB - not sure where to put this because it is a Lab and field thing. -\nThis is an essential section to include if your lab uses these. Work with your lab safety manager to develop handling and storage instructions. See SAEL lab manual lithium battery page - SAEL Lab Example & Glider Lab Manual"
   },
   {
     "objectID": "content/SharedValues.html",
     "href": "content/SharedValues.html",
     "title": "Shared Values",
     "section": "",
-    "text": "A shared values / lab culture page is optional but is highly recommended. Establishing these values as a team can help create a positive and inclusive environment, foster a shared vision, promote collaboration, and build team cohesion while supporting individual growth.\nSAEL example\nFaylab example",
-    "crumbs": [
-      "Optional Pages",
-      "Shared Values"
-    ]
+    "text": "A shared values / lab culture page is optional but is highly recommended. Establishing these values as a team can help create a positive and inclusive environment, foster a shared vision, promote collaboration, and build team cohesion while supporting individual growth.\nSAEL example\nFaylab example"
   },
   {
     "objectID": "content/DataManagement.html",
@@ -305,6 +260,7 @@
     "section": "",
     "text": "A data management section is required and should include the following information;\n\nData Archive Methods\n\nInformation on where your data is archived (PACM, NCEI, Tethys, Internal databases, etc)\nSAEL Example\n\nSpecies reference guide for your region\n\nDevelop a species and call type library for your region\nThis can include spectrograms of calls and sound clips\nPIFSC working on this, use them as an example once finalized\nSAEL Example\n\nMedia\n\nLinks to sound archives, media archives, web sites, blogs, etc.\nSAEL Example\n\n\nThis can be a section with subpages or a qmd\nGlider Lab Manual",
     "crumbs": [
+      "Berchok Lab Manual",
       "Data Management"
     ]
   },
@@ -313,11 +269,7 @@
     "href": "content/OpenScience.html",
     "title": "Open Science",
     "section": "",
-    "text": "This section is optional but is a great place for all of your open science related resources and tools. You can include information here for our Openscapes work, stack exchange, GitHub, co working guides, etc.\nSAEL Example",
-    "crumbs": [
-      "Optional Pages",
-      "Open Science"
-    ]
+    "text": "This section is optional but is a great place for all of your open science related resources and tools. You can include information here for our Openscapes work, stack exchange, GitHub, co working guides, etc.\nSAEL Example"
   },
   {
     "objectID": "content/Reporting.html",
@@ -326,6 +278,7 @@
     "section": "",
     "text": "his is a required page and should include any templates you have created for reporting within NOAA or to other agencies.\nExamples include NEFSC PAM data reporting templates and standard report formats for a few different agencies/species (right whales, Australian Marine Parks).",
     "crumbs": [
+      "Berchok Lab Manual",
       "Reporting"
     ]
   },
@@ -336,6 +289,7 @@
     "section": "",
     "text": "his is a required page and should include any templates you have created for reporting within NOAA or to other agencies.\nExamples include NEFSC PAM data reporting templates and standard report formats for a few different agencies/species (right whales, Australian Marine Parks).",
     "crumbs": [
+      "Berchok Lab Manual",
       "Reporting"
     ]
   },
@@ -346,6 +300,7 @@
     "section": "Permits",
     "text": "Permits\nYou should also include any permit reporting guidelines here\n\nPermits and Permit Reporting Guidelines\n\nInclude permit numbers and links to your centers/groups permits\nInclude directions for permit reporting (Protected species, National Marine Sanctuaries, Navy, Fish and Wildlife, etc)\nYou can include links to past permit reports (these can be private google drive folders if needed)\nSAEL example",
     "crumbs": [
+      "Berchok Lab Manual",
       "Reporting"
     ]
   },
@@ -354,22 +309,14 @@
     "href": "content/Onboarding.html",
     "title": "Onboarding",
     "section": "",
-    "text": "This page is optional but can be used as a landing page for new lab members. You can include introductory information, links to must read papers, new hire resources, goal setting information, etc.\nFaylab example",
-    "crumbs": [
-      "Optional Pages",
-      "Onboarding"
-    ]
+    "text": "This page is optional but can be used as a landing page for new lab members. You can include introductory information, links to must read papers, new hire resources, goal setting information, etc.\nFaylab example"
   },
   {
     "objectID": "content/Offboarding.html",
     "href": "content/Offboarding.html",
     "title": "Offboarding",
     "section": "",
-    "text": "This page is optional but can be extremely beneficial when a member of your team is transitioning out of their current position. Things to include here are directions for project documentation, data and code storage/sharing, turning in equipment, etc.\nFaylab example",
-    "crumbs": [
-      "Optional Pages",
-      "Offboarding"
-    ]
+    "text": "This page is optional but can be extremely beneficial when a member of your team is transitioning out of their current position. Things to include here are directions for project documentation, data and code storage/sharing, turning in equipment, etc.\nFaylab example"
   },
   {
     "objectID": "content/Hardware.html",
@@ -378,7 +325,7 @@
     "section": "",
     "text": "POC: Catherine/Brynn What: Instruments, Moorings (how it is all put together)",
     "crumbs": [
-      "Lab Management",
+      "Berchok Lab Manual",
       "Hardware"
     ]
   },
@@ -389,7 +336,7 @@
     "section": "",
     "text": "POC: Catherine/Brynn What: Instruments, Moorings (how it is all put together)",
     "crumbs": [
-      "Lab Management",
+      "Berchok Lab Manual",
       "Hardware"
     ]
   },
@@ -400,7 +347,7 @@
     "section": "Sonobuoys",
     "text": "Sonobuoys\nPOC: Jess Crance/Catherine",
     "crumbs": [
-      "Lab Management",
+      "Berchok Lab Manual",
       "Hardware"
     ]
   },
@@ -411,7 +358,7 @@
     "section": "Towed hydrophone Arrays",
     "text": "Towed hydrophone Arrays\nPOC: Jess Crance\nA hardware section is required and should include the following information;\n\nInformation on your recorders\nArray configurations and diagrams\nPlatform information (towed, moored, drifting, etc.)\nOther sensors included (GPS devices, depth senors, etc.)\n\nThis will be variable for each center and may change from project to project. You should list all hardware, present and past.\nYou can also link to a separate hardware repository if needed (SAEL example)\nThis can be a section with subpages or a qmd",
     "crumbs": [
-      "Lab Management",
+      "Berchok Lab Manual",
       "Hardware"
     ]
   },
@@ -420,66 +367,42 @@
     "href": "content/PublicationsPresentations.html",
     "title": "Publications and Presentations",
     "section": "",
-    "text": "This is an optional page but is a great opportunity to highlight some of your publications and presentations.\nSAEL example (add once this page is corrected)",
-    "crumbs": [
-      "Optional Pages",
-      "Publications and Presentations"
-    ]
+    "text": "This is an optional page but is a great opportunity to highlight some of your publications and presentations.\nSAEL example (add once this page is corrected)"
   },
   {
     "objectID": "content/AnalysisMethods.html",
     "href": "content/AnalysisMethods.html",
     "title": "Analysis Methods",
     "section": "",
-    "text": "An analysis methods section is required and should include the following information;\n\nData Prep and Archive\n\nData prep (decompressing, creating LTSAs, decimating, etc.)\n\nSAEL example\n\nData quality checks (QAQC scripts)\n\nSAEL example\n\nData upload steps\n\nIf you have a internal storage include directions here on where data should be stored and in what format\nYou can also include a data managment structure with standardized naming and storage/folder structures\nSAEL example\n\n\nAnalysis methods for each species, group, or sound source\n\nYou can break this down by baleen and toothed whales, soundscapes, etc.\nEach section should include detailed and reproducible methods that anybody can recreate\n\n\nYou can also link to a separate hardware repository if needed (SAEL example)\nGlider Lab Manual example",
-    "crumbs": [
-      "Software & Analysis Methods",
-      "Analysis Methods"
-    ]
+    "text": "An analysis methods section is required and should include the following information;\n\nData Prep and Archive\n\nData prep (decompressing, creating LTSAs, decimating, etc.)\n\nSAEL example\n\nData quality checks (QAQC scripts)\n\nSAEL example\n\nData upload steps\n\nIf you have a internal storage include directions here on where data should be stored and in what format\nYou can also include a data managment structure with standardized naming and storage/folder structures\nSAEL example\n\n\nAnalysis methods for each species, group, or sound source\n\nYou can break this down by baleen and toothed whales, soundscapes, etc.\nEach section should include detailed and reproducible methods that anybody can recreate\n\n\nYou can also link to a separate hardware repository if needed (SAEL example)\nGlider Lab Manual example"
   },
   {
     "objectID": "content/Inventory.html",
     "href": "content/Inventory.html",
     "title": "Inventory",
     "section": "",
-    "text": "I think the best way to organize this is this way",
-    "crumbs": [
-      "Lab Management",
-      "Inventory"
-    ]
+    "text": "I think the best way to organize this is this way"
   },
   {
     "objectID": "content/Inventory.html#accountable-property",
     "href": "content/Inventory.html#accountable-property",
     "title": "Inventory",
     "section": "Accountable property",
-    "text": "Accountable property\nPOC: CLB What: this will include Hard drive list and any equipment lists Maybe: would be good to have everyone’s lists here too (e.g., Jess has some drives on her list now, and maybe ST600s?) But would be good to know who has what assigned computer.",
-    "crumbs": [
-      "Lab Management",
-      "Inventory"
-    ]
+    "text": "Accountable property\nPOC: CLB What: this will include Hard drive list and any equipment lists Maybe: would be good to have everyone’s lists here too (e.g., Jess has some drives on her list now, and maybe ST600s?) But would be good to know who has what assigned computer."
   },
   {
     "objectID": "content/Inventory.html#lab-inventory",
     "href": "content/Inventory.html#lab-inventory",
     "title": "Inventory",
     "section": "Lab inventory",
-    "text": "Lab inventory\nPOC: CLB/BMK/JLC What: The is the lab inventory - will include supplies, all equipment (whether on accountable property list or not), And it would be good for this to also serve as the to purchase spot somehow",
-    "crumbs": [
-      "Lab Management",
-      "Inventory"
-    ]
+    "text": "Lab inventory\nPOC: CLB/BMK/JLC What: The is the lab inventory - will include supplies, all equipment (whether on accountable property list or not), And it would be good for this to also serve as the to purchase spot somehow"
   },
   {
     "objectID": "content/Inventory.html#master-data-drives-inventory",
     "href": "content/Inventory.html#master-data-drives-inventory",
     "title": "Inventory",
     "section": "Master data drives inventory",
-    "text": "Master data drives inventory\nPOC: CLB/EKB What: THis is sort of the same as accountable property - but are those drives that got taken off the list and should continue to be tracked. Eric has already sorted the drives into boxes. Do I want to have a sensitive data list for those I have locked up??\nAn inventory page is highly recommended to keep track of equipment, loans, and gear beingin the field. This can be a link to a Google sheet or embedded in the website\n\nSAEL Lab Example",
-    "crumbs": [
-      "Lab Management",
-      "Inventory"
-    ]
+    "text": "Master data drives inventory\nPOC: CLB/EKB What: THis is sort of the same as accountable property - but are those drives that got taken off the list and should continue to be tracked. Eric has already sorted the drives into boxes. Do I want to have a sensitive data list for those I have locked up??\nAn inventory page is highly recommended to keep track of equipment, loans, and gear beingin the field. This can be a link to a Google sheet or embedded in the website\n\nSAEL Lab Example"
   },
   {
     "objectID": "content/NMFS_OpenSciDirections/rmarkdown.html",
@@ -607,10 +530,6 @@
     "href": "content/Resources.html",
     "title": "Resources",
     "section": "",
-    "text": "This page is optional but can be a good spot for any remaining resources or tools you want easy access to.",
-    "crumbs": [
-      "Optional Pages",
-      "Resources"
-    ]
+    "text": "This page is optional but can be a good spot for any remaining resources or tools you want easy access to."
   }
 ]
