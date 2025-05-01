@@ -1,24 +1,25 @@
 ---
-title: "Home"
-
+title: "Alaska Fisheries Science Center, Passive Acoustics Group"
+subtitle: "Lab Manual"
 page-layout: full
+link-external-newwindow: true
 ---
 
-## Alaska Fisheries Science Center/Marine Mammal Laboratory/Passive Acoustics Group Lab Manual
+::: {layout-ncol="2"}
+The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program (CAEP) at the Alaska Fisheries Science Center's Marine Mammal Lab. Our main mission is to use recordings of ocean sounds to monitor the timing and distribution of marine mammals and human activities in Alaskan waters. We also monitor noise levels from biological, anthropogenic, and environmental sources. Our group is made up of two teams who work independently of each other. Each team's lab manual can be accessed from the following links:
+:::
 
-The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program of the Marine Mammal Laboratory at the Alaska Fisheries Science Center. There are two main labs within the group:
+including the Bering, Beaufort, and Chukchi Seas, Gulf of Alaska, and Cook Inlet.
 
 ### Berchok Lab
 
 The Berchok Lab focuses on long-term data collection throughout Alaskan waters including the Bering, Beaufort, and Chukchi Seas as well as in the Gulf of Alaska.
 
-We collect and process data from two main sources.  Click on the link to get to the collection-through-analysis SOPs
+We collect and process data from two main sources. Click on the link to get to the collection-through-analysis SOPs
 
--  Long-term Moorings
+-   Long-term Moorings
 
--  Sonobuoys
-
-
+-   Sonobuoys
 
 ### Castellote Lab
 
