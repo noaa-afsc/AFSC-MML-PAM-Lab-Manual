@@ -2,39 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Alaska Fisheries Science Center\nPassive Acoustics Group",
+    "title": "Alaska Fisheries Science Center, Passive Acoustics Group",
     "section": "",
-    "text": "The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program (CAEP) at the Alaska Fisheries Science Center’s Marine Mammal Lab.\nOur main mission is to use recordings of ocean sounds to monitor the timing and distribution of marine mammals and human activities in Alaskan waters. We also monitor noise levels from biological, anthropogenic, and environmental sources. Our group is made up of two teams who work independently of each other. Each team’s lab manual can be accessed from the following links:\n::: ::::",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#required-pages",
-    "href": "index.html#required-pages",
-    "title": "Alaska Fisheries Science Center\nPassive Acoustics Group",
-    "section": "Required Pages",
-    "text": "Required Pages\nIn order to keep consistency between science centers, the following sections/pages will be required in all lab manuals. These will be directly linked to the National PAM Repository. The links will direct you to the associated template page with more directions on what to include.\n\nHome Page (this page): Edit this page to include an introduction to your lab, projects you are working on, etc.\nLab Management\nData Management\nHardware\nSoftware\nAnalysis\nReporting",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#optional-pages",
-    "href": "index.html#optional-pages",
-    "title": "Alaska Fisheries Science Center\nPassive Acoustics Group",
-    "section": "Optional Pages",
-    "text": "Optional Pages\nHere are some more ideas for pages to include in your lab manual. These are optional and will not be linked to the main National PAM Repo, but they may be helpful for your team\n\nShared values/lab culture\nOnboarding\nOffboarding\nField Methods\nOpen Science\nPublications/Presentations\nResources\n\nShipping Address: Alaska Fisheries Science Center, Marine Mammal Lab, 7600 Sandpoint Way NE, Seattle, WA 98115",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#additional-national-marine-fisheries-lab-manuals",
-    "href": "index.html#additional-national-marine-fisheries-lab-manuals",
-    "title": "Alaska Fisheries Science Center\nPassive Acoustics Group",
-    "section": "Additional National Marine Fisheries Lab Manuals",
-    "text": "Additional National Marine Fisheries Lab Manuals\n\nSWFSC: Southwest Fisheries\nNWFSC: Northwest Fisheries\nAFSC: Alaska Fisheries\nSEFSC: Southeast Fisheries\nPIFSC: Pacific Islands Fisheries\nNational PAM Network",
+    "text": "The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program (CAEP) at the Alaska Fisheries Science Center’s Marine Mammal Lab. We are one of five regional science centers that are part of the National PAM Network\n\n\n\n\n\n\n\n\n\n\nOur main mission is to use recordings of ocean sounds to monitor the timing and distribution of marine mammals and human activities in Alaskan waters. We also monitor noise levels from biological, anthropogenic, and environmental sources. Our group is made up of two teams who work independently of each other. Each team’s lab manual can be accessed from the following links:\n\n\n\n\nTeam Berchok\n\n\n\n\n\n\n\n\nTeam Castellote\n\n\n\n\nShipping Address: Alaska Fisheries Science Center, Marine Mammal Lab, 7600 Sand Point Way NE, Seattle, WA 98115",
     "crumbs": [
       "Home"
     ]
@@ -200,69 +170,23 @@
     ]
   },
   {
-    "objectID": "content/AnalysisMethods.html",
-    "href": "content/AnalysisMethods.html",
-    "title": "Analysis Methods",
+    "objectID": "content/FieldMethods.html",
+    "href": "content/FieldMethods.html",
+    "title": "Field Methods",
     "section": "",
-    "text": "An analysis methods section is required and should include the following information;\n\nData Prep and Archive\n\nData prep (decompressing, creating LTSAs, decimating, etc.)\n\nSAEL example\n\nData quality checks (QAQC scripts)\n\nSAEL example\n\nData upload steps\n\nIf you have a internal storage include directions here on where data should be stored and in what format\nYou can also include a data managment structure with standardized naming and storage/folder structures\nSAEL example\n\n\nAnalysis methods for each species, group, or sound source\n\nYou can break this down by baleen and toothed whales, soundscapes, etc.\nEach section should include detailed and reproducible methods that anybody can recreate\n\n\nYou can also link to a separate hardware repository if needed (SAEL example)\nGlider Lab Manual example",
+    "text": "A field methods section is highly recommended to help your team keep track of all current and past fieldwork documentation. Things to include here can include hardware specifications, checklists for fieldwork prep, deployment and recovery methods, etc.\nYou can make this a section with subpages or link directly to a separate repository that includes more detailed methods.\nADRIFT example",
     "crumbs": [
-      "Software & Analysis Methods",
-      "Analysis Methods"
+      "Field Methods"
     ]
   },
   {
-    "objectID": "content/PublicationsPresentations.html",
-    "href": "content/PublicationsPresentations.html",
-    "title": "Publications and Presentations",
+    "objectID": "content/SoftwareAnalysis.html",
+    "href": "content/SoftwareAnalysis.html",
+    "title": "Software & Analysis Methods",
     "section": "",
-    "text": "This is an optional page but is a great opportunity to highlight some of your publications and presentations.\nSAEL example (add once this page is corrected)",
+    "text": "A software and analysis methods section is required and should include subpages for both topics (analysis methods can be a subsection with pages for different anaylsis methods topics).",
     "crumbs": [
-      "Optional Pages",
-      "Publications and Presentations"
-    ]
-  },
-  {
-    "objectID": "content/Hardware.html",
-    "href": "content/Hardware.html",
-    "title": "Hardware",
-    "section": "",
-    "text": "POC: Catherine/Brynn What: Instruments, Moorings (how it is all put together)",
-    "crumbs": [
-      "Lab Management",
-      "Hardware"
-    ]
-  },
-  {
-    "objectID": "content/Hardware.html#moorings",
-    "href": "content/Hardware.html#moorings",
-    "title": "Hardware",
-    "section": "",
-    "text": "POC: Catherine/Brynn What: Instruments, Moorings (how it is all put together)",
-    "crumbs": [
-      "Lab Management",
-      "Hardware"
-    ]
-  },
-  {
-    "objectID": "content/Hardware.html#sonobuoys",
-    "href": "content/Hardware.html#sonobuoys",
-    "title": "Hardware",
-    "section": "Sonobuoys",
-    "text": "Sonobuoys\nPOC: Jess Crance/Catherine",
-    "crumbs": [
-      "Lab Management",
-      "Hardware"
-    ]
-  },
-  {
-    "objectID": "content/Hardware.html#towed-hydrophone-arrays",
-    "href": "content/Hardware.html#towed-hydrophone-arrays",
-    "title": "Hardware",
-    "section": "Towed hydrophone Arrays",
-    "text": "Towed hydrophone Arrays\nPOC: Jess Crance\nA hardware section is required and should include the following information;\n\nInformation on your recorders\nArray configurations and diagrams\nPlatform information (towed, moored, drifting, etc.)\nOther sensors included (GPS devices, depth senors, etc.)\n\nThis will be variable for each center and may change from project to project. You should list all hardware, present and past.\nYou can also link to a separate hardware repository if needed (SAEL example)\nThis can be a section with subpages or a qmd",
-    "crumbs": [
-      "Lab Management",
-      "Hardware"
+      "Software & Analysis Methods"
     ]
   },
   {
@@ -448,23 +372,69 @@
     ]
   },
   {
-    "objectID": "content/SoftwareAnalysis.html",
-    "href": "content/SoftwareAnalysis.html",
-    "title": "Software & Analysis Methods",
+    "objectID": "content/Hardware.html",
+    "href": "content/Hardware.html",
+    "title": "Hardware",
     "section": "",
-    "text": "A software and analysis methods section is required and should include subpages for both topics (analysis methods can be a subsection with pages for different anaylsis methods topics).",
+    "text": "POC: Catherine/Brynn What: Instruments, Moorings (how it is all put together)",
     "crumbs": [
-      "Software & Analysis Methods"
+      "Lab Management",
+      "Hardware"
     ]
   },
   {
-    "objectID": "content/FieldMethods.html",
-    "href": "content/FieldMethods.html",
-    "title": "Field Methods",
+    "objectID": "content/Hardware.html#moorings",
+    "href": "content/Hardware.html#moorings",
+    "title": "Hardware",
     "section": "",
-    "text": "A field methods section is highly recommended to help your team keep track of all current and past fieldwork documentation. Things to include here can include hardware specifications, checklists for fieldwork prep, deployment and recovery methods, etc.\nYou can make this a section with subpages or link directly to a separate repository that includes more detailed methods.\nADRIFT example",
+    "text": "POC: Catherine/Brynn What: Instruments, Moorings (how it is all put together)",
     "crumbs": [
-      "Field Methods"
+      "Lab Management",
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "content/Hardware.html#sonobuoys",
+    "href": "content/Hardware.html#sonobuoys",
+    "title": "Hardware",
+    "section": "Sonobuoys",
+    "text": "Sonobuoys\nPOC: Jess Crance/Catherine",
+    "crumbs": [
+      "Lab Management",
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "content/Hardware.html#towed-hydrophone-arrays",
+    "href": "content/Hardware.html#towed-hydrophone-arrays",
+    "title": "Hardware",
+    "section": "Towed hydrophone Arrays",
+    "text": "Towed hydrophone Arrays\nPOC: Jess Crance\nA hardware section is required and should include the following information;\n\nInformation on your recorders\nArray configurations and diagrams\nPlatform information (towed, moored, drifting, etc.)\nOther sensors included (GPS devices, depth senors, etc.)\n\nThis will be variable for each center and may change from project to project. You should list all hardware, present and past.\nYou can also link to a separate hardware repository if needed (SAEL example)\nThis can be a section with subpages or a qmd",
+    "crumbs": [
+      "Lab Management",
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "content/PublicationsPresentations.html",
+    "href": "content/PublicationsPresentations.html",
+    "title": "Publications and Presentations",
+    "section": "",
+    "text": "This is an optional page but is a great opportunity to highlight some of your publications and presentations.\nSAEL example (add once this page is corrected)",
+    "crumbs": [
+      "Optional Pages",
+      "Publications and Presentations"
+    ]
+  },
+  {
+    "objectID": "content/AnalysisMethods.html",
+    "href": "content/AnalysisMethods.html",
+    "title": "Analysis Methods",
+    "section": "",
+    "text": "An analysis methods section is required and should include the following information;\n\nData Prep and Archive\n\nData prep (decompressing, creating LTSAs, decimating, etc.)\n\nSAEL example\n\nData quality checks (QAQC scripts)\n\nSAEL example\n\nData upload steps\n\nIf you have a internal storage include directions here on where data should be stored and in what format\nYou can also include a data managment structure with standardized naming and storage/folder structures\nSAEL example\n\n\nAnalysis methods for each species, group, or sound source\n\nYou can break this down by baleen and toothed whales, soundscapes, etc.\nEach section should include detailed and reproducible methods that anybody can recreate\n\n\nYou can also link to a separate hardware repository if needed (SAEL example)\nGlider Lab Manual example",
+    "crumbs": [
+      "Software & Analysis Methods",
+      "Analysis Methods"
     ]
   },
   {
