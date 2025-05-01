@@ -1,26 +1,52 @@
 ---
-title: "Alaska Fisheries Science Center Passive Acoustics Group"
-subtitle: "Lab Manual"
+title: |
+  | Alaska Fisheries Science Center 
+  | Passive Acoustics Group
+subtitle: |
+  | Lab Manual
+date: today
+date-format: 'DD MMM YYYY'
 page-layout: full
 link-external-newwindow: true
 format: html
 editor: visual
 ---
-:::: {.columns}
-::: {.column width="50%"}
-The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program (CAEP) at the Alaska Fisheries Science Center's Marine Mammal Lab. 
+<style type="text/css">
+h1.title {
+  font-size: 32px;
+  text-align: left;
+   margin-bottom:-20px;
+}
+h2.subtitle {
+    font-size: 32px;
+  text-align: left;
+   margin-bottom:-20px;
+}
+</style>
 
-Our main mission is to use recordings of ocean sounds to monitor the timing and distribution of marine mammals and human activities in Alaskan waters. We also monitor noise levels from biological, anthropogenic, and environmental sources. Our group is made up of two teams who work independently of each other. Each team's lab manual can be accessed from the following links:
+:::: columns
+::: {.column width="48%"}
+<p>
+
+</p>
+
+The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program (CAEP) at the Alaska Fisheries Science Center's Marine Mammal Lab.
 :::
 
-<!-- ::: {.column width="5%"} -->
-<!-- empty column to create gap -->
-<!--  ::: -->
+::: {.column width="2%"}
 
-::: {.column width="50%"}
+:::
+::: {.column width="48%"}
 ![](content/images/AFSCImages/AlaskaIcon.png){fig-alt="" fig-align="center"}
 :::
 ::::
+
+Our main mission is to use recordings of ocean sounds to monitor the timing and distribution of marine mammals and human activities in Alaskan waters. We also monitor noise levels from biological, anthropogenic, and environmental sources. Our group is made up of two teams who work independently of each other. Each team's lab manual can be accessed from the following links: 
+
+::: 
+::::
+
+
 
 ### Berchok Lab
 
