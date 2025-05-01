@@ -1,9 +1,6 @@
 ---
-title: |
-  | Alaska Fisheries Science Center 
-  | Passive Acoustics Group
-subtitle: |
-  | Lab Manual
+title: Alaska Fisheries Science Center, Passive Acoustics Group
+subtitle: Lab Manual
 date: today
 date-format: 'DD MMM YYYY'
 page-layout: full
@@ -11,93 +8,56 @@ link-external-newwindow: true
 format: html
 editor: visual
 ---
+
+```{=html}
 <style type="text/css">
 h1.title {
+  color: SteelBlue;
   font-size: 32px;
   text-align: left;
-   margin-bottom:-20px;
+  margin-bottom:-20px;
 }
-h2.subtitle {
+h1.subtitle {
+    color: blue;
     font-size: 32px;
-  text-align: left;
-   margin-bottom:-20px;
+    text-align: left;
+    margin-bottom:-20px;
 }
 </style>
-
-:::: columns
+```
 ::: {.column width="48%"}
-<p>
+<p style="padding-top:0px;">
+
+The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program (CAEP) at the Alaska Fisheries Science Center's [Marine Mammal Lab](https://www.fisheries.noaa.gov/about/marine-mammal-laboratory).  We are one of five regional science centers that are part of the [National PAM Network](https://github.com/nmfs-ost/PAM_National_Network)
 
 </p>
-
-The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program (CAEP) at the Alaska Fisheries Science Center's Marine Mammal Lab.
 :::
 
 ::: {.column width="2%"}
-
 :::
+
 ::: {.column width="48%"}
+<p style="padding-top:10px;">
 ![](content/images/AFSCImages/AlaskaIcon.png){fig-alt="" fig-align="center"}
+</p>
 :::
-::::
 
-Our main mission is to use recordings of ocean sounds to monitor the timing and distribution of marine mammals and human activities in Alaskan waters. We also monitor noise levels from biological, anthropogenic, and environmental sources. Our group is made up of two teams who work independently of each other. Each team's lab manual can be accessed from the following links: 
+Our main mission is to use recordings of ocean sounds to monitor the timing and distribution of marine mammals and human activities in Alaskan waters. We also monitor noise levels from biological, anthropogenic, and environmental sources. Our group is made up of two teams who work independently of each other. Each team's lab manual can be accessed from the following links:
 
-::: 
-::::
+::: {.column width="48%"}
+|   |
+|:---:|
+|[Team Berchok](https://nmfs-ost.github.io/PAM_template_lab_manual/content/LabManagement.html)
+:::
+
+::: {.column width="48%"}
+|   |
+|:---:|
+|[Team Castellote](https://nmfs-ost.github.io/PAM_template_lab_manual/content/LabManagement.html)
+
+:::
+
+**Shipping Address:** *Alaska Fisheries Science Center, Marine Mammal Lab, 7600 Sand Point Way NE, Seattle, WA 98115*
 
 
 
-### Berchok Lab
-
-The Berchok Lab focuses on long-term data collection throughout Alaskan waters including the Bering, Beaufort, and Chukchi Seas as well as in the Gulf of Alaska.
-
-We collect and process data from two main sources. Click on the link to get to the collection-through-analysis SOPs
-
--   Long-term Moorings
-
--   Sonobuoys
-
-### Castellote Lab
-
-The Castellote Lab focuses on Cook Inlet as well as projects in Kotzembue, etc.
-
-## Required Pages
-
-In order to keep consistency between science centers, the following sections/pages will be required in all lab manuals. These will be directly linked to the National PAM Repository. The links will direct you to the associated template page with more directions on what to include.
-
--   Home Page (this page): Edit this page to include an introduction to your lab, projects you are working on, etc.
--   [Lab Management](https://nmfs-ost.github.io/PAM_template_lab_manual/content/LabManagement.html)
--   [Data Management](https://nmfs-ost.github.io/PAM_template_lab_manual/content/DataManagement.html)
--   [Hardware](https://nmfs-ost.github.io/PAM_template_lab_manual/content/Hardware.html)
--   [Software](https://nmfs-ost.github.io/PAM_template_lab_manual/content/Software.html)
--   [Analysis](https://nmfs-ost.github.io/PAM_template_lab_manual/content/AnalysisMethods.html)
--   [Reporting](https://nmfs-ost.github.io/PAM_template_lab_manual/content/Reporting.html)
-
-## Optional Pages
-
-Here are some more ideas for pages to include in your lab manual. These are optional and will not be linked to the main National PAM Repo, but they may be helpful for your team
-
--   [Shared values/lab culture](https://nmfs-ost.github.io/PAM_template_lab_manual/content/SharedValues.html)
--   [Onboarding](https://nmfs-ost.github.io/PAM_template_lab_manual/content/Onboarding.html)
--   [Offboarding](https://nmfs-ost.github.io/PAM_template_lab_manual/content/Offboarding.html)
--   [Field Methods](https://nmfs-ost.github.io/PAM_template_lab_manual/content/FieldMethods.html)
--   [Open Science](https://nmfs-ost.github.io/PAM_template_lab_manual/content/OpenScience.html)
--   [Publications/Presentations](https://nmfs-ost.github.io/PAM_template_lab_manual/content/PublicationsPresentations.html)
--   [Resources](https://nmfs-ost.github.io/PAM_template_lab_manual/content/Resources.html)
-
-**Shipping Address:** Alaska Fisheries Science Center, Marine Mammal Lab, 7600 Sandpoint Way NE, Seattle, WA 98115
-
-## Additional National Marine Fisheries Lab Manuals
-
--   [SWFSC: Southwest Fisheries](https://sael-swfsc.github.io/SAEL-lab-manual/)
-
--   [NWFSC: Northwest Fisheries](https://noaa-nwfsc.github.io/NWFSC-PAM-Lab-Manual/)
-
--   [AFSC: Alaska Fisheries](https://noaa-afsc.github.io/AFSC-MML-PAM-Lab-Manual/)
-
--   [SEFSC: Southeast Fisheries](https://sefsc.github.io/SEFSC-PAM-Lab-Manual/)
-
--   [PIFSC: Pacific Islands Fisheries](https://pifsc-protected-species-division.github.io/CRP_PAM_Manual/)
-
--   [National PAM Network](https://github.com/nmfs-ost/PAM_National_Network)
