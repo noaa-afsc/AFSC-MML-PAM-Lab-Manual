@@ -28,26 +28,25 @@ h1.subtitle {
 ::: {.column width="48%"}
 <p style="padding-top:0px;">
 
-The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program (CAEP) at the Alaska Fisheries Science Center's [Marine Mammal Lab](https://www.fisheries.noaa.gov/about/marine-mammal-laboratory).  We are one of five regional science centers that are part of the [National PAM Network](https://github.com/nmfs-ost/PAM_National_Network)
+The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program (CAEP) at the Alaska Fisheries Science Center's [Marine Mammal Lab](https://www.fisheries.noaa.gov/about/marine-mammal-laboratory).  We are one of five regional science centers that are part of the [National PAM Network](https://nmfs-ost.github.io/PAM_National_Network/)
 
 </p>
 :::
 
-::: {.column width="2%"}
-:::
 
 ::: {.column width="48%"}
 <p style="padding-top:10px;">
 ![](content/images/AFSCImages/AlaskaIcon.png){fig-alt="" fig-align="center"}
 </p>
 :::
-
+</p>
 Our main mission is to use recordings of ocean sounds to monitor the timing and distribution of marine mammals and human activities in Alaskan waters. We also monitor noise levels from biological, anthropogenic, and environmental sources. Our group is made up of two teams who work independently of each other. Each team's lab manual can be accessed from the following links:
 
 ::: {.column width="48%"}
 |   |
 |:---:|
 |[Team Berchok](https://nmfs-ost.github.io/PAM_template_lab_manual/content/LabManagement.html)
+
 :::
 
 ::: {.column width="48%"}
@@ -56,7 +55,8 @@ Our main mission is to use recordings of ocean sounds to monitor the timing and 
 |[Team Castellote](https://nmfs-ost.github.io/PAM_template_lab_manual/content/LabManagement.html)
 
 :::
-
+<p style="padding-bottom:20px;">
+</p>
 **Shipping Address:** *Alaska Fisheries Science Center, Marine Mammal Lab, 7600 Sand Point Way NE, Seattle, WA 98115*
 
 
