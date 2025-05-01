@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Home – AFSC MML PAM Lab Manual</title>
+<title>Alaska Fisheries Science Center, Passive Acoustics Group – AFSC MML PAM Lab Manual</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -474,11 +474,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#alaska-fisheries-science-centermarine-mammal-laboratorypassive-acoustics-group-lab-manual" id="toc-alaska-fisheries-science-centermarine-mammal-laboratorypassive-acoustics-group-lab-manual" class="nav-link active" data-scroll-target="#alaska-fisheries-science-centermarine-mammal-laboratorypassive-acoustics-group-lab-manual">Alaska Fisheries Science Center/Marine Mammal Laboratory/Passive Acoustics Group Lab Manual</a>
-  <ul class="collapse">
-  <li><a href="#berchok-lab" id="toc-berchok-lab" class="nav-link" data-scroll-target="#berchok-lab">Berchok Lab</a></li>
+  <li><a href="#berchok-lab" id="toc-berchok-lab" class="nav-link active" data-scroll-target="#berchok-lab">Berchok Lab</a></li>
   <li><a href="#castellote-lab" id="toc-castellote-lab" class="nav-link" data-scroll-target="#castellote-lab">Castellote Lab</a></li>
-  </ul></li>
   <li><a href="#required-pages" id="toc-required-pages" class="nav-link" data-scroll-target="#required-pages">Required Pages</a></li>
   <li><a href="#optional-pages" id="toc-optional-pages" class="nav-link" data-scroll-target="#optional-pages">Optional Pages</a></li>
   <li><a href="#additional-national-marine-fisheries-lab-manuals" id="toc-additional-national-marine-fisheries-lab-manuals" class="nav-link" data-scroll-target="#additional-national-marine-fisheries-lab-manuals">Additional National Marine Fisheries Lab Manuals</a></li>
@@ -491,7 +488,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Home</h1>
+<h1 class="title">Alaska Fisheries Science Center, Passive Acoustics Group</h1>
+<p class="subtitle lead">Lab Manual</p>
 </div>
 
 
@@ -508,9 +506,14 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="alaska-fisheries-science-centermarine-mammal-laboratorypassive-acoustics-group-lab-manual" class="level2">
-<h2 class="anchored" data-anchor-id="alaska-fisheries-science-centermarine-mammal-laboratorypassive-acoustics-group-lab-manual">Alaska Fisheries Science Center/Marine Mammal Laboratory/Passive Acoustics Group Lab Manual</h2>
-<p>The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program of the Marine Mammal Laboratory at the Alaska Fisheries Science Center. There are two main labs within the group:</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program (CAEP) at the Alaska Fisheries Science Center’s Marine Mammal Lab. Our main mission is to use recordings of ocean sounds to monitor the timing and distribution of marine mammals and human activities in Alaskan waters. We also monitor noise levels from biological, anthropogenic, and environmental sources. Our group is made up of two teams who work independently of each other. Each team’s lab manual can be accessed from the following links:</p>
+</div>
+</div>
+</div>
+<p>including the Bering, Beaufort, and Chukchi Seas, Gulf of Alaska, and Cook Inlet.</p>
 <section id="berchok-lab" class="level3">
 <h3 class="anchored" data-anchor-id="berchok-lab">Berchok Lab</h3>
 <p>The Berchok Lab focuses on long-term data collection throughout Alaskan waters including the Bering, Beaufort, and Chukchi Seas as well as in the Gulf of Alaska.</p>
@@ -523,7 +526,6 @@ ul.task-list li input[type="checkbox"] {
 <section id="castellote-lab" class="level3">
 <h3 class="anchored" data-anchor-id="castellote-lab">Castellote Lab</h3>
 <p>The Castellote Lab focuses on Cook Inlet as well as projects in Kotzembue, etc.</p>
-</section>
 </section>
 <section id="required-pages" class="level2">
 <h2 class="anchored" data-anchor-id="required-pages">Required Pages</h2>
@@ -666,6 +668,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
