@@ -36,7 +36,7 @@ The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Progr
 ::: {.column width="48%"}
 <p style="padding-top: 10px;">
 
-![](content/images/AFSCImages/AlaskaIcon.png){fig-alt="" fig-align="center"}
+![](content/images/AFSCimages/AlaskaIcon.png){fig-alt="" fig-align="center"}
 
 </p>
 :::
