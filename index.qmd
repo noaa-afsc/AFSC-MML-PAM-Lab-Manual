@@ -31,18 +31,51 @@ The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Progr
 ![](content/images/AFSCimages/AlaskaIcon.png){fig-alt="" fig-align="center"}
 :::
 
-Our main mission is to use recordings of ocean sounds to monitor the timing and distribution of marine mammals and human activities in Alaskan waters. We also monitor noise levels from biological, anthropogenic, and environmental sources. Our group is made up of two teams who work independently of each other. Each team's lab manual can be accessed from the following links:
+Our main mission is to use recordings of ocean sounds to monitor the timing and distribution of marine mammals and human activities in Alaskan waters. We also monitor noise levels from biological, anthropogenic, and environmental sources. Our group is made up of two teams who work independently of each other. 
+
+
+```{=html}
+<table>
+  <caption>Each team's lab manual can be accessed from the following links:</caption>
+  <thead>
+  <style>
+  th {text-align: center;}
+  </style>
+  
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td><img src="content/images/AFSCimages/NPRWwatercolor_CarleyLoweCropped.png" alt="African Bush Elephant" /></td>
+      <td><img src="content/images/AFSCimages/placeholderCIB.png" alt="African Bush Elephant" /></td>
+    </tr>
+  </tbody>
+</table>
+```
+
+
+
+
+
+
 
 ::: {.column width="48%"}
-|                                                                                               |
+|                                                                                                                                 |
 |:----------------------------------------------------------------------:|
-| [Team Berchok](https://nmfs-ost.github.io/PAM_template_lab_manual/content/LabManagement.html) |
+| ![(c) Carley Lowe](content/images/AFSCimages/NPRWwatercolor_CarleyLoweCropped.png){fig-alt="(C)Carley Lowe" fig-align="center"} |
+|                  [Arctic Team](https://nmfs-ost.github.io/PAM_template_lab_manual/content/LabManagement.html)                   |
 :::
 
 ::: {.column width="48%"}
-|                                                                                                  |
+|                                                                                                |
 |:----------------------------------------------------------------------:|
-| [Team Castellote](https://nmfs-ost.github.io/PAM_template_lab_manual/content/LabManagement.html) |
+| ![](content/images/AFSCimages/placeholderCIB.png){fig-alt="(C)Carley Lowe" fig-align="center"} |
+
+| 
+[Cook Inlet Team](https://nmfs-ost.github.io/PAM_template_lab_manual/content/LabManagement.html)|
 :::
 
 <p style="padding-bottom: 20px;">
