@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Alaska Fisheries Science Center, Passive Acoustics Group",
     "section": "",
-    "text": "The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program (CAEP) at the Alaska Fisheries Science Center’s Marine Mammal Lab. We are one of five regional science centers that are part of the National PAM Network\n\n\n\n\n\n\n\n\nOur main mission is to use recordings of ocean sounds to monitor the timing and distribution of marine mammals and human activities in Alaskan waters. We also monitor noise levels from biological, anthropogenic, and environmental sources. Our group is made up of two teams who work independently of each other.\n\n  Each team's lab manual can be accessed from the following links:\n  \n  \n  \n    \n      Header 1\n      Header 2\n    \n  \n  \n    \n    \n      \n    \n  \n\n\n\n\n\n\n\n\nArctic Team\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCook Inlet Team|\n\n\n\nShipping Address: Alaska Fisheries Science Center, Marine Mammal Lab, 7600 Sand Point Way NE, Seattle, WA 98115",
+    "text": "The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program (CAEP) at the Alaska Fisheries Science Center’s Marine Mammal Lab. We are one of five regional science centers that are part of the National PAM Network\n\n\n\n\n\n\n\n\nOur main mission is to use recordings of ocean sounds to monitor the timing and distribution of marine mammals and human activities in Alaskan waters. We also monitor noise levels from biological, anthropogenic, and environmental sources. Our group is made up of two teams who work independently of each other. Each team’s lab manual can be accessed from the following links:\n\n  \n  \n  \n  \n    \n    \n      Arctic Team\n    Cook Inlet Team\n    \n    \n    © Carley Lowe\n    \n    \n    \n  \n\n\n\nShipping Address: Alaska Fisheries Science Center, Marine Mammal Lab, 7600 Sand Point Way NE, Seattle, WA 98115",
     "crumbs": [
       "Home"
     ]
@@ -164,9 +164,19 @@
   {
     "objectID": "content/TeamBerchok.html#where-we-work",
     "href": "content/TeamBerchok.html#where-we-work",
-    "title": "Team Berchok",
+    "title": "Arctic Team",
     "section": "Where we work",
-    "text": "Where we work\n\n\n\n\n\n\n\nWe primarily deploy passive acoustic recorders on subsurface moorings throughout the Bering, Beaufort, and Chukchi Seas, as well as in the Gulf of Alaska. We also conduct real-time passive acoustic monitoring via sonobuoys while underway.|",
+    "text": "Where we work",
+    "crumbs": [
+      "Berchok Lab Manual"
+    ]
+  },
+  {
+    "objectID": "content/TeamBerchok.html#the-research-we-do",
+    "href": "content/TeamBerchok.html#the-research-we-do",
+    "title": "Arctic Team",
+    "section": "The research we do",
+    "text": "The research we do\n\n\n\n\n\n\n\n\n\n\nWe primarily deploy passive acoustic recorders on subsurface moorings throughout the Bering, Beaufort, and Chukchi Seas, as well as in the Gulf of Alaska. They autonomously record underwater sounds for a year at a time.\n\n\nWe also conduct shorter-term real-time passive acoustic monitoring via sonobuoys from vessels.\n\n\n\n\n\n\n\n\nAll",
     "crumbs": [
       "Berchok Lab Manual"
     ]
