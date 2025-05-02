@@ -6,6 +6,7 @@ date-format: 'DD MMM YYYY'
 page-layout: full
 link-external-newwindow: true
 format: html
+editor: visual
 ---
 
 
@@ -18,7 +19,7 @@ Our team primarily deploys passive acoustic recorders on subsurface moorings thr
 
 ::: {.column width="48%"}
 ![](content/images/AFSCimages/AlaskaIcon.png){fig-alt="" fig-align="center"}
-
+:::
 
 
 
