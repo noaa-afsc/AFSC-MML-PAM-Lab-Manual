@@ -1,5 +1,5 @@
 ---
-title: "Team Berchok"
+title: "Arctic Team"
 ---
 
 ## Who we are
@@ -11,17 +11,18 @@ title: "Team Berchok"
 
 
 
-
+## The research we do
 
 
 
 ::: {.column width="42%"}
 |       |
-|:-----:|
-<p></p>
-We primarily deploy passive acoustic recorders on subsurface moorings throughout the Bering, Beaufort, and Chukchi Seas, as well as in the Gulf of Alaska.  We also conduct real-time passive acoustic monitoring via sonobuoys while underway.|
+|:-----|
+|<p></p>
+We primarily deploy passive acoustic recorders on subsurface moorings throughout the Bering, Beaufort, and Chukchi Seas, as well as in the Gulf of Alaska. They autonomously record underwater sounds for a year at a time.|  
+|We also conduct shorter-term real-time passive acoustic monitoring via sonobuoys from vessels.|
 :::
 
 ::: {.column width="48%"}
-![](images/AFSCimages/MMLmoorings_currentVsAll.png){fig-alt="" fig-align="center"}
+![All ](images/AFSCimages/MMLmoorings_currentVsAll.png){fig-alt="" fig-align="center"}
 ::::
