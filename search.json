@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Alaska Fisheries Science Center, Passive Acoustics Group",
     "section": "",
-    "text": "The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program (CAEP) at the Alaska Fisheries Science Center’s Marine Mammal Lab. We are one of five regional science centers that are part of the National PAM Network\n\n\n\n\n\n\n\n\nOur main mission is to use recordings of ocean sounds to monitor the timing and distribution of marine mammals and human activities in Alaskan waters. We also monitor noise levels from biological, anthropogenic, and environmental sources. Our group is made up of two teams who work independently of each other. Each team’s lab manual can be accessed from the following links:\n\n\n\n\nTeam Berchok\n\n\n\n\n\n\n\n\nTeam Castellote\n\n\n\n\n\n\nShipping Address: Alaska Fisheries Science Center, Marine Mammal Lab, 7600 Sand Point Way NE, Seattle, WA 98115",
+    "text": "The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program (CAEP) at the Alaska Fisheries Science Center’s Marine Mammal Lab. We are one of five regional science centers that are part of the National PAM Network\n\n\n\n\n\n\n\n\nOur main mission is to use recordings of ocean sounds to monitor the timing and distribution of marine mammals and human activities in Alaskan waters. We also monitor noise levels from biological, anthropogenic, and environmental sources. Our group is made up of two teams who work independently of each other.\n\n  Each team's lab manual can be accessed from the following links:\n  \n  \n  \n    \n      Header 1\n      Header 2\n    \n  \n  \n    \n    \n      \n    \n  \n\n\n\n\n\n\n\n\nArctic Team\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCook Inlet Team|\n\n\n\nShipping Address: Alaska Fisheries Science Center, Marine Mammal Lab, 7600 Sand Point Way NE, Seattle, WA 98115",
     "crumbs": [
       "Home"
     ]
@@ -162,11 +162,11 @@
     "text": "[Splits the raw sonobuoy files into single channels and converts the local to UTC time]\nThings you’ll need:\n\nCorrectly named project folder and files (see above - link to section CB)\nFully completed recording log (times are in local time)\n\n\n\n\nExample of a sonobuoy recording log\n\n\n\nMatlab version 2023b or higher (maybe 2023a will work)\nSonobuoyRename_v1.m\n\nRunning SonobuoyRename_v1.m\n\nYou can change the pathing in lines 11, 13, and 15 of the code, or you can just browse to the folders while running code.\nFirst point to the specific deployment folder that contains your raw wave files.\nThen point to a fast external drive (just the drive letter).\nThen to the folder with the recording log excels\nChoose geographic region where the sonobuoy recordings were deployed in\n\nMatlab can handle the time zone and daylight savings business.\nIf one is missing, let CB know so she can update backup files.\n\nThe way to add is typing timezones into the Matlab command window to get the table, then you add that info in the tz= line (around line 20) of the code.\n\n\nThe resulting wavefiles have sonobuoy number as part of their filename: (e.g., SB-PWYM01_014-240813-182113.wav)\n\nBACKING UP DATA\n\nCopy all files from fast external drive to a B external drive and the Audio_Data2 folder in the NAS2 drive\nIn the Where the files are excel note the B and and NAS drives in the row for that cruise (this file will be cleaned up soon - CB)."
   },
   {
-    "objectID": "content/TeamBerchok.html",
-    "href": "content/TeamBerchok.html",
+    "objectID": "content/TeamBerchok.html#where-we-work",
+    "href": "content/TeamBerchok.html#where-we-work",
     "title": "Team Berchok",
-    "section": "",
-    "text": "We primarily deploy passive acoustic recorders on subsurface moorings throughout the Bering, Beaufort, and Chukchi Seas, as well as in the Gulf of Alaska. We also conduct real-time passive acoustic monitoring via sonobuoys while underway.|",
+    "section": "Where we work",
+    "text": "Where we work\n\n\n\n\n\n\n\nWe primarily deploy passive acoustic recorders on subsurface moorings throughout the Bering, Beaufort, and Chukchi Seas, as well as in the Gulf of Alaska. We also conduct real-time passive acoustic monitoring via sonobuoys while underway.|",
     "crumbs": [
       "Berchok Lab Manual"
     ]
