@@ -55,8 +55,6 @@ Our main mission is to use recordings of ocean sounds to monitor the timing and 
   </tbody>
 </table>
 ```
-<p style="padding-bottom: 20px;">
 
-</p>
 
 **Shipping Address:** *Alaska Fisheries Science Center, Marine Mammal Lab, 7600 Sand Point Way NE, Seattle, WA 98115*
