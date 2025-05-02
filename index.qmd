@@ -35,13 +35,13 @@ Our main mission is to use recordings of ocean sounds to monitor the timing and 
 
 ::: {.column width="48%"}
 |                                                                                               |
-|:---------------------------------------------------------------------------------------------:|
+|:----------------------------------------------------------------------:|
 | [Team Berchok](https://nmfs-ost.github.io/PAM_template_lab_manual/content/LabManagement.html) |
 :::
 
 ::: {.column width="48%"}
 |                                                                                                  |
-|:------------------------------------------------------------------------------------------------:|
+|:----------------------------------------------------------------------:|
 | [Team Castellote](https://nmfs-ost.github.io/PAM_template_lab_manual/content/LabManagement.html) |
 :::
 

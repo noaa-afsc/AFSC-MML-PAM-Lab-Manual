@@ -6,9 +6,9 @@ title: "Team Berchok"
 |       |
 |:-----:|
 <p></p>
-The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program (CAEP) at the Alaska Fisheries Science Center's [Marine Mammal Lab](https://www.fisheries.noaa.gov/about/marine-mammal-laboratory). We are one of five regional science centers that are part of the [National PAM Network](https://nmfs-ost.github.io/PAM_National_Network/)
+We primarily deploy passive acoustic recorders on subsurface moorings throughout the Bering, Beaufort, and Chukchi Seas, as well as in the Gulf of Alaska.  We also conduct real-time passive acoustic monitoring via sonobuoys while underway.|
 :::
 
 ::: {.column width="48%"}
-![](content/images/AFSCimages/AlaskaIcon.png){fig-alt="" fig-align="center"}
+![](images/AFSCimages/MMLmoorings_currentVsAll.png){fig-alt="" fig-align="center"}
 ::::
