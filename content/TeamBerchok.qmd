@@ -1,39 +1,14 @@
 ---
 title: "Team Berchok"
-editor: visual
-date: today
-date-format: 'DD MMM YYYY'
-page-layout: full
-link-external-newwindow: true
-format: html
-editor: visual
 ---
-
 
 ::: {.column width="42%"}
 |       |
 |:-----:|
 <p></p>
-Our team primarily deploys passive acoustic recorders on subsurface moorings throughout the Bering, Beaufort, and Chukchi Seas, as well as in the Gulf of Alaska.  We also conduct real-time passive acoustic monitoring via sonobuoys while underway.|
+The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program (CAEP) at the Alaska Fisheries Science Center's [Marine Mammal Lab](https://www.fisheries.noaa.gov/about/marine-mammal-laboratory). We are one of five regional science centers that are part of the [National PAM Network](https://nmfs-ost.github.io/PAM_National_Network/)
 :::
 
 ::: {.column width="48%"}
 ![](content/images/AFSCimages/AlaskaIcon.png){fig-alt="" fig-align="center"}
-:::
-
-
-
-
-|     |  Data Collection   | Data Processing | Data Analysis | Data Results | Data Products | Outreach |
-|-----------|:---------:|:---------:|:---------:|:--------:|:---------:|:---------:|
-|     |  Instrument Prep   | Data extraction |    Manual     |   Database   |    Reports    |          |
-|     | Shipping logistics |  Data back up   |     AI/ML     |              |  Tech Memos   |          |
-|     |   Field Methods    | Data Processing |               |              | Publications  |          |
-|     |                    |                 |               |              | Presentations |          |
-|     |                    |                 |               |              |               |          |
-|     |                    |                 |               |              |               |          |
-|     |                    |                 |               |              |               |          |
-|     |                    |                 |               |              |               |          |
-|     |                    |                 |               |              |               |          |
-
-: Overview
+::::
