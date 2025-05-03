@@ -8,7 +8,7 @@ link-external-newwindow: true
 format: html
 editor: visual
 ---
-myfile.jpg?ver=123
+
 
 ```{=html}
 <style type="text/css">
@@ -20,11 +20,11 @@ h1.title {
 }
 </style>
 ```
-::: {.column width="40%"}
+::: {.column width="30%"}
 ![](content/images/AFSCimages/AlaskaIcon.png){fig-alt="" fig-align="center"}
 :::
 
-::: {.column width="55%"}
+::: {.column width="40%"}
 
 
 The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program (CAEP) at the Alaska Fisheries Science Center's [Marine Mammal Lab](https://www.fisheries.noaa.gov/about/marine-mammal-laboratory). We are one of five regional science centers that are part of the [National PAM Network](https://nmfs-ost.github.io/PAM_National_Network/)
@@ -46,8 +46,8 @@ Our main mission is to use recordings of ocean sounds to monitor the timing and 
     <th><a href="https://noaa-afsc.github.io/AFSC-MML-PAM-Lab-Manual/content/TeamCastellote.html">Cook Inlet Team</a></th>
     </tr>
     <tr>
-    <td><img src="content/images/AFSCimages/NPRWwatercolor_CarleyLoweCropped.png" width="400" height="375" style="vertical-align:middle" /><figcaption>© Carley Lowe</figcaption></td>
-    <td><img src="content/images/AFSCimages/PlaceHolderCIB.png" width="400" height="300" /></td>
+    <td><img src="content/images/AFSCimages/NPRWwatercolor_CarleyLoweCropped.png" width="320" height="300" style="vertical-align:middle" /><figcaption>© Carley Lowe</figcaption></td>
+    <td><img src="content/images/AFSCimages/PlaceHolderCIB.png" width="360" height="260" /></td>
     </tr>
     <tr>
   </tbody>
