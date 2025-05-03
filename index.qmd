@@ -8,6 +8,7 @@ link-external-newwindow: true
 format: html
 editor: visual
 ---
+myfile.jpg?ver=123
 
 ```{=html}
 <style type="text/css">
@@ -19,11 +20,11 @@ h1.title {
 }
 </style>
 ```
-::: {.column width="45%"}
+::: {.column width="40%"}
 ![](content/images/AFSCimages/AlaskaIcon.png){fig-alt="" fig-align="center"}
 :::
 
-::: {.column width="50%"}
+::: {.column width="55%"}
 
 
 The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program (CAEP) at the Alaska Fisheries Science Center's [Marine Mammal Lab](https://www.fisheries.noaa.gov/about/marine-mammal-laboratory). We are one of five regional science centers that are part of the [National PAM Network](https://nmfs-ost.github.io/PAM_National_Network/)
