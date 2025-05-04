@@ -24,27 +24,29 @@ title: "Arctic Team"
 </table>
 
 ### Past Team Members
-:::
+
 ::: {.column width="30%"}
 - Greta Weise
 - Ildiko Kremper
 - Jessica Knoth
 - Arial Brewer
-- Jenna Harlacher
+
 :::
 ::: {.column width="30%"}
+- Jenna Harlacher
 - Eliza Ives
 - Alexandra Ulmke
 - Megan Wood
-- Holly Calahan
+
 
 :::
 ::: {.column width="30%"}
 - Julie Mocklin
 - Linda Vate Bratstrom
+- Holly Calahan
 - Jessica Thompson
 :::
-:::
+
 
 <!--
 
@@ -79,7 +81,6 @@ title: "Arctic Team"
 
 ### Past Interns and Volunteers
 
-|
 | **CICOES**: Sophia Wagner (2023), Cole Watson (2020), Dana's Intern (??)
 | **NOAA Hollings**: Ildiko Kremper (2020), Srishti Dasarathy (2015), Rebecca Leitt (2013), Dana Wright (2011)
 | **SAFS/MML**: Max Van Gelder (2020)
