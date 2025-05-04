@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Alaska Fisheries Science Center, Passive Acoustics Group",
     "section": "",
-    "text": "The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program (CAEP) at the Alaska Fisheries Science Center’s Marine Mammal Lab. We are one of five regional science centers that are part of the National PAM Network\n\nOur main mission is to use recordings of ocean sounds to monitor the timing and distribution of marine mammals and human activities in Alaskan waters. We also monitor noise levels from biological, anthropogenic, and environmental sources. Our group is made up of two teams who work independently of each other. Each team’s lab manual can be accessed from the following links:\n\n  \n  \n  \n  \n    \n    \n      Arctic Team\n    Cook Inlet Team\n    \n    \n    © Carley Lowe\n    \n    \n    \n  \n\nShipping Address: Alaska Fisheries Science Center, Marine Mammal Lab, 7600 Sand Point Way NE, Seattle, WA 98115",
+    "text": "The Passive Acoustics Group is part of the Cetacean Assessment and Ecology Program (CAEP) at the Alaska Fisheries Science Center’s Marine Mammal Lab. We are one of five regional science centers that are part of the National PAM Network\n\n\n\n\nOur main mission is to use recordings of ocean sounds to monitor the timing and distribution of marine mammals and human activities in Alaskan waters. We also monitor noise levels from biological, anthropogenic, and environmental sources. Our group is made up of two teams who work independently of each other. Each team’s lab manual can be accessed from the following links:\n\n\n  \n  \n  \n  \n    \n    \n      Arctic Team\n    Cook Inlet Team\n    \n    \n    © Carley Lowe\n    \n    \n    \n  \n\nShipping Address: Alaska Fisheries Science Center, Marine Mammal Lab, 7600 Sand Point Way NE, Seattle, WA 98115",
     "crumbs": [
       "Home"
     ]
@@ -160,6 +160,26 @@
     "title": "Software",
     "section": "",
     "text": "[Splits the raw sonobuoy files into single channels and converts the local to UTC time]\nThings you’ll need:\n\nCorrectly named project folder and files (see above - link to section CB)\nFully completed recording log (times are in local time)\n\n\n\n\nExample of a sonobuoy recording log\n\n\n\nMatlab version 2023b or higher (maybe 2023a will work)\nSonobuoyRename_v1.m\n\nRunning SonobuoyRename_v1.m\n\nYou can change the pathing in lines 11, 13, and 15 of the code, or you can just browse to the folders while running code.\nFirst point to the specific deployment folder that contains your raw wave files.\nThen point to a fast external drive (just the drive letter).\nThen to the folder with the recording log excels\nChoose geographic region where the sonobuoy recordings were deployed in\n\nMatlab can handle the time zone and daylight savings business.\nIf one is missing, let CB know so she can update backup files.\n\nThe way to add is typing timezones into the Matlab command window to get the table, then you add that info in the tz= line (around line 20) of the code.\n\n\nThe resulting wavefiles have sonobuoy number as part of their filename: (e.g., SB-PWYM01_014-240813-182113.wav)\n\nBACKING UP DATA\n\nCopy all files from fast external drive to a B external drive and the Audio_Data2 folder in the NAS2 drive\nIn the Where the files are excel note the B and and NAS drives in the row for that cruise (this file will be cleaned up soon - CB)."
+  },
+  {
+    "objectID": "content/TeamBerchok.html",
+    "href": "content/TeamBerchok.html",
+    "title": "Arctic Team",
+    "section": "",
+    "text": "Catherine Berchok\n\n\n\n\n\nJessica Crance\n\n\n\n\n\nDana Wright\n\n\n\n\n\nBrynn Kimber\n\n\n\n\n\nEric Braen\n\n\n\n\n\n\n\nStephanie Grassia\n\n\n\n\n\nDaniel Woodrich\n\n\n\n\n\nSophia Wagner\n\n\n\n\n\n\n\n\n::: ::: {.column width=“30%”} - Greta Weise - Ildiko Kremper - Jessica Knoth - Arial Brewer - Jenna Harlacher ::: ::: {.column width=“30%”} - Eliza Ives - Alexandra Ulmke - Megan Wood - Holly Calahan\n::: ::: {.column width=“30%”} - Julie Mocklin - Linda Vate Bratstrom - Jessica Thompson ::: :::\n\n\n\n\n\nEllen Garland\n\n\n\n\n\nCICOES: Sophia Wagner (2023), Cole Watson (2020), Dana’s Intern (??)\nNOAA Hollings: Ildiko Kremper (2020), Srishti Dasarathy (2015), Rebecca Leitt (2013), Dana Wright (2011)\nSAFS/MML: Max Van Gelder (2020)\nNERTO: Daryin Medley (2021)\nVolunteers: Nicholas Tucker(??), Cole Watson (??), Eric Braen (??)|",
+    "crumbs": [
+      "Berchok Lab Manual"
+    ]
+  },
+  {
+    "objectID": "content/TeamBerchok.html#who-we-are",
+    "href": "content/TeamBerchok.html#who-we-are",
+    "title": "Arctic Team",
+    "section": "",
+    "text": "Catherine Berchok\n\n\n\n\n\nJessica Crance\n\n\n\n\n\nDana Wright\n\n\n\n\n\nBrynn Kimber\n\n\n\n\n\nEric Braen\n\n\n\n\n\n\n\nStephanie Grassia\n\n\n\n\n\nDaniel Woodrich\n\n\n\n\n\nSophia Wagner\n\n\n\n\n\n\n\n\n::: ::: {.column width=“30%”} - Greta Weise - Ildiko Kremper - Jessica Knoth - Arial Brewer - Jenna Harlacher ::: ::: {.column width=“30%”} - Eliza Ives - Alexandra Ulmke - Megan Wood - Holly Calahan\n::: ::: {.column width=“30%”} - Julie Mocklin - Linda Vate Bratstrom - Jessica Thompson ::: :::\n\n\n\n\n\nEllen Garland\n\n\n\n\n\nCICOES: Sophia Wagner (2023), Cole Watson (2020), Dana’s Intern (??)\nNOAA Hollings: Ildiko Kremper (2020), Srishti Dasarathy (2015), Rebecca Leitt (2013), Dana Wright (2011)\nSAFS/MML: Max Van Gelder (2020)\nNERTO: Daryin Medley (2021)\nVolunteers: Nicholas Tucker(??), Cole Watson (??), Eric Braen (??)|",
+    "crumbs": [
+      "Berchok Lab Manual"
+    ]
   },
   {
     "objectID": "content/TeamBerchok.html#where-we-work",
