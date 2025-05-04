@@ -4,25 +4,100 @@ title: "Arctic Team"
 
 ## Who we are
 
+### Current Team Members
 
+<table>
+    <tbody>
+    <tr>
+    <td width = "25%" ><img src="images/AFSCimages/teamPhotos/CBerchok.png" width="100" height="140" style="vertical-align:middle"/><figcaption  width = "25%" ><a href="https://noaa-afsc.github.io/AFSC-MML-PAM-Lab-Manual/content/CBerchok.html">Catherine Berchok</a></figcaption></td>
+   <td width = "25%" ><img src="images/AFSCimages/teamPhotos/JCrance.jpg "width="100" height="140" style="vertical-align:middle"/><figcaption><a href="https://noaa-afsc.github.io/AFSC-MML-PAM-Lab-Manual/content/JCrance.html">Jessica Crance</a></figcaption></td>
+     <td width = "25%" ><img src="images/AFSCimages/teamPhotos/DWright.jpg" width="100" height="140" style="vertical-align:middle"/><figcaption><a href="https://noaa-afsc.github.io/AFSC-MML-PAM-Lab-Manual/content/DWright.html">Dana Wright</a></figcaption></td>
+      <td width = "25%" ><img src="images/AFSCimages/teamPhotos/BKimber.jpg" width="100" height="140" style="vertical-align:middle"/><figcaption><a href="https://noaa-afsc.github.io/AFSC-MML-PAM-Lab-Manual/content/BKimber.html">Brynn Kimber</a></figcaption></td>
+    <td width = "25%" ><img src="images/AFSCimages/teamPhotos/EBraen.jpg" width="100" height="140" style="vertical-align:middle"/><figcaption  width = "25%" ><a href="https://noaa-afsc.github.io/AFSC-MML-PAM-Lab-Manual/content/EBraen.html">Eric Braen</a></figcaption></td>
+     </tr>
+     <tr>
+      <td width = "25%" ><img src="images/AFSCimages/teamPhotos/SGrassia.jpg" width="100" height="140" style="vertical-align:middle"/><figcaption  width = "25%" ><a href="https://noaa-afsc.github.io/AFSC-MML-PAM-Lab-Manual/content/SGrassia.html">Stephanie Grassia</a></figcaption></td>
+   <td width = "25%" ><img src="images/AFSCimages/teamPhotos/DWoodrich.jpg "width="100" height="140" style="vertical-align:middle"/><figcaption><a href="https://noaa-afsc.github.io/AFSC-MML-PAM-Lab-Manual/content/DWoodrich.html">Daniel Woodrich</figcaption></td>
+     <td width = "25%" ><img src="images/AFSCimages/teamPhotos/SWagner.jpg" width="100" height="140" style="vertical-align:middle"/><figcaption><a href="https://noaa-afsc.github.io/AFSC-MML-PAM-Lab-Manual/content/SWagner.html">Sophia Wagner</a></figcaption></td>
+    </tr>
+  </tbody>
+</table>
+
+### Past Team Members
+:::
+::: {.column width="30%"}
+- Greta Weise
+- Ildiko Kremper
+- Jessica Knoth
+- Arial Brewer
+- Jenna Harlacher
+:::
+::: {.column width="30%"}
+- Eliza Ives
+- Alexandra Ulmke
+- Megan Wood
+- Holly Calahan
+
+:::
+::: {.column width="30%"}
+- Julie Mocklin
+- Linda Vate Bratstrom
+- Jessica Thompson
+:::
+:::
+
+<!--
+
+<table>
+    <tbody>
+    <tr>
+    <td width = "25%" ><img src="images/AFSCimages/teamPhotos/GWeise.jpg" width="100" height="140" style="vertical-align:middle"/><figcaption  width = "25%" ><a> Greta Weise</a></figcaption></td>
+    <td width = "25%" ><img src="images/AFSCimages/teamPhotos/IKremper.png" width="100" height="140" style="vertical-align:middle"/><figcaption  width = "25%" ><a> Ildiko Kremper</a></figcaption></td>
+   <td width = "25%" ><img src="images/AFSCimages/teamPhotos/JKnoth.png "width="100" height="140" style="vertical-align:middle"/><figcaption  width = "25%" ><a> Jessica Knoth </a></figcaption></td>
+      <td width = "25%" ><img src="images/AFSCimages/teamPhotos/ABrewer.png "width="100" height="140" style="vertical-align:middle"/><figcaption  width = "25%" ><a> Arial Brewer </a></figcaption></td>
+     <td width = "25%" ><img src="images/AFSCimages/teamPhotos/BlankPhotoFluke.png" width="100" height="70" style="vertical-align:middle"/><figcaption width = "25%"><a>Jenna Harlacher</a></figcaption></td>
+     </tr>
+     <tr>
+     <td width = "25%" ><img src="images/AFSCimages/teamPhotos/BlankPhotoFluke.png" width="90" height="70" style="vertical-align:middle"/><figcaption width = "25%"><a>Eliza Ives</a></figcaption></td>
+        <td width = "25%" ><img src="images/AFSCimages/teamPhotos/BlankPhotoFluke.png" width="90" height="70" style="vertical-align:middle"/><figcaption width = "25%"><a>Alexandra Ulmke</a></figcaption></td>
+        <td width = "25%" ><img src="images/AFSCimages/teamPhotos/BlankPhotoFluke.png" width="90" height="70" style="vertical-align:middle"/><figcaption width = "25%"><a>Holly Calahan</a></figcaption></td>
+      <td width = "25%" ><img src="images/AFSCimages/teamPhotos/BlankPhotoFluke.png" width="90" height="70" style="vertical-align:middle"/><figcaption width = "25%"><a>Megan Wood</a></figcaption></td>
+     <td width = "25%" height = "70" ><img src="images/AFSCimages/teamPhotos/BlankPhotoFluke.png" width="90" height="70" style="vertical-align:middle"/><figcaption width = "25%"><a>Ellen Garland</a></figcaption></td>
+     </tr>
+     <tr>
+        <td width = "25%" ><img src="images/AFSCimages/teamPhotos/BlankPhotoFluke.png" width="90" height="70" style="vertical-align:middle"/><figcaption width = "25%"><a>Julie Mocklin</a></figcaption></td>
+        <td width = "25%" ><img src="images/AFSCimages/teamPhotos/BlankPhotoFluke.png" width="90" height="70" style="vertical-align:middle"/><figcaption width = "25%"><a>Linda Vate Bratstrom</a></figcaption></td>
+      <td width = "25%" ><img src="images/AFSCimages/teamPhotos/BlankPhotoFluke.png" width="90" height="70" style="vertical-align:middle"/><figcaption width = "25%"><a>Jessica Thompson</a></figcaption></td>
+    </tr>
+  </tbody>
+</table>
+-->
+
+### Post Docs
+
+- Ellen Garland
+
+### Past Interns and Volunteers
+
+|
+| **CICOES**: Sophia Wagner (2023), Cole Watson (2020), Dana's Intern (??)
+| **NOAA Hollings**: Ildiko Kremper (2020), Srishti Dasarathy (2015), Rebecca Leitt (2013), Dana Wright (2011)
+| **SAFS/MML**: Max Van Gelder (2020)
+| **NERTO**: Daryin Medley (2021)
+| **Volunteers**: Nicholas Tucker(??), Cole Watson (??), Eric Braen (??)|
 
 ## Where we work
 
-
-
-
 ## The research we do
 
-
-
 ::: {.column width="42%"}
-|       |
-|:-----|
-|<p></p>
-We primarily deploy passive acoustic recorders on subsurface moorings throughout the Bering, Beaufort, and Chukchi Seas, as well as in the Gulf of Alaska. They autonomously record underwater sounds for a year at a time.|  
-|We also conduct shorter-term real-time passive acoustic monitoring via sonobuoys from vessels.|
+|                                                                                                                                                                                                                             |
+|:-----------------------------------------------------------------------|
+|                                                                                                                                                                                                                             |
+| We primarily deploy passive acoustic recorders on subsurface moorings throughout the Bering, Beaufort, and Chukchi Seas, as well as in the Gulf of Alaska. They autonomously record underwater sounds for a year at a time. |
+| We also conduct shorter-term real-time passive acoustic monitoring via sonobuoys from vessels.                                                                                                                              |
 :::
 
 ::: {.column width="48%"}
-![All ](images/AFSCimages/MMLmoorings_currentVsAll.png){fig-alt="" fig-align="center"}
-::::
+![All](images/AFSCimages/MMLmoorings_currentVsAll.png){fig-alt="" fig-align="center"}
+:::
