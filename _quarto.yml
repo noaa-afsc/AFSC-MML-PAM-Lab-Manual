@@ -36,6 +36,8 @@ website:
       - section: content/TeamBerchok.qmd
         text: "Arctic Lab Manual"
         contents:
+          - href: content/Overview.qmd
+            text: "Overview/Site Navigation"
           - href: content/LabManagement.qmd
             text: "Lab Management"
           - href: content/DataManagement.qmd
