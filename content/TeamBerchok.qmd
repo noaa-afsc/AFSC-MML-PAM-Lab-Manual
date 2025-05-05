@@ -89,6 +89,15 @@ title: "Arctic Team"
 
 ## Where we work
 
+::: {.column width="42%"}
+We work in the US Arctic, from the Aleutian Islands and Bering Sea north to the shelf waters of the eastern Chukchi and western Beaufort Seas, as well as the Chukchi Borderlands.  We also work in the northern Gulf of Alaska, and have had short-term projects in Behm Canal (near Ketchikan, Alaska).
+:::
+
+::: {.column width="40%"}
+![Google Earth](content/images/AFSCimages/WhereWeWork.png){fig-alt="" fig-align="center"}
+:::
+
+
 ## The research we do
 
 ::: {.column width="42%"}
