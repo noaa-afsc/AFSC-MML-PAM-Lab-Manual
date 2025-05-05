@@ -90,24 +90,26 @@ title: "Arctic Team"
 ## Where we work
 
 ::: {.column width="42%"}
+<p> 
+</p>
+
 We work in the US Arctic, from the Aleutian Islands and Bering Sea north to the shelf waters of the eastern Chukchi and western Beaufort Seas, as well as the Chukchi Borderlands.  We also work in the northern Gulf of Alaska, and have had short-term projects in Behm Canal (near Ketchikan, Alaska).
 :::
 
-::: {.column width="40%"}
-![Google Earth](content/images/AFSCimages/WhereWeWork.png){fig-alt="" fig-align="center"}
+::: {.column width="50%"}
+![Google Earth](images/AFSCimages/WhereWeWorkMap.png){fig-alt="" fig-align="center"}
 :::
-
 
 ## The research we do
+::: {.column width="35%"}
+We primarily deploy two types of passive acoustic sensors:
 
-::: {.column width="42%"}
-|                                                                                                                                                                                                                             |
-|:-----------------------------------------------------------------------|
-|                                                                                                                                                                                                                             |
-| We primarily deploy passive acoustic recorders on subsurface moorings throughout the Bering, Beaufort, and Chukchi Seas, as well as in the Gulf of Alaska. They autonomously record underwater sounds for a year at a time. |
-| We also conduct shorter-term real-time passive acoustic monitoring via sonobuoys from vessels.                                                                                                                              |
+-  Recorders deployed on subsurface moorings throughout the Bering, Beaufort, and Chukchi Seas, as well as in the Gulf of Alaska. They autonomously record underwater sounds for a year at a time. 
+-  Sonobuoys for shorter-term, real-time, passive acoustic monitoring from vessels.        
+
+We also occasionally use towed arrays and have deployed sonobuoys from aircraft.
 :::
 
-::: {.column width="48%"}
-![All](images/AFSCimages/MMLmoorings_currentVsAll.png){fig-alt="" fig-align="center"}
+::: {.column width="45%"}
+![Locations of all long-term passive acoustic recorder moorings](images/AFSCimages/MMLmoorings_currentVsAll.png){fig-alt="" fig-align="center"}
 :::

@@ -34,10 +34,10 @@ website:
       - href: index.qmd
         text: Home
       - section: content/TeamBerchok.qmd
-        text: "Berchok Lab Manual"
+        text: "Arctic Lab Manual"
         contents:
           - href: content/LabManagement.qmd
-            text: "Lab Management.qmd"
+            text: "Lab Management"
           - href: content/DataManagement.qmd
             text: Data Management
           - href: content/Hardware.qmd
@@ -48,7 +48,7 @@ website:
             text: "Reporting"
             
       - section: content/TeamCastellote.qmd
-        text: "Castellote Lab Manual"
+        text: "Cook Inlet Lab Manual"
         contents:
           - href: content/LabManagement.qmd
             text: "Lab Management.qmd"
