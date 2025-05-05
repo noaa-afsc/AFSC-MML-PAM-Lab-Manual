@@ -168,7 +168,7 @@
     "section": "",
     "text": "Catherine Berchok\n\n\n\n\n\nJessica Crance\n\n\n\n\n\nDana Wright\n\n\n\n\n\nBrynn Kimber\n\n\n\n\n\nEric Braen\n\n\n\n\n\n\n\nStephanie Grassia\n\n\n\n\n\nDaniel Woodrich\n\n\n\n\n\nSophia Wagner\n\n\n\n\n\n\n\n\n\n\nGreta Weise\nIldiko Kremper\nJessica Knoth\nArial Brewer\n\n\n\n\nJenna Harlacher\nEliza Ives\nAlexandra Ulmke\nMegan Wood\n\n\n\n\nJulie Mocklin\nLinda Vate Bratstrom\nHolly Calahan\nJessica Thompson\n\n\n\n\n\n\n\nEllen Garland\n\n\n\n\nCICOES: Sophia Wagner (2023), Cole Watson (2020), Dana’s Intern (??)\nNOAA Hollings: Ildiko Kremper (2020), Srishti Dasarathy (2015), Rebecca Leitt (2013), Dana Wright (2011)\nSAFS/MML: Max Van Gelder (2020)\nNERTO: Daryin Medley (2021)\nVolunteers: Nicholas Tucker(??), Cole Watson (??), Eric Braen (??)|",
     "crumbs": [
-      "Berchok Lab Manual"
+      "Arctic Lab Manual"
     ]
   },
   {
@@ -178,7 +178,7 @@
     "section": "",
     "text": "Catherine Berchok\n\n\n\n\n\nJessica Crance\n\n\n\n\n\nDana Wright\n\n\n\n\n\nBrynn Kimber\n\n\n\n\n\nEric Braen\n\n\n\n\n\n\n\nStephanie Grassia\n\n\n\n\n\nDaniel Woodrich\n\n\n\n\n\nSophia Wagner\n\n\n\n\n\n\n\n\n\n\nGreta Weise\nIldiko Kremper\nJessica Knoth\nArial Brewer\n\n\n\n\nJenna Harlacher\nEliza Ives\nAlexandra Ulmke\nMegan Wood\n\n\n\n\nJulie Mocklin\nLinda Vate Bratstrom\nHolly Calahan\nJessica Thompson\n\n\n\n\n\n\n\nEllen Garland\n\n\n\n\nCICOES: Sophia Wagner (2023), Cole Watson (2020), Dana’s Intern (??)\nNOAA Hollings: Ildiko Kremper (2020), Srishti Dasarathy (2015), Rebecca Leitt (2013), Dana Wright (2011)\nSAFS/MML: Max Van Gelder (2020)\nNERTO: Daryin Medley (2021)\nVolunteers: Nicholas Tucker(??), Cole Watson (??), Eric Braen (??)|",
     "crumbs": [
-      "Berchok Lab Manual"
+      "Arctic Lab Manual"
     ]
   },
   {
@@ -186,9 +186,9 @@
     "href": "content/TeamBerchok.html#where-we-work",
     "title": "Arctic Team",
     "section": "Where we work",
-    "text": "Where we work\n\nWe work in the US Arctic, from the Aleutian Islands and Bering Sea north to the shelf waters of the eastern Chukchi and western Beaufort Seas, as well as the Chukchi Borderlands. We also work in the northern Gulf of Alaska, and have had short-term projects in Behm Canal (near Ketchikan, Alaska).\n\n\n\n\n\nGoogle Earth",
+    "text": "Where we work\n\n\n\nWe work in the US Arctic, from the Aleutian Islands and Bering Sea north to the shelf waters of the eastern Chukchi and western Beaufort Seas, as well as the Chukchi Borderlands. We also work in the northern Gulf of Alaska, and have had short-term projects in Behm Canal (near Ketchikan, Alaska).\n\n\n\n\n\nGoogle Earth",
     "crumbs": [
-      "Berchok Lab Manual"
+      "Arctic Lab Manual"
     ]
   },
   {
@@ -196,9 +196,9 @@
     "href": "content/TeamBerchok.html#the-research-we-do",
     "title": "Arctic Team",
     "section": "The research we do",
-    "text": "The research we do\n\n\n\n\n\n\n\n\n\n\nWe primarily deploy passive acoustic recorders on subsurface moorings throughout the Bering, Beaufort, and Chukchi Seas, as well as in the Gulf of Alaska. They autonomously record underwater sounds for a year at a time.\n\n\nWe also conduct shorter-term real-time passive acoustic monitoring via sonobuoys from vessels.\n\n\n\n\n\n\n\n\nAll",
+    "text": "The research we do\n\nWe primarily deploy two types of passive acoustic sensors:\n\nRecorders deployed on subsurface moorings throughout the Bering, Beaufort, and Chukchi Seas, as well as in the Gulf of Alaska. They autonomously record underwater sounds for a year at a time.\nSonobuoys for shorter-term, real-time, passive acoustic monitoring from vessels.\n\nWe also occasionally use towed arrays and have deployed sonobuoys from aircraft.\n\n\n\n\n\nLocations of all long-term passive acoustic recorder moorings",
     "crumbs": [
-      "Berchok Lab Manual"
+      "Arctic Lab Manual"
     ]
   },
   {
@@ -215,7 +215,7 @@
     "section": "",
     "text": "A software and analysis methods section is required and should include subpages for both topics (analysis methods can be a subsection with pages for different anaylsis methods topics).",
     "crumbs": [
-      "Berchok Lab Manual",
+      "Arctic Lab Manual",
       "Software & Analysis"
     ]
   },
@@ -226,8 +226,8 @@
     "section": "",
     "text": "A lab management section is required and should include the following information;\n\nSafety\nInventory\nHardware",
     "crumbs": [
-      "Berchok Lab Manual",
-      "Lab Management.qmd"
+      "Arctic Lab Manual",
+      "Lab Management"
     ]
   },
   {
@@ -300,7 +300,7 @@
     "section": "",
     "text": "A data management section is required and should include the following information;\n\nData Archive Methods\n\nInformation on where your data is archived (PACM, NCEI, Tethys, Internal databases, etc)\nSAEL Example\n\nSpecies reference guide for your region\n\nDevelop a species and call type library for your region\nThis can include spectrograms of calls and sound clips\nPIFSC working on this, use them as an example once finalized\nSAEL Example\n\nMedia\n\nLinks to sound archives, media archives, web sites, blogs, etc.\nSAEL Example\n\n\nThis can be a section with subpages or a qmd\nGlider Lab Manual",
     "crumbs": [
-      "Berchok Lab Manual",
+      "Arctic Lab Manual",
       "Data Management"
     ]
   },
@@ -318,7 +318,7 @@
     "section": "",
     "text": "his is a required page and should include any templates you have created for reporting within NOAA or to other agencies.\nExamples include NEFSC PAM data reporting templates and standard report formats for a few different agencies/species (right whales, Australian Marine Parks).",
     "crumbs": [
-      "Berchok Lab Manual",
+      "Arctic Lab Manual",
       "Reporting"
     ]
   },
@@ -329,7 +329,7 @@
     "section": "",
     "text": "his is a required page and should include any templates you have created for reporting within NOAA or to other agencies.\nExamples include NEFSC PAM data reporting templates and standard report formats for a few different agencies/species (right whales, Australian Marine Parks).",
     "crumbs": [
-      "Berchok Lab Manual",
+      "Arctic Lab Manual",
       "Reporting"
     ]
   },
@@ -340,7 +340,7 @@
     "section": "Permits",
     "text": "Permits\nYou should also include any permit reporting guidelines here\n\nPermits and Permit Reporting Guidelines\n\nInclude permit numbers and links to your centers/groups permits\nInclude directions for permit reporting (Protected species, National Marine Sanctuaries, Navy, Fish and Wildlife, etc)\nYou can include links to past permit reports (these can be private google drive folders if needed)\nSAEL example",
     "crumbs": [
-      "Berchok Lab Manual",
+      "Arctic Lab Manual",
       "Reporting"
     ]
   },
@@ -365,7 +365,7 @@
     "section": "",
     "text": "POC: Catherine/Brynn What: Instruments, Moorings (how it is all put together)",
     "crumbs": [
-      "Berchok Lab Manual",
+      "Arctic Lab Manual",
       "Hardware"
     ]
   },
@@ -376,7 +376,7 @@
     "section": "",
     "text": "POC: Catherine/Brynn What: Instruments, Moorings (how it is all put together)",
     "crumbs": [
-      "Berchok Lab Manual",
+      "Arctic Lab Manual",
       "Hardware"
     ]
   },
@@ -387,7 +387,7 @@
     "section": "Sonobuoys",
     "text": "Sonobuoys\nPOC: Jess Crance/Catherine",
     "crumbs": [
-      "Berchok Lab Manual",
+      "Arctic Lab Manual",
       "Hardware"
     ]
   },
@@ -398,7 +398,7 @@
     "section": "Towed hydrophone Arrays",
     "text": "Towed hydrophone Arrays\nPOC: Jess Crance\nA hardware section is required and should include the following information;\n\nInformation on your recorders\nArray configurations and diagrams\nPlatform information (towed, moored, drifting, etc.)\nOther sensors included (GPS devices, depth senors, etc.)\n\nThis will be variable for each center and may change from project to project. You should list all hardware, present and past.\nYou can also link to a separate hardware repository if needed (SAEL example)\nThis can be a section with subpages or a qmd",
     "crumbs": [
-      "Berchok Lab Manual",
+      "Arctic Lab Manual",
       "Hardware"
     ]
   },
