@@ -1,0 +1,33 @@
+---
+title: "Overview"
+---
+
+```{mermaid}
+flowchart TD
+
+    A1{Data Collection} --> A2{Data Archiving}
+    A2{Data Archiving} --> A3{Data Processing}
+    A3{Data Processing} --> A4{Database}
+    A4{Database}--> A5{Data Analysis}
+    A5{Data Analysis} --> A6{Dissemenation}
+  
+      n1(Sonobuoys) --> A1{Data Collection}
+        s1[Prep] --> n1
+      
+      n2(Moorings) --> A1{Data Collection}
+        s7[Refurbish] --> n2
+        s8[Clean] --> n2
+        s9[Test] --> n2
+      
+      nn1(OtherPAM) --> A1{Data Collection}
+      n3(Towed Array) --> nn1
+      n4(Dipping Phone) --> nn1
+      
+     
+    
+   
+
+```
+
+
+

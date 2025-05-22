@@ -81,7 +81,8 @@ format:
     code-copy: true
     code-overflow: wrap
     toc: true
-
+    mermaid:
+      theme: forest
 
 filters:
   - include-files.lua
