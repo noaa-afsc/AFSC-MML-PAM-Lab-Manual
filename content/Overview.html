@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Inventory – AFSC MML PAM Lab Manual</title>
+<title>Overview – AFSC MML PAM Lab Manual</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,6 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../content/LabManagement.html" rel="next">
+<link href="../content/TeamBerchok.html" rel="prev">
 <link href="../images/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -71,6 +73,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="mermaid-theme" content="forest">
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -246,7 +252,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Inventory</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/TeamBerchok.html">Arctic Lab Manual</a></li><li class="breadcrumb-item"><a href="../content/Overview.html">Overview/Site Navigation</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -293,7 +299,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/Overview.html" class="sidebar-item-text sidebar-link">
+  <a href="../content/Overview.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Overview/Site Navigation</span></a>
   </div>
 </li>
@@ -424,24 +430,16 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#accountable-property" id="toc-accountable-property" class="nav-link active" data-scroll-target="#accountable-property">Accountable property</a></li>
-  <li><a href="#lab-inventory" id="toc-lab-inventory" class="nav-link" data-scroll-target="#lab-inventory">Lab inventory</a></li>
-  <li><a href="#master-data-drives-inventory" id="toc-master-data-drives-inventory" class="nav-link" data-scroll-target="#master-data-drives-inventory">Master data drives inventory</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/noaa-afsc/AFSC-MML-PAM-Lab-Manual/edit/main/content/Inventory.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/noaa-afsc/AFSC-MML-PAM-Lab-Manual/blob/main/content/Inventory.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/noaa-afsc/AFSC-MML-PAM-Lab-Manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/TeamBerchok.html">Arctic Lab Manual</a></li><li class="breadcrumb-item"><a href="../content/Overview.html">Overview/Site Navigation</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Inventory</h1>
+<h1 class="title">Overview</h1>
 </div>
 
 
@@ -458,25 +456,43 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>I think the best way to organize this is this way</p>
-<section id="accountable-property" class="level2">
-<h2 class="anchored" data-anchor-id="accountable-property">Accountable property</h2>
-<p>POC: CLB What: this will include Hard drive list and any equipment lists Maybe: would be good to have everyone’s lists here too (e.g., Jess has some drives on her list now, and maybe ST600s?) But would be good to know who has what assigned computer.</p>
-</section>
-<section id="lab-inventory" class="level2">
-<h2 class="anchored" data-anchor-id="lab-inventory">Lab inventory</h2>
-<p>POC: CLB/BMK/JLC What: The is the lab inventory - will include supplies, all equipment (whether on accountable property list or not), And it would be good for this to also serve as the to purchase spot somehow</p>
-</section>
-<section id="master-data-drives-inventory" class="level2">
-<h2 class="anchored" data-anchor-id="master-data-drives-inventory">Master data drives inventory</h2>
-<p>POC: CLB/EKB What: THis is sort of the same as accountable property - but are those drives that got taken off the list and should continue to be tracked. Eric has already sorted the drives into boxes. Do I want to have a sensitive data list for those I have locked up??</p>
-<p>An inventory page is highly recommended to keep track of equipment, loans, and gear beingin the field. This can be a link to a Google sheet or embedded in the website</p>
-<ul>
-<li><a href="https://sael-swfsc.github.io/SAEL-lab-manual/content/Inventory.html">SAEL Lab Example</a></li>
-</ul>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+
+    A1{Data Collection} --&gt; A2{Data Archiving}
+    A2{Data Archiving} --&gt; A3{Data Processing}
+    A3{Data Processing} --&gt; A4{Database}
+    A4{Database}--&gt; A5{Data Analysis}
+    A5{Data Analysis} --&gt; A6{Dissemenation}
+  
+      n1(Sonobuoys) --&gt; A1{Data Collection}
+        s1[Prep] --&gt; n1
+      
+      n2(Moorings) --&gt; A1{Data Collection}
+        s7[Refurbish] --&gt; n2
+        s8[Clean] --&gt; n2
+        s9[Test] --&gt; n2
+      
+      nn1(OtherPAM) --&gt; A1{Data Collection}
+      n3(Towed Array) --&gt; nn1
+      n4(Dipping Phone) --&gt; nn1
+      
+     
+    
+   
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -891,6 +907,18 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../content/TeamBerchok.html" class="pagination-link" aria-label="Arctic Lab Manual">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Arctic Lab Manual</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../content/LabManagement.html" class="pagination-link" aria-label="Lab Management">
+        <span class="nav-page-text">Lab Management</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -899,7 +927,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/noaa-afsc/AFSC-MML-PAM-Lab-Manual/edit/main/content/Inventory.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/noaa-afsc/AFSC-MML-PAM-Lab-Manual/blob/main/content/Inventory.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/noaa-afsc/AFSC-MML-PAM-Lab-Manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/noaa-afsc/AFSC-MML-PAM-Lab-Manual/edit/main/content/Overview.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/noaa-afsc/AFSC-MML-PAM-Lab-Manual/blob/main/content/Overview.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/noaa-afsc/AFSC-MML-PAM-Lab-Manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
