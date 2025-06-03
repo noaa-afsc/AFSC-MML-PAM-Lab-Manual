@@ -3,3 +3,11 @@ title: Resources
 ---
 
 This page is optional but can be a good spot for any remaining resources or tools you want easy access to.
+
+Records management info
+
+[NOAA records information site] (https://www.noaa.gov/organization/administration/noaa-records-management).
+
+Records schedule here: https://sites.google.com/noaa.gov/cao/ocao-services-and-guidance/records-management-tools/noaa-records-schedules
+
+![Records Lifecycle](images/AFSCimages/RecordDecisionTree2020.jpg){fig-alt="" fig-align="center"}
