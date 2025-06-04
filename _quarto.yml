@@ -46,6 +46,8 @@ website:
             text: Hardware
           - section: content/SoftwareAnalysis.qmd
             text: "Software & Analysis"
+          - section: content/Software_Overview.qmd
+            text: "Software Overview"
           - href: content/Reporting.qmd
             text: "Reporting"
             
