@@ -460,6 +460,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.mjs';
+let config = { 
+    startOnLoad: true,
+    loglevel: 0,
+    theme: 'default',
+};
+mermaid.initialize(config);
+</script>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
@@ -482,8 +491,6 @@ ul.task-list li input[type="checkbox"] {
     Tools
       Pen and paper
       Mermaid
-   
-
 </pre>
 </div>
 <p></p></figure><p></p>
