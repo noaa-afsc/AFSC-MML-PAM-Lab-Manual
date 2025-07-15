@@ -224,7 +224,7 @@
     "href": "content/Software_Overview.html",
     "title": "Software_Overview",
     "section": "",
-    "text": "mindmap\n  root((mindmap))\n    Origins\n      Long history\n      ::icon(fa fa-book)\n      Popularization\n        British popular psychology author Tony Buzan\n    Research\n      On effectiveness&lt;br/&gt;and features\n      On Automatic creation\n        Uses\n            Creative techniques\n            Strategic planning\n            Argument mapping\n    Tools\n      Pen and paper\n      Mermaid",
+    "text": "flowchart TD\n        A([\"INSTINCT .csv results file, e.g. (Q:\\ANALYSIS\\+INSTINCT results\\Bearded\\Final_INSTINCT_runs_toTransfertoSC\\Manolo_Castellote\\manolo_full_datasets_year2\\full_ds_w_maybes.csv\"])\n        A --&gt; B[\"Run Instinct2SC_v2r6; point to INSTINCT results file, location to put exported pngResults (e.g., Q:\\ANALYSIS\\+Kotz\\PngResultsforALL_08Jul2025), and where NAS waves are\"]\n        B --&gt; C{\"New INSTINCT png reslts now in PngResultsforALL_date file\"}\n        C --&gt;|\"SC to compare?\"| D[\"Run INSTINCT2SCcompare_v6r2.m\"]\n    C --&gt;|\"Collate to run plotLTall?\"| E[\"convert2bin_v5r3\"]\n    C --&gt;|\"Collate for extracting bins/pngs?\"| F[\"convert2bin_v5r7\"]\n    F --&gt;|\"Run for bins to plot in R/Matlab?\"| G[\"]",
     "crumbs": [
       "Arctic Lab Manual",
       "Software Overview"

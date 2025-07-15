@@ -474,23 +474,18 @@ mermaid.initialize(config);
 <div>
 <p></p><figure class="figure"><p></p>
 <div>
-<pre class="mermaid mermaid-js">mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularization
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness&lt;br/&gt;and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
+<pre class="mermaid mermaid-js">flowchart TD
+        A(["INSTINCT .csv results file, e.g. (Q:\ANALYSIS\+INSTINCT results\Bearded\Final_INSTINCT_runs_toTransfertoSC\Manolo_Castellote\manolo_full_datasets_year2\full_ds_w_maybes.csv"])
+        A --&gt; B["Run Instinct2SC_v2r6; point to INSTINCT results file, location to put exported pngResults (e.g., Q:\ANALYSIS\+Kotz\PngResultsforALL_08Jul2025), and where NAS waves are"]
+        B --&gt; C{"New INSTINCT png reslts now in PngResultsforALL_date file"}
+        C --&gt;|"SC to compare?"| D["Run INSTINCT2SCcompare_v6r2.m"]
+    C --&gt;|"Collate to run plotLTall?"| E["convert2bin_v5r3"]
+    C --&gt;|"Collate for extracting bins/pngs?"| F["convert2bin_v5r7"]
+    F --&gt;|"Run for bins to plot in R/Matlab?"| G["]
+
+            
+   
+
 </pre>
 </div>
 <p></p></figure><p></p>
