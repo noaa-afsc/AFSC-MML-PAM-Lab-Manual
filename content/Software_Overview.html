@@ -479,13 +479,14 @@ mermaid.initialize(config);
         A --&gt; B["Run Instinct2SC_v2r6; point to INSTINCT results file, location to put exported pngResults (e.g., Q:\ANALYSIS\+Kotz\PngResultsforALL_08Jul2025), and where NAS waves are"]
         B --&gt; C{"New INSTINCT png reslts now in PngResultsforALL_date file"}
         C --&gt;|"SC to compare?"| D["Run INSTINCT2SCcompare_v6r2.m"]
-    C --&gt;|"Collate to run plotLTall?"| E["convert2bin_v5r3"]
+    C --&gt;|"Collate to get Pngresltsforall?"| E["convert2bin_v5r3"]
     C --&gt;|"Collate for extracting bins/pngs?"| F["convert2bin_v5r7"]
-    F --&gt;|"Run for bins to plot in R/Matlab?"| G["]
-
-            
-   
-
+    F --&gt;|"Run for bins to plot in R/Matlab?"| G["extractBins_v1r2"]
+    F --&gt;|"Run for pngs to box/review in Raven?"| H["extractPngs_v1r3"]
+    G --&gt;|"Make plots"| I["plotLT_all_v7r2"]
+    G --&gt;|"Make plots"| J["boxwhisk..."]
+    E --&gt;|"Make Plots"| K["plotLT_all_v6r9"]
+    
 </pre>
 </div>
 <p></p></figure><p></p>
