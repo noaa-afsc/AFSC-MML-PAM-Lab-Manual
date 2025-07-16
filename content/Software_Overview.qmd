@@ -20,7 +20,8 @@ flowchart TD
     C -->|"Collate for extracting bins/pngs?"| F["convert2bin_v5r7"]
     F -->|"Run for bins to plot in R/Matlab?"| G["extractBins_v1r2"]
     F -->|"Run for pngs to box/review in Raven?"| H["extractPngs_v1r3"]
-    E -->|"Make plots"| I["plotLT_all_v7r2"]
-    G -->|"Make Plots"| J["plotLT_all_v7r1"]
+    G -->|"Make plots"| I["plotLT_all_v7r2"]
+    G -->|"Make plots"| J["boxwhisk..."]
+    E -->|"Make Plots"| K["plotLT_all_v6r9"]
     
 ```
