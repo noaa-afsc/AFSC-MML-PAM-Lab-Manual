@@ -25,3 +25,22 @@ flowchart TD
     E -->|"Make Plots"| K["plotLT_all_v6r9"]
     
 ```
+
+```{mermaid}
+flowchart TD
+        A(["raw files on AURAL M2 drive"])
+        A --> B["Copy to external drive - folder with Mooring Deployment Name"]
+        B --> F["Copy to A drive back in Seattle"]
+        A --> B[" Label external drive with Mooring Deployment name"]
+        B --> C{"Run InfoWav on copied files"}
+        C --> D["Rename Bilan to bilan_moorDeployName"]
+        C --> E["Run AuralRename_v2"]
+    C -->|"Collate to get Pngresltsforall?"| E["convert2bin_v5r3"]
+    C -->|"Collate for extracting bins/pngs?"| F["convert2bin_v5r7"]
+    F -->|"Run for bins to plot in R/Matlab?"| G["extractBins_v1r2"]
+    F -->|"Run for pngs to box/review in Raven?"| H["extractPngs_v1r3"]
+    G -->|"Make plots"| I["plotLT_all_v7r2"]
+    G -->|"Make plots"| J["boxwhisk..."]
+    E -->|"Make Plots"| K["plotLT_all_v6r9"]
+    
+```
