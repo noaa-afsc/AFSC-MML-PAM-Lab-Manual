@@ -493,6 +493,33 @@ mermaid.initialize(config);
 </div>
 </div>
 </div>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+        A(["raw files on AURAL M2 drive"])
+        A --&gt; B["Copy to external drive - folder with Mooring Deployment Name"]
+        B --&gt; F["Copy to A drive back in Seattle"]
+        A --&gt; B[" Label external drive with Mooring Deployment name"]
+        B --&gt; C{"Run InfoWav on copied files"}
+        C --&gt; D["Rename Bilan to bilan_moorDeployName"]
+        C --&gt; E["Run AuralRename_v2"]
+    C --&gt;|"Collate to get Pngresltsforall?"| E["convert2bin_v5r3"]
+    C --&gt;|"Collate for extracting bins/pngs?"| F["convert2bin_v5r7"]
+    F --&gt;|"Run for bins to plot in R/Matlab?"| G["extractBins_v1r2"]
+    F --&gt;|"Run for pngs to box/review in Raven?"| H["extractPngs_v1r3"]
+    G --&gt;|"Make plots"| I["plotLT_all_v7r2"]
+    G --&gt;|"Make plots"| J["boxwhisk..."]
+    E --&gt;|"Make Plots"| K["plotLT_all_v6r9"]
+    
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 
 
 
