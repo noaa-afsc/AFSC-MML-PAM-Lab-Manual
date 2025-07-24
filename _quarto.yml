@@ -41,9 +41,9 @@ website:
           - href: content/LabManagement.qmd
             text: "Lab Management"
           - href: content/DataManagement.qmd
-            text: Data Management
+            text: "Data Management"
           - href: content/Hardware.qmd
-            text: Hardware
+            text: "Hardware"
           - section: content/SoftwareAnalysis.qmd
             text: "Software & Analysis"
           - section: content/Software_Overview.qmd
