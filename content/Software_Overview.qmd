@@ -16,13 +16,13 @@ flowchart TD
         A --> B["Run Instinct2SC_v2r6; point to INSTINCT results file, location to put exported pngResults (e.g., Q:\ANALYSIS\+Kotz\PngResultsforALL_08Jul2025), and where NAS waves are"]
         B --> C{"New INSTINCT png reslts now in PngResultsforALL_date file"}
         C -->|"SC to compare?"| D["Run INSTINCT2SCcompare_v6r2.m"]
-    C -->|"Collate to get Pngresltsforall?"| E["convert2bin_v5r3"]
+    C -->|"Collate to get Pngresltsforall?"| E["convert2bin_v5r4"]
     C -->|"Collate for extracting bins/pngs?"| F["convert2bin_v5r7"]
     F -->|"Run for bins to plot in R/Matlab?"| G["extractBins_v1r2"]
     F -->|"Run for pngs to box/review in Raven?"| H["extractPngs_v1r3"]
     G -->|"Make plots"| I["plotLT_all_v7r2"]
     G -->|"Make plots"| J["boxwhisk..."]
-    E -->|"Make Plots"| K["plotLT_all_v6r9"]
+    E -->|"Make Plots"| K["plotLT_all_v6r11"]
     
 ```
 
