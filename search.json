@@ -10,18 +10,25 @@
     ]
   },
   {
+    "objectID": "content/Software.html",
+    "href": "content/Software.html",
+    "title": "Software",
+    "section": "",
+    "text": "This part will most likely move elsewhere with just the code living here, but this is easier for my brain at the moment (CB)\n(You have come back from sea and have successfully collected sonobuoy data, now what?)\nFILENAMING: You will need to make sure you have named the deployment folder and files correctly. It’s better to have it right before you start recording, but this can be fixed afterwards.\n\nDeployment folder will be in the format: PPXX_SB_CCLL, where:\n\nPP is project code (e.g., POWER = PW; CHAOZ = CZ; Haida Gwaii = HG; ALTIMA = AL)\n(I will make a list that lives here, or is linked to Google drive folder; for the moment verify with Crance or Berchok).\nXX is the 2 digit year\nSB is sonobuoy\nCC is the Vessel name (e.g., AQ = Aquila, DY = Dyson, YM = Yushin Maru)\nLL is the cruise leg (if you just have 1 big leg, then the whole thing is just 01).\nUnderscores are important here\nExamples: PW24_SB_YM01, HG24_SB_TU01, CZ14_SB_AQ02, BC24_SB_AS01\n\nOnce you have the Deployment Folder name, the wave file names follow the same codes just in a slightly different order:\n\nSB-PPCCLL-YYMMDD-HHMMSS.wav, where - YYMMDD-HHMMSS is the year, month, day, 24hour, minute, second local field time.\nDashes are important here.\nExamples: SB-PWYM01-240813-182113.wav, SB-HGTU01-240528-211538.wav\nYou can bulk rename files using wildren.exe\n\n\nBACKING UP DATA You need to back up the raw data in 2 places: A drive & SB_Backup drive\n\nBoth these locations should have all the wave files + all the .mat files from BoatTrackPosns and SONOstationPosns + the sonoExcel file.\nOnce you have made sure the same number of files are in all places, you can delete the files from your field drives.\nAlso make a new row in the Where the files are excel, and note the A and SB backup drive numbers in that row (this file will be cleaned up soon - CB).\n\n\n\n[Splits the raw sonobuoy files into single channels and converts the local to UTC time]\nThings you’ll need:\n\nCorrectly named project folder and files (see above - link to section CB)\nFully completed recording log (times are in local time)\n\n\n\n\nExample of a sonobuoy recording log\n\n\n\nMatlab version 2023b or higher (maybe 2023a will work)\nSonobuoyRename_v1.m\n\nRunning SonobuoyRename_v1.m\n\nYou can change the pathing in lines 11, 13, and 15 of the code, or you can just browse to the folders while running code.\nFirst point to the specific deployment folder that contains your raw wave files.\nThen point to a fast external drive (just the drive letter).\nThen to the folder with the recording log excels\nChoose geographic region where the sonobuoy recordings were deployed in\n\nMatlab can handle the time zone and daylight savings business.\nIf one is missing, let CB know so she can update backup files.\n\nThe way to add is typing timezones into the Matlab command window to get the table, then you add that info in the tz= line (around line 20) of the code.\n\n\nThe resulting wavefiles have sonobuoy number as part of their filename: (e.g., SB-PWYM01_014-240813-182113.wav)\n\nBACKING UP DATA\n\nCopy all files from fast external drive to a B external drive and the Audio_Data2 folder in the NAS2 drive\nIn the Where the files are excel note the B and and NAS drives in the row for that cruise (this file will be cleaned up soon - CB)."
+  },
+  {
+    "objectID": "content/Software.html#sonobuoy-raw-to-b-drive-conversion-process",
+    "href": "content/Software.html#sonobuoy-raw-to-b-drive-conversion-process",
+    "title": "Software",
+    "section": "",
+    "text": "[Splits the raw sonobuoy files into single channels and converts the local to UTC time]\nThings you’ll need:\n\nCorrectly named project folder and files (see above - link to section CB)\nFully completed recording log (times are in local time)\n\n\n\n\nExample of a sonobuoy recording log\n\n\n\nMatlab version 2023b or higher (maybe 2023a will work)\nSonobuoyRename_v1.m\n\nRunning SonobuoyRename_v1.m\n\nYou can change the pathing in lines 11, 13, and 15 of the code, or you can just browse to the folders while running code.\nFirst point to the specific deployment folder that contains your raw wave files.\nThen point to a fast external drive (just the drive letter).\nThen to the folder with the recording log excels\nChoose geographic region where the sonobuoy recordings were deployed in\n\nMatlab can handle the time zone and daylight savings business.\nIf one is missing, let CB know so she can update backup files.\n\nThe way to add is typing timezones into the Matlab command window to get the table, then you add that info in the tz= line (around line 20) of the code.\n\n\nThe resulting wavefiles have sonobuoy number as part of their filename: (e.g., SB-PWYM01_014-240813-182113.wav)\n\nBACKING UP DATA\n\nCopy all files from fast external drive to a B external drive and the Audio_Data2 folder in the NAS2 drive\nIn the Where the files are excel note the B and and NAS drives in the row for that cruise (this file will be cleaned up soon - CB)."
+  },
+  {
     "objectID": "content/OpenScience.html",
     "href": "content/OpenScience.html",
     "title": "Open Science",
     "section": "",
     "text": "This section is optional but is a great place for all of your open science related resources and tools. You can include information here for our Openscapes work, stack exchange, GitHub, co working guides, etc.\nSAEL Example"
-  },
-  {
-    "objectID": "content/Resources.html",
-    "href": "content/Resources.html",
-    "title": "Resources",
-    "section": "",
-    "text": "This page is optional but can be a good spot for any remaining resources or tools you want easy access to.\nRecords management info\n[NOAA records information site] (https://www.noaa.gov/organization/administration/noaa-records-management).\nRecords schedule here: https://sites.google.com/noaa.gov/cao/ocao-services-and-guidance/records-management-tools/noaa-records-schedules\n https://www.noaa.gov/organization/administration/nao-202-735d-2-scientific-integrity"
   },
   {
     "objectID": "content/NMFS_OpenSciDirections/Intro.html",
@@ -68,327 +75,6 @@
     ]
   },
   {
-    "objectID": "content/NMFS_OpenSciDirections/code.html",
-    "href": "content/NMFS_OpenSciDirections/code.html",
-    "title": "Rendering with Code",
-    "section": "",
-    "text": "You can have code (R, Python or Julia) in your qmd file. You will need to have these installed on your local computer, but presumably you do already if you are adding code to your qmd files.\nx &lt;- c(5, 15, 25, 35, 45, 55)\ny &lt;- c(5, 20, 14, 32, 22, 38)\nlm(x ~ y)\n\n\nCall:\nlm(formula = x ~ y)\n\nCoefficients:\n(Intercept)            y  \n      1.056        1.326",
-    "crumbs": [
-      "NMFS Open Science Directions",
-      "Rendering with Code"
-    ]
-  },
-  {
-    "objectID": "content/NMFS_OpenSciDirections/code.html#modify-the-github-action",
-    "href": "content/NMFS_OpenSciDirections/code.html#modify-the-github-action",
-    "title": "Rendering with Code",
-    "section": "Modify the GitHub Action",
-    "text": "Modify the GitHub Action\nYou will need to change the GitHub Action in .github/workflows to install these and any needed packages in order for GitHub to be able to render your webpage. The GitHub Action install R since I used that in code.qmd. If you use Python or Julia instead, then you will need to update the GitHub Action to install those.\nIf getting the GitHub Action to work is too much hassle (and that definitely happens), you can alway render locally and publish to the gh-pages branch. If you do this, make sure to delete or rename the GitHub Action to something like\nrender-and-publish.old_yml\nso GitHub does not keep trying to run it. Nothing bad will happen if you don’t do this, but if you are not using the action (because it keeps failing), then you don’t need GitHub to run it.",
-    "crumbs": [
-      "NMFS Open Science Directions",
-      "Rendering with Code"
-    ]
-  },
-  {
-    "objectID": "content/NMFS_OpenSciDirections/code.html#render-locally-and-publish-to-gh-pages-branch",
-    "href": "content/NMFS_OpenSciDirections/code.html#render-locally-and-publish-to-gh-pages-branch",
-    "title": "Rendering with Code",
-    "section": "Render locally and publish to gh-pages branch",
-    "text": "Render locally and publish to gh-pages branch\nTo render locally and push up to the gh-pages branch, open a terminal window and then cd to the directory with the Quarto project. Type this in the terminal:\nquarto render gh-pages",
-    "crumbs": [
-      "NMFS Open Science Directions",
-      "Rendering with Code"
-    ]
-  },
-  {
-    "objectID": "content/NMFS_OpenSciDirections/publishing.html",
-    "href": "content/NMFS_OpenSciDirections/publishing.html",
-    "title": "Publishing",
-    "section": "",
-    "text": "To get your Quarto webpage to show up with the url\nyou have a few steps."
-  },
-  {
-    "objectID": "content/NMFS_OpenSciDirections/publishing.html#turn-on-github-pages-for-your-repo",
-    "href": "content/NMFS_OpenSciDirections/publishing.html#turn-on-github-pages-for-your-repo",
-    "title": "Publishing",
-    "section": "Turn on GitHub Pages for your repo",
-    "text": "Turn on GitHub Pages for your repo\n\nTurn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.\nTurn on GitHub Actions under Settings &gt; Actions &gt; General\n\nThe GitHub Action will automatically recreate your website when you push to GitHub after you do the initial gh-pages set-up"
-  },
-  {
-    "objectID": "content/NMFS_OpenSciDirections/publishing.html#do-your-first-publish-to-gh-pages",
-    "href": "content/NMFS_OpenSciDirections/publishing.html#do-your-first-publish-to-gh-pages",
-    "title": "Publishing",
-    "section": "Do your first publish to gh-pages",
-    "text": "Do your first publish to gh-pages\nThe first time you publish to gh-pages, you need to do so locally.\n\nOn your local computer, open a terminal window and cd to your repo directory. Here is what that cd command looks like for me. You command will look different because your local repo will be somewhere else on your computer.\n\ncd ~/Documents/GitHub/NOAA-quarto-simple\n\nPublish to the gh-pages. In the terminal type\n\nquarto publish gh-pages\nThis is going to render your webpage and then push the _site contents to the gh-pages branch."
-  },
-  {
-    "objectID": "content/NMFS_OpenSciDirections/publishing.html#dont-like-using-gh-pages",
-    "href": "content/NMFS_OpenSciDirections/publishing.html#dont-like-using-gh-pages",
-    "title": "Publishing",
-    "section": "Don’t like using gh-pages?",
-    "text": "Don’t like using gh-pages?\nIn some cases, you don’t want your website on the gh-pages branch. For example, if you are creating releases and you want the website pages archived in that release, then you won’t want your website pages on the gh-pages branch.\nHere are the changes you need to make if you to avoid gh-pages branch.\n\nAt the top of _quarto.yml add the following:\n\nproject: \n  type: website\n  output-dir: docs\n\nOn GitHub under Settings &gt; Pages set pages to be made from the main branch and the docs directory.\nMake sure docs is not listed in .gitignore\nPublish the site the first time locally using quarto publish from the terminal\nChange the GitHub Action because you can’t use quarto publish gh-pages. You’ll need to push to the main branch yourself (in the GitHub Action)\n\non:\n  push:\n    branches: main\n\nname: Render and Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v2 \n        \n      - name: Set up R (needed for Rmd)\n        uses: r-lib/actions/setup-r@v2\n\n      - name: Install packages (needed for Rmd)\n        run: Rscript -e 'install.packages(c(\"rmarkdown\", \"knitr\", \"jsonlite\"))'\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n        with:\n          # To install LaTeX to build PDF book \n          # tinytex: true \n          # uncomment below and fill to pin a version\n          # version: 0.9.600\n      \n      - name: Render Quarto Project\n        uses: quarto-dev/quarto-actions/render@v2\n        with:\n          to: html\n\n      - name: Set up Git\n        run: |\n          git config --local user.email \"actions@github.com\"\n          git config --local user.name \"GitHub Actions\"\n\n      - name: Commit all changes and push\n        run: |\n          git add -A && git commit -m 'Build site' || echo \"No changes to commit\"\n          git push origin || echo \"No changes to commit\""
-  },
-  {
-    "objectID": "content/NMFS_OpenSciDirections/acknowledgements.html",
-    "href": "content/NMFS_OpenSciDirections/acknowledgements.html",
-    "title": "Acknowledgments",
-    "section": "",
-    "text": "This repo and GitHub Action was based on the tutorial by Openscapes quarto-website-tutorial by Julia Lowndes and Stefanie Butland.",
-    "crumbs": [
-      "NMFS Open Science Directions",
-      "Acknowledgments"
-    ]
-  },
-  {
-    "objectID": "content/Hardware.html",
-    "href": "content/Hardware.html",
-    "title": "Hardware",
-    "section": "",
-    "text": "POC: Catherine/Brynn What: Instruments, Moorings (how it is all put together)",
-    "crumbs": [
-      "Arctic Lab Manual",
-      "Hardware"
-    ]
-  },
-  {
-    "objectID": "content/Hardware.html#moorings",
-    "href": "content/Hardware.html#moorings",
-    "title": "Hardware",
-    "section": "",
-    "text": "POC: Catherine/Brynn What: Instruments, Moorings (how it is all put together)",
-    "crumbs": [
-      "Arctic Lab Manual",
-      "Hardware"
-    ]
-  },
-  {
-    "objectID": "content/Hardware.html#sonobuoys",
-    "href": "content/Hardware.html#sonobuoys",
-    "title": "Hardware",
-    "section": "Sonobuoys",
-    "text": "Sonobuoys\nPOC: Jess Crance/Catherine",
-    "crumbs": [
-      "Arctic Lab Manual",
-      "Hardware"
-    ]
-  },
-  {
-    "objectID": "content/Hardware.html#towed-hydrophone-arrays",
-    "href": "content/Hardware.html#towed-hydrophone-arrays",
-    "title": "Hardware",
-    "section": "Towed hydrophone Arrays",
-    "text": "Towed hydrophone Arrays\nPOC: Jess Crance\nA hardware section is required and should include the following information;\n\nInformation on your recorders\nArray configurations and diagrams\nPlatform information (towed, moored, drifting, etc.)\nOther sensors included (GPS devices, depth senors, etc.)\n\nThis will be variable for each center and may change from project to project. You should list all hardware, present and past.\nYou can also link to a separate hardware repository if needed (SAEL example)\nThis can be a section with subpages or a qmd",
-    "crumbs": [
-      "Arctic Lab Manual",
-      "Hardware"
-    ]
-  },
-  {
-    "objectID": "content/SoftwareAnalysis.html",
-    "href": "content/SoftwareAnalysis.html",
-    "title": "Software & Analysis Methods",
-    "section": "",
-    "text": "A software and analysis methods section is required and should include subpages for both topics (analysis methods can be a subsection with pages for different anaylsis methods topics).",
-    "crumbs": [
-      "Arctic Lab Manual",
-      "Software & Analysis"
-    ]
-  },
-  {
-    "objectID": "content/Overview.html",
-    "href": "content/Overview.html",
-    "title": "Overview",
-    "section": "",
-    "text": "flowchart TD\n\n    A1{Data Collection} --&gt; A2{Data Archiving}\n    A2{Data Archiving} --&gt; A3{Data Processing}\n    A3{Data Processing} --&gt; A4{Database}\n    A4{Database}--&gt; A5{Data Analysis}\n    A5{Data Analysis} --&gt; A6{Dissemenation}\n  \n      n1(Sonobuoys) --&gt; A1{Data Collection}\n        s1[Prep] --&gt; n1\n      \n      n2(Moorings) --&gt; A1{Data Collection}\n        s7[Refurbish] --&gt; n2\n        s8[Clean] --&gt; n2\n        s9[Test] --&gt; n2\n      \n      nn1(OtherPAM) --&gt; A1{Data Collection}\n      n3(Towed Array) --&gt; nn1\n      n4(Dipping Phone) --&gt; nn1",
-    "crumbs": [
-      "Arctic Lab Manual",
-      "Overview/Site Navigation"
-    ]
-  },
-  {
-    "objectID": "content/SharedValues.html",
-    "href": "content/SharedValues.html",
-    "title": "Shared Values",
-    "section": "",
-    "text": "A shared values / lab culture page is optional but is highly recommended. Establishing these values as a team can help create a positive and inclusive environment, foster a shared vision, promote collaboration, and build team cohesion while supporting individual growth.\nSAEL example\nFaylab example"
-  },
-  {
-    "objectID": "content/FieldMethods.html",
-    "href": "content/FieldMethods.html",
-    "title": "Field Methods",
-    "section": "",
-    "text": "A field methods section is highly recommended to help your team keep track of all current and past fieldwork documentation. Things to include here can include hardware specifications, checklists for fieldwork prep, deployment and recovery methods, etc.\nYou can make this a section with subpages or link directly to a separate repository that includes more detailed methods.\nADRIFT example"
-  },
-  {
-    "objectID": "content/Software_Overview.html",
-    "href": "content/Software_Overview.html",
-    "title": "Software_Overview",
-    "section": "",
-    "text": "flowchart TD\n        A([\"INSTINCT .csv results file, e.g. (Q:\\ANALYSIS\\+INSTINCT results\\Bearded\\Final_INSTINCT_runs_toTransfertoSC\\Manolo_Castellote\\manolo_full_datasets_year2\\full_ds_w_maybes.csv\"])\n        A --&gt; B[\"Run Instinct2SC_v2r6; point to INSTINCT results file, location to put exported pngResults (e.g., Q:\\ANALYSIS\\+Kotz\\PngResultsforALL_08Jul2025), and where NAS waves are\"]\n        B --&gt; C{\"New INSTINCT png reslts now in PngResultsforALL_date file\"}\n        C --&gt;|\"SC to compare?\"| D[\"Run INSTINCT2SCcompare_v6r2.m\"]\n    C --&gt;|\"Collate to get Pngresltsforall?\"| E[\"convert2bin_v5r3\"]\n    C --&gt;|\"Collate for extracting bins/pngs?\"| F[\"convert2bin_v5r7\"]\n    F --&gt;|\"Run for bins to plot in R/Matlab?\"| G[\"extractBins_v1r2\"]\n    F --&gt;|\"Run for pngs to box/review in Raven?\"| H[\"extractPngs_v1r3\"]\n    G --&gt;|\"Make plots\"| I[\"plotLT_all_v7r2\"]\n    G --&gt;|\"Make plots\"| J[\"boxwhisk...\"]\n    E --&gt;|\"Make Plots\"| K[\"plotLT_all_v6r9\"]\n    \n\n\n\n\n\n\n\n\n\n\n\nflowchart TD\n        A([\"raw files on AURAL M2 drive\"])\n        A --&gt; B[\"Copy to external drive - folder with Mooring Deployment Name\"]\n        B --&gt; F[\"Copy to A drive back in Seattle\"]\n        A --&gt; B[\" Label external drive with Mooring Deployment name\"]\n        B --&gt; C{\"Run InfoWav on copied files\"}\n        C --&gt; D[\"Rename Bilan to bilan_moorDeployName\"]\n        C --&gt; E[\"Run AuralRename_v2\"]\n    C --&gt;|\"Collate to get Pngresltsforall?\"| E[\"convert2bin_v5r3\"]\n    C --&gt;|\"Collate for extracting bins/pngs?\"| F[\"convert2bin_v5r7\"]\n    F --&gt;|\"Run for bins to plot in R/Matlab?\"| G[\"extractBins_v1r2\"]\n    F --&gt;|\"Run for pngs to box/review in Raven?\"| H[\"extractPngs_v1r3\"]\n    G --&gt;|\"Make plots\"| I[\"plotLT_all_v7r2\"]\n    G --&gt;|\"Make plots\"| J[\"boxwhisk...\"]\n    E --&gt;|\"Make Plots\"| K[\"plotLT_all_v6r9\"]",
-    "crumbs": [
-      "Arctic Lab Manual",
-      "Software Overview"
-    ]
-  },
-  {
-    "objectID": "content/Reporting.html",
-    "href": "content/Reporting.html",
-    "title": "Reporting",
-    "section": "",
-    "text": "his is a required page and should include any templates you have created for reporting within NOAA or to other agencies.\nExamples include NEFSC PAM data reporting templates and standard report formats for a few different agencies/species (right whales, Australian Marine Parks).",
-    "crumbs": [
-      "Arctic Lab Manual",
-      "Reporting"
-    ]
-  },
-  {
-    "objectID": "content/Reporting.html#templates",
-    "href": "content/Reporting.html#templates",
-    "title": "Reporting",
-    "section": "",
-    "text": "his is a required page and should include any templates you have created for reporting within NOAA or to other agencies.\nExamples include NEFSC PAM data reporting templates and standard report formats for a few different agencies/species (right whales, Australian Marine Parks).",
-    "crumbs": [
-      "Arctic Lab Manual",
-      "Reporting"
-    ]
-  },
-  {
-    "objectID": "content/Reporting.html#permits",
-    "href": "content/Reporting.html#permits",
-    "title": "Reporting",
-    "section": "Permits",
-    "text": "Permits\nYou should also include any permit reporting guidelines here\n\nPermits and Permit Reporting Guidelines\n\nInclude permit numbers and links to your centers/groups permits\nInclude directions for permit reporting (Protected species, National Marine Sanctuaries, Navy, Fish and Wildlife, etc)\nYou can include links to past permit reports (these can be private google drive folders if needed)\nSAEL example",
-    "crumbs": [
-      "Arctic Lab Manual",
-      "Reporting"
-    ]
-  },
-  {
-    "objectID": "content/PublicationsPresentations.html",
-    "href": "content/PublicationsPresentations.html",
-    "title": "Publications and Presentations",
-    "section": "",
-    "text": "This is an optional page but is a great opportunity to highlight some of your publications and presentations.\nSAEL example (add once this page is corrected)"
-  },
-  {
-    "objectID": "content/DataManagement.html",
-    "href": "content/DataManagement.html",
-    "title": "Data Management",
-    "section": "",
-    "text": "A data management section is required and should include the following information;\n\nData Archive Methods\n\nInformation on where your data is archived (PACM, NCEI, Tethys, Internal databases, etc)\nSAEL Example\n\nSpecies reference guide for your region\n\nDevelop a species and call type library for your region\nThis can include spectrograms of calls and sound clips\nPIFSC working on this, use them as an example once finalized\nSAEL Example\n\nMedia\n\nLinks to sound archives, media archives, web sites, blogs, etc.\nSAEL Example\n\n\nThis can be a section with subpages or a qmd\nGlider Lab Manual",
-    "crumbs": [
-      "Arctic Lab Manual",
-      "Data Management"
-    ]
-  },
-  {
-    "objectID": "content/TeamBerchok.html",
-    "href": "content/TeamBerchok.html",
-    "title": "Arctic Team",
-    "section": "",
-    "text": "Catherine Berchok\n\n\n\n\n\nJessica Crance\n\n\n\n\n\nDana Wright\n\n\n\n\n\nBrynn Kimber\n\n\n\n\n\nEric Braen\n\n\n\n\n\n\n\nStephanie Grassia\n\n\n\n\n\nDaniel Woodrich\n\n\n\n\n\nSophia Wagner\n\n\n\n\n\n\n\n\n\n\nGreta Weise\nIldiko Kremper\nJessica Knoth\nArial Brewer\n\n\n\n\nJenna Harlacher\nEliza Ives\nAlexandra Ulmke\nMegan Wood\n\n\n\n\nJulie Mocklin\nLinda Vate Bratstrom\nHolly Calahan\nJessica Thompson\n\n\n\n\n\n\n\nEllen Garland\n\n\n\n\nCICOES: Sophia Wagner (2023), Cole Watson (2020), Tarenina Max (2017)\nNOAA Hollings: Ildiko Kremper (2020), Srishti Dasarathy (2015), Rebecca Leitt (2013), Dana Wright (2011)\nSAFS/MML: Max Van Gelder (2020)\nNERTO: Daryin Medley (2021)\nVolunteers: Nicholas Tucker(2015), Cole Watson (2019), Eric Braen (2015), Sam Strauss (2017-2018)|",
-    "crumbs": [
-      "Arctic Lab Manual"
-    ]
-  },
-  {
-    "objectID": "content/TeamBerchok.html#who-we-are",
-    "href": "content/TeamBerchok.html#who-we-are",
-    "title": "Arctic Team",
-    "section": "",
-    "text": "Catherine Berchok\n\n\n\n\n\nJessica Crance\n\n\n\n\n\nDana Wright\n\n\n\n\n\nBrynn Kimber\n\n\n\n\n\nEric Braen\n\n\n\n\n\n\n\nStephanie Grassia\n\n\n\n\n\nDaniel Woodrich\n\n\n\n\n\nSophia Wagner\n\n\n\n\n\n\n\n\n\n\nGreta Weise\nIldiko Kremper\nJessica Knoth\nArial Brewer\n\n\n\n\nJenna Harlacher\nEliza Ives\nAlexandra Ulmke\nMegan Wood\n\n\n\n\nJulie Mocklin\nLinda Vate Bratstrom\nHolly Calahan\nJessica Thompson\n\n\n\n\n\n\n\nEllen Garland\n\n\n\n\nCICOES: Sophia Wagner (2023), Cole Watson (2020), Tarenina Max (2017)\nNOAA Hollings: Ildiko Kremper (2020), Srishti Dasarathy (2015), Rebecca Leitt (2013), Dana Wright (2011)\nSAFS/MML: Max Van Gelder (2020)\nNERTO: Daryin Medley (2021)\nVolunteers: Nicholas Tucker(2015), Cole Watson (2019), Eric Braen (2015), Sam Strauss (2017-2018)|",
-    "crumbs": [
-      "Arctic Lab Manual"
-    ]
-  },
-  {
-    "objectID": "content/TeamBerchok.html#where-we-work",
-    "href": "content/TeamBerchok.html#where-we-work",
-    "title": "Arctic Team",
-    "section": "Where we work",
-    "text": "Where we work\n\n\n\nWe work in the US Arctic, from the Aleutian Islands and Bering Sea north to the shelf waters of the eastern Chukchi and western Beaufort Seas, as well as the Chukchi Borderlands. We also work in the northern Gulf of Alaska, and have had short-term projects in Behm Canal (near Ketchikan, Alaska).\n\n\n\n\n\nGoogle Earth",
-    "crumbs": [
-      "Arctic Lab Manual"
-    ]
-  },
-  {
-    "objectID": "content/TeamBerchok.html#the-research-we-do",
-    "href": "content/TeamBerchok.html#the-research-we-do",
-    "title": "Arctic Team",
-    "section": "The research we do",
-    "text": "The research we do\n\nWe primarily deploy two types of passive acoustic sensors:\n\nRecorders deployed on subsurface moorings throughout the Bering, Beaufort, and Chukchi Seas, as well as in the Gulf of Alaska. They autonomously record underwater sounds for a year at a time.\nSonobuoys for shorter-term, real-time, passive acoustic monitoring from vessels.\n\nWe also occasionally use towed arrays and have deployed sonobuoys from aircraft.\n\n\n\n\n\nLocations of all long-term passive acoustic recorder moorings",
-    "crumbs": [
-      "Arctic Lab Manual"
-    ]
-  },
-  {
-    "objectID": "content/Inventory.html",
-    "href": "content/Inventory.html",
-    "title": "Inventory",
-    "section": "",
-    "text": "I think the best way to organize this is this way"
-  },
-  {
-    "objectID": "content/Inventory.html#accountable-property",
-    "href": "content/Inventory.html#accountable-property",
-    "title": "Inventory",
-    "section": "Accountable property",
-    "text": "Accountable property\nPOC: CLB What: this will include Hard drive list and any equipment lists Maybe: would be good to have everyone’s lists here too (e.g., Jess has some drives on her list now, and maybe ST600s?) But would be good to know who has what assigned computer."
-  },
-  {
-    "objectID": "content/Inventory.html#lab-inventory",
-    "href": "content/Inventory.html#lab-inventory",
-    "title": "Inventory",
-    "section": "Lab inventory",
-    "text": "Lab inventory\nPOC: CLB/BMK/JLC What: The is the lab inventory - will include supplies, all equipment (whether on accountable property list or not), And it would be good for this to also serve as the to purchase spot somehow"
-  },
-  {
-    "objectID": "content/Inventory.html#master-data-drives-inventory",
-    "href": "content/Inventory.html#master-data-drives-inventory",
-    "title": "Inventory",
-    "section": "Master data drives inventory",
-    "text": "Master data drives inventory\nPOC: CLB/EKB What: THis is sort of the same as accountable property - but are those drives that got taken off the list and should continue to be tracked. Eric has already sorted the drives into boxes. Do I want to have a sensitive data list for those I have locked up??\nAn inventory page is highly recommended to keep track of equipment, loans, and gear beingin the field. This can be a link to a Google sheet or embedded in the website\n\nSAEL Lab Example"
-  },
-  {
-    "objectID": "content/AnalysisMethods.html",
-    "href": "content/AnalysisMethods.html",
-    "title": "Analysis Methods",
-    "section": "",
-    "text": "An analysis methods section is required and should include the following information;\n\nData Prep and Archive\n\nData prep (decompressing, creating LTSAs, decimating, etc.)\n\nSAEL example\n\nData quality checks (QAQC scripts)\n\nSAEL example\n\nData upload steps\n\nIf you have a internal storage include directions here on where data should be stored and in what format\nYou can also include a data managment structure with standardized naming and storage/folder structures\nSAEL example\n\n\nAnalysis methods for each species, group, or sound source\n\nYou can break this down by baleen and toothed whales, soundscapes, etc.\nEach section should include detailed and reproducible methods that anybody can recreate\n\n\nYou can also link to a separate hardware repository if needed (SAEL example)\nGlider Lab Manual example"
-  },
-  {
-    "objectID": "content/Software.html",
-    "href": "content/Software.html",
-    "title": "Software",
-    "section": "",
-    "text": "This part will most likely move elsewhere with just the code living here, but this is easier for my brain at the moment (CB)\n(You have come back from sea and have successfully collected sonobuoy data, now what?)\nFILENAMING: You will need to make sure you have named the deployment folder and files correctly. It’s better to have it right before you start recording, but this can be fixed afterwards.\n\nDeployment folder will be in the format: PPXX_SB_CCLL, where:\n\nPP is project code (e.g., POWER = PW; CHAOZ = CZ; Haida Gwaii = HG; ALTIMA = AL)\n(I will make a list that lives here, or is linked to Google drive folder; for the moment verify with Crance or Berchok).\nXX is the 2 digit year\nSB is sonobuoy\nCC is the Vessel name (e.g., AQ = Aquila, DY = Dyson, YM = Yushin Maru)\nLL is the cruise leg (if you just have 1 big leg, then the whole thing is just 01).\nUnderscores are important here\nExamples: PW24_SB_YM01, HG24_SB_TU01, CZ14_SB_AQ02, BC24_SB_AS01\n\nOnce you have the Deployment Folder name, the wave file names follow the same codes just in a slightly different order:\n\nSB-PPCCLL-YYMMDD-HHMMSS.wav, where - YYMMDD-HHMMSS is the year, month, day, 24hour, minute, second local field time.\nDashes are important here.\nExamples: SB-PWYM01-240813-182113.wav, SB-HGTU01-240528-211538.wav\nYou can bulk rename files using wildren.exe\n\n\nBACKING UP DATA You need to back up the raw data in 2 places: A drive & SB_Backup drive\n\nBoth these locations should have all the wave files + all the .mat files from BoatTrackPosns and SONOstationPosns + the sonoExcel file.\nOnce you have made sure the same number of files are in all places, you can delete the files from your field drives.\nAlso make a new row in the Where the files are excel, and note the A and SB backup drive numbers in that row (this file will be cleaned up soon - CB).\n\n\n\n[Splits the raw sonobuoy files into single channels and converts the local to UTC time]\nThings you’ll need:\n\nCorrectly named project folder and files (see above - link to section CB)\nFully completed recording log (times are in local time)\n\n\n\n\nExample of a sonobuoy recording log\n\n\n\nMatlab version 2023b or higher (maybe 2023a will work)\nSonobuoyRename_v1.m\n\nRunning SonobuoyRename_v1.m\n\nYou can change the pathing in lines 11, 13, and 15 of the code, or you can just browse to the folders while running code.\nFirst point to the specific deployment folder that contains your raw wave files.\nThen point to a fast external drive (just the drive letter).\nThen to the folder with the recording log excels\nChoose geographic region where the sonobuoy recordings were deployed in\n\nMatlab can handle the time zone and daylight savings business.\nIf one is missing, let CB know so she can update backup files.\n\nThe way to add is typing timezones into the Matlab command window to get the table, then you add that info in the tz= line (around line 20) of the code.\n\n\nThe resulting wavefiles have sonobuoy number as part of their filename: (e.g., SB-PWYM01_014-240813-182113.wav)\n\nBACKING UP DATA\n\nCopy all files from fast external drive to a B external drive and the Audio_Data2 folder in the NAS2 drive\nIn the Where the files are excel note the B and and NAS drives in the row for that cruise (this file will be cleaned up soon - CB)."
-  },
-  {
-    "objectID": "content/Software.html#sonobuoy-raw-to-b-drive-conversion-process",
-    "href": "content/Software.html#sonobuoy-raw-to-b-drive-conversion-process",
-    "title": "Software",
-    "section": "",
-    "text": "[Splits the raw sonobuoy files into single channels and converts the local to UTC time]\nThings you’ll need:\n\nCorrectly named project folder and files (see above - link to section CB)\nFully completed recording log (times are in local time)\n\n\n\n\nExample of a sonobuoy recording log\n\n\n\nMatlab version 2023b or higher (maybe 2023a will work)\nSonobuoyRename_v1.m\n\nRunning SonobuoyRename_v1.m\n\nYou can change the pathing in lines 11, 13, and 15 of the code, or you can just browse to the folders while running code.\nFirst point to the specific deployment folder that contains your raw wave files.\nThen point to a fast external drive (just the drive letter).\nThen to the folder with the recording log excels\nChoose geographic region where the sonobuoy recordings were deployed in\n\nMatlab can handle the time zone and daylight savings business.\nIf one is missing, let CB know so she can update backup files.\n\nThe way to add is typing timezones into the Matlab command window to get the table, then you add that info in the tz= line (around line 20) of the code.\n\n\nThe resulting wavefiles have sonobuoy number as part of their filename: (e.g., SB-PWYM01_014-240813-182113.wav)\n\nBACKING UP DATA\n\nCopy all files from fast external drive to a B external drive and the Audio_Data2 folder in the NAS2 drive\nIn the Where the files are excel note the B and and NAS drives in the row for that cruise (this file will be cleaned up soon - CB)."
-  },
-  {
-    "objectID": "content/Offboarding.html",
-    "href": "content/Offboarding.html",
-    "title": "Offboarding",
-    "section": "",
-    "text": "This page is optional but can be extremely beneficial when a member of your team is transitioning out of their current position. Things to include here are directions for project documentation, data and code storage/sharing, turning in equipment, etc.\nFaylab example"
-  },
-  {
-    "objectID": "content/LabManagement.html",
-    "href": "content/LabManagement.html",
-    "title": "Lab Management",
-    "section": "",
-    "text": "A lab management section is required and should include the following information;\n\nSafety\nInventory\nHardware",
-    "crumbs": [
-      "Arctic Lab Manual",
-      "Lab Management"
-    ]
-  },
-  {
     "objectID": "content/NMFS_OpenSciDirections/add-content.html",
     "href": "content/NMFS_OpenSciDirections/add-content.html",
     "title": "Customize",
@@ -419,39 +105,6 @@
     "crumbs": [
       "NMFS Open Science Directions",
       "Customize"
-    ]
-  },
-  {
-    "objectID": "content/NMFS_OpenSciDirections/customizing.html",
-    "href": "content/NMFS_OpenSciDirections/customizing.html",
-    "title": "Customization",
-    "section": "",
-    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation.",
-    "crumbs": [
-      "NMFS Open Science Directions",
-      "Customization"
-    ]
-  },
-  {
-    "objectID": "content/NMFS_OpenSciDirections/customizing.html#quarto-documentation",
-    "href": "content/NMFS_OpenSciDirections/customizing.html#quarto-documentation",
-    "title": "Customization",
-    "section": "",
-    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation.",
-    "crumbs": [
-      "NMFS Open Science Directions",
-      "Customization"
-    ]
-  },
-  {
-    "objectID": "content/NMFS_OpenSciDirections/customizing.html#examples",
-    "href": "content/NMFS_OpenSciDirections/customizing.html#examples",
-    "title": "Customization",
-    "section": "Examples",
-    "text": "Examples\nLooking at other people’s Quarto code is a great way to figure out how to do stuff. Most will have a link to a GitHub repo where you can see the raw code. Look for a link to edit page or see source code. This will usually be on the right. Or look for the GitHub icon somewhere.\n\nQuarto gallery\nnmfs-openscapes\nFaye lab manual\nquarto-titlepages Note the link to edit is broken. Go to repo and look in documentation directory.",
-    "crumbs": [
-      "NMFS Open Science Directions",
-      "Customization"
     ]
   },
   {
@@ -488,47 +141,120 @@
     ]
   },
   {
-    "objectID": "content/NMFS_OpenSciDirections/rendering.html",
-    "href": "content/NMFS_OpenSciDirections/rendering.html",
-    "title": "Rendering",
+    "objectID": "content/NMFS_OpenSciDirections/publishing.html",
+    "href": "content/NMFS_OpenSciDirections/publishing.html",
+    "title": "Publishing",
     "section": "",
-    "text": "The repo includes a GitHub Action that will render (build) the website automatically when you make changes to the files. It will be pushed to the gh-pages branch.\nBut when you are developing your content, you will want to render it locally.",
+    "text": "To get your Quarto webpage to show up with the url\nyou have a few steps."
+  },
+  {
+    "objectID": "content/NMFS_OpenSciDirections/publishing.html#turn-on-github-pages-for-your-repo",
+    "href": "content/NMFS_OpenSciDirections/publishing.html#turn-on-github-pages-for-your-repo",
+    "title": "Publishing",
+    "section": "Turn on GitHub Pages for your repo",
+    "text": "Turn on GitHub Pages for your repo\n\nTurn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.\nTurn on GitHub Actions under Settings &gt; Actions &gt; General\n\nThe GitHub Action will automatically recreate your website when you push to GitHub after you do the initial gh-pages set-up"
+  },
+  {
+    "objectID": "content/NMFS_OpenSciDirections/publishing.html#do-your-first-publish-to-gh-pages",
+    "href": "content/NMFS_OpenSciDirections/publishing.html#do-your-first-publish-to-gh-pages",
+    "title": "Publishing",
+    "section": "Do your first publish to gh-pages",
+    "text": "Do your first publish to gh-pages\nThe first time you publish to gh-pages, you need to do so locally.\n\nOn your local computer, open a terminal window and cd to your repo directory. Here is what that cd command looks like for me. You command will look different because your local repo will be somewhere else on your computer.\n\ncd ~/Documents/GitHub/NOAA-quarto-simple\n\nPublish to the gh-pages. In the terminal type\n\nquarto publish gh-pages\nThis is going to render your webpage and then push the _site contents to the gh-pages branch."
+  },
+  {
+    "objectID": "content/NMFS_OpenSciDirections/publishing.html#dont-like-using-gh-pages",
+    "href": "content/NMFS_OpenSciDirections/publishing.html#dont-like-using-gh-pages",
+    "title": "Publishing",
+    "section": "Don’t like using gh-pages?",
+    "text": "Don’t like using gh-pages?\nIn some cases, you don’t want your website on the gh-pages branch. For example, if you are creating releases and you want the website pages archived in that release, then you won’t want your website pages on the gh-pages branch.\nHere are the changes you need to make if you to avoid gh-pages branch.\n\nAt the top of _quarto.yml add the following:\n\nproject: \n  type: website\n  output-dir: docs\n\nOn GitHub under Settings &gt; Pages set pages to be made from the main branch and the docs directory.\nMake sure docs is not listed in .gitignore\nPublish the site the first time locally using quarto publish from the terminal\nChange the GitHub Action because you can’t use quarto publish gh-pages. You’ll need to push to the main branch yourself (in the GitHub Action)\n\non:\n  push:\n    branches: main\n\nname: Render and Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v2 \n        \n      - name: Set up R (needed for Rmd)\n        uses: r-lib/actions/setup-r@v2\n\n      - name: Install packages (needed for Rmd)\n        run: Rscript -e 'install.packages(c(\"rmarkdown\", \"knitr\", \"jsonlite\"))'\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n        with:\n          # To install LaTeX to build PDF book \n          # tinytex: true \n          # uncomment below and fill to pin a version\n          # version: 0.9.600\n      \n      - name: Render Quarto Project\n        uses: quarto-dev/quarto-actions/render@v2\n        with:\n          to: html\n\n      - name: Set up Git\n        run: |\n          git config --local user.email \"actions@github.com\"\n          git config --local user.name \"GitHub Actions\"\n\n      - name: Commit all changes and push\n        run: |\n          git add -A && git commit -m 'Build site' || echo \"No changes to commit\"\n          git push origin || echo \"No changes to commit\""
+  },
+  {
+    "objectID": "content/Offboarding.html",
+    "href": "content/Offboarding.html",
+    "title": "Offboarding",
+    "section": "",
+    "text": "This page is optional but can be extremely beneficial when a member of your team is transitioning out of their current position. Things to include here are directions for project documentation, data and code storage/sharing, turning in equipment, etc.\nFaylab example"
+  },
+  {
+    "objectID": "content/AnalysisMethods.html",
+    "href": "content/AnalysisMethods.html",
+    "title": "Analysis Methods",
+    "section": "",
+    "text": "An analysis methods section is required and should include the following information;\n\nData Prep and Archive\n\nData prep (decompressing, creating LTSAs, decimating, etc.)\n\nSAEL example\n\nData quality checks (QAQC scripts)\n\nSAEL example\n\nData upload steps\n\nIf you have a internal storage include directions here on where data should be stored and in what format\nYou can also include a data managment structure with standardized naming and storage/folder structures\nSAEL example\n\n\nAnalysis methods for each species, group, or sound source\n\nYou can break this down by baleen and toothed whales, soundscapes, etc.\nEach section should include detailed and reproducible methods that anybody can recreate\n\n\nYou can also link to a separate hardware repository if needed (SAEL example)\nGlider Lab Manual example"
+  },
+  {
+    "objectID": "content/Onboarding.html",
+    "href": "content/Onboarding.html",
+    "title": "Onboarding",
+    "section": "",
+    "text": "This page is optional but can be used as a landing page for new lab members. You can include introductory information, links to must read papers, new hire resources, goal setting information, etc.\nFaylab example"
+  },
+  {
+    "objectID": "content/DataManagement.html",
+    "href": "content/DataManagement.html",
+    "title": "Data Management",
+    "section": "",
+    "text": "A data management section is required and should include the following information;\n\nData Archive Methods\n\nInformation on where your data is archived (PACM, NCEI, Tethys, Internal databases, etc)\nSAEL Example\n\nSpecies reference guide for your region\n\nDevelop a species and call type library for your region\nThis can include spectrograms of calls and sound clips\nPIFSC working on this, use them as an example once finalized\nSAEL Example\n\nMedia\n\nLinks to sound archives, media archives, web sites, blogs, etc.\nSAEL Example\n\n\nThis can be a section with subpages or a qmd\nGlider Lab Manual",
     "crumbs": [
-      "NMFS Open Science Directions",
-      "Rendering"
+      "Arctic Lab Manual",
+      "Data Management"
     ]
   },
   {
-    "objectID": "content/NMFS_OpenSciDirections/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
-    "href": "content/NMFS_OpenSciDirections/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
-    "title": "Rendering",
-    "section": "Step 1. Make sure you have a recent RStudio",
-    "text": "Step 1. Make sure you have a recent RStudio\nHave you updated RStudio since about August 2022? No? Then update to a newer version of RStudio. In general, you want to keep RStudio updated and it is required to have a recent version to use Quarto.",
+    "objectID": "content/Resources.html",
+    "href": "content/Resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "This page is optional but can be a good spot for any remaining resources or tools you want easy access to.\nRecords management info\n[NOAA records information site] (https://www.noaa.gov/organization/administration/noaa-records-management).\nRecords schedule here: https://sites.google.com/noaa.gov/cao/ocao-services-and-guidance/records-management-tools/noaa-records-schedules\n https://www.noaa.gov/organization/administration/nao-202-735d-2-scientific-integrity"
+  },
+  {
+    "objectID": "content/SoftwareAnalysis.html",
+    "href": "content/SoftwareAnalysis.html",
+    "title": "Software & Analysis Methods",
+    "section": "",
+    "text": "A software and analysis methods section is required and should include subpages for both topics (analysis methods can be a subsection with pages for different anaylsis methods topics).",
     "crumbs": [
-      "NMFS Open Science Directions",
-      "Rendering"
+      "Arctic Lab Manual",
+      "Software & Analysis"
     ]
   },
   {
-    "objectID": "content/NMFS_OpenSciDirections/rendering.html#step-2.-clone-and-create-rstudio-project",
-    "href": "content/NMFS_OpenSciDirections/rendering.html#step-2.-clone-and-create-rstudio-project",
-    "title": "Rendering",
-    "section": "Step 2. Clone and create RStudio project",
-    "text": "Step 2. Clone and create RStudio project\nFirst, clone the repo onto your local computer. How? You can click File &gt; New Project and then select “Version Control”. Paste in the url of the repository. That will clone the repo on to your local computer. When you make changes, you will need to push those up.",
-    "crumbs": [
-      "NMFS Open Science Directions",
-      "Rendering"
-    ]
+    "objectID": "content/Inventory.html",
+    "href": "content/Inventory.html",
+    "title": "Inventory",
+    "section": "",
+    "text": "I think the best way to organize this is this way"
   },
   {
-    "objectID": "content/NMFS_OpenSciDirections/rendering.html#step-3.-render-within-rstudio",
-    "href": "content/NMFS_OpenSciDirections/rendering.html#step-3.-render-within-rstudio",
-    "title": "Rendering",
-    "section": "Step 3. Render within RStudio",
-    "text": "Step 3. Render within RStudio\nRStudio will recognize that this is a Quarto project by the presence of the _quarto.yml file and will see the “Build” tab. Click the “Render website” button to render to the _site folder.\nPreviewing: You can either click index.html in the _site folder and specify “preview in browser” or set up RStudio to preview to the viewer panel. To do the latter, go to Tools &gt; Global Options &gt; R Markdown. Then select “Show output preview in: Viewer panel”.",
+    "objectID": "content/Inventory.html#accountable-property",
+    "href": "content/Inventory.html#accountable-property",
+    "title": "Inventory",
+    "section": "Accountable property",
+    "text": "Accountable property\nPOC: CLB What: this will include Hard drive list and any equipment lists Maybe: would be good to have everyone’s lists here too (e.g., Jess has some drives on her list now, and maybe ST600s?) But would be good to know who has what assigned computer."
+  },
+  {
+    "objectID": "content/Inventory.html#lab-inventory",
+    "href": "content/Inventory.html#lab-inventory",
+    "title": "Inventory",
+    "section": "Lab inventory",
+    "text": "Lab inventory\nPOC: CLB/BMK/JLC What: The is the lab inventory - will include supplies, all equipment (whether on accountable property list or not), And it would be good for this to also serve as the to purchase spot somehow"
+  },
+  {
+    "objectID": "content/Inventory.html#master-data-drives-inventory",
+    "href": "content/Inventory.html#master-data-drives-inventory",
+    "title": "Inventory",
+    "section": "Master data drives inventory",
+    "text": "Master data drives inventory\nPOC: CLB/EKB What: THis is sort of the same as accountable property - but are those drives that got taken off the list and should continue to be tracked. Eric has already sorted the drives into boxes. Do I want to have a sensitive data list for those I have locked up??\nAn inventory page is highly recommended to keep track of equipment, loans, and gear beingin the field. This can be a link to a Google sheet or embedded in the website\n\nSAEL Lab Example"
+  },
+  {
+    "objectID": "content/Software_Overview.html",
+    "href": "content/Software_Overview.html",
+    "title": "Software_Overview",
+    "section": "",
+    "text": "flowchart TD\n        A([\"INSTINCT .csv results file, e.g. (Q:\\ANALYSIS\\+INSTINCT results\\Bearded\\Final_INSTINCT_runs_toTransfertoSC\\Manolo_Castellote\\manolo_full_datasets_year2\\full_ds_w_maybes.csv\"])\n        A --&gt; B[\"Run Instinct2SC_v2r6; point to INSTINCT results file, location to put exported pngResults (e.g., Q:\\ANALYSIS\\+Kotz\\PngResultsforALL_08Jul2025), and where NAS waves are\"]\n        B --&gt; C{\"New INSTINCT png reslts now in PngResultsforALL_date file\"}\n        C --&gt;|\"SC to compare?\"| D[\"Run INSTINCT2SCcompare_v6r2.m\"]\n    C --&gt;|\"Collate to get Pngresltsforall?\"| E[\"convert2bin_v5r4\"]\n    C --&gt;|\"Collate for extracting bins/pngs?\"| F[\"convert2bin_v5r7\"]\n    F --&gt;|\"Run for bins to plot in R/Matlab?\"| G[\"extractBins_v1r2\"]\n    F --&gt;|\"Run for pngs to box/review in Raven?\"| H[\"extractPngs_v1r3\"]\n    G --&gt;|\"Make plots\"| I[\"plotLT_all_v7r2\"]\n    G --&gt;|\"Make plots\"| J[\"boxwhisk...\"]\n    E --&gt;|\"Make Plots\"| K[\"plotLT_all_v6r11\"]\n    \n\n\n\n\n\n\n\n\n\n\n\nflowchart TD\n        A([\"raw files on AURAL M2 drive\"])\n        A --&gt; B[\"Copy to external drive - folder with Mooring Deployment Name\"]\n        B --&gt; F[\"Copy to A drive back in Seattle\"]\n        A --&gt; B[\" Label external drive with Mooring Deployment name\"]\n        B --&gt; C{\"Run InfoWav on copied files\"}\n        C --&gt; D[\"Rename Bilan to bilan_moorDeployName\"]\n        C --&gt; E[\"Run AuralRename_v2\"]\n    C --&gt;|\"Collate to get Pngresltsforall?\"| E[\"convert2bin_v5r3\"]\n    C --&gt;|\"Collate for extracting bins/pngs?\"| F[\"convert2bin_v5r7\"]\n    F --&gt;|\"Run for bins to plot in R/Matlab?\"| G[\"extractBins_v1r2\"]\n    F --&gt;|\"Run for pngs to box/review in Raven?\"| H[\"extractPngs_v1r3\"]\n    G --&gt;|\"Make plots\"| I[\"plotLT_all_v7r2\"]\n    G --&gt;|\"Make plots\"| J[\"boxwhisk...\"]\n    E --&gt;|\"Make Plots\"| K[\"plotLT_all_v6r9\"]",
     "crumbs": [
-      "NMFS Open Science Directions",
-      "Rendering"
+      "Arctic Lab Manual",
+      "Software Overview"
     ]
   },
   {
@@ -588,10 +314,284 @@
     "text": "Lithium battery safety\nPOC: JLC and CLB - not sure where to put this because it is a Lab and field thing. -\nThis is an essential section to include if your lab uses these. Work with your lab safety manager to develop handling and storage instructions. See SAEL lab manual lithium battery page - SAEL Lab Example & Glider Lab Manual"
   },
   {
-    "objectID": "content/Onboarding.html",
-    "href": "content/Onboarding.html",
-    "title": "Onboarding",
+    "objectID": "content/LabManagement.html",
+    "href": "content/LabManagement.html",
+    "title": "Lab Management",
     "section": "",
-    "text": "This page is optional but can be used as a landing page for new lab members. You can include introductory information, links to must read papers, new hire resources, goal setting information, etc.\nFaylab example"
+    "text": "A lab management section is required and should include the following information;\n\nSafety\nInventory\nHardware",
+    "crumbs": [
+      "Arctic Lab Manual",
+      "Lab Management"
+    ]
+  },
+  {
+    "objectID": "content/TeamBerchok.html",
+    "href": "content/TeamBerchok.html",
+    "title": "Arctic Team",
+    "section": "",
+    "text": "Catherine Berchok\n\n\n\n\n\nJessica Crance\n\n\n\n\n\nDana Wright\n\n\n\n\n\nBrynn Kimber\n\n\n\n\n\nEric Braen\n\n\n\n\n\n\n\nStephanie Grassia\n\n\n\n\n\nDaniel Woodrich\n\n\n\n\n\nSophia Wagner\n\n\n\n\n\n\n\n\n\n\nGreta Weise\nIldiko Kremper\nJessica Knoth\nArial Brewer\n\n\n\n\nJenna Harlacher\nEliza Ives\nAlexandra Ulmke\nMegan Wood\n\n\n\n\nJulie Mocklin\nLinda Vate Bratstrom\nHolly Calahan\nJessica Thompson\n\n\n\n\n\n\n\nEllen Garland\n\n\n\n\nCICOES: Sophia Wagner (2023), Cole Watson (2020), Tarenina Max (2017)\nNOAA Hollings: Ildiko Kremper (2020), Srishti Dasarathy (2015), Rebecca Leitt (2013), Dana Wright (2011)\nSAFS/MML: Max Van Gelder (2020)\nNERTO: Daryin Medley (2021)\nVolunteers: Nicholas Tucker(2015), Cole Watson (2019), Eric Braen (2015), Sam Strauss (2017-2018)|",
+    "crumbs": [
+      "Arctic Lab Manual"
+    ]
+  },
+  {
+    "objectID": "content/TeamBerchok.html#who-we-are",
+    "href": "content/TeamBerchok.html#who-we-are",
+    "title": "Arctic Team",
+    "section": "",
+    "text": "Catherine Berchok\n\n\n\n\n\nJessica Crance\n\n\n\n\n\nDana Wright\n\n\n\n\n\nBrynn Kimber\n\n\n\n\n\nEric Braen\n\n\n\n\n\n\n\nStephanie Grassia\n\n\n\n\n\nDaniel Woodrich\n\n\n\n\n\nSophia Wagner\n\n\n\n\n\n\n\n\n\n\nGreta Weise\nIldiko Kremper\nJessica Knoth\nArial Brewer\n\n\n\n\nJenna Harlacher\nEliza Ives\nAlexandra Ulmke\nMegan Wood\n\n\n\n\nJulie Mocklin\nLinda Vate Bratstrom\nHolly Calahan\nJessica Thompson\n\n\n\n\n\n\n\nEllen Garland\n\n\n\n\nCICOES: Sophia Wagner (2023), Cole Watson (2020), Tarenina Max (2017)\nNOAA Hollings: Ildiko Kremper (2020), Srishti Dasarathy (2015), Rebecca Leitt (2013), Dana Wright (2011)\nSAFS/MML: Max Van Gelder (2020)\nNERTO: Daryin Medley (2021)\nVolunteers: Nicholas Tucker(2015), Cole Watson (2019), Eric Braen (2015), Sam Strauss (2017-2018)|",
+    "crumbs": [
+      "Arctic Lab Manual"
+    ]
+  },
+  {
+    "objectID": "content/TeamBerchok.html#where-we-work",
+    "href": "content/TeamBerchok.html#where-we-work",
+    "title": "Arctic Team",
+    "section": "Where we work",
+    "text": "Where we work\n\n\n\nWe work in the US Arctic, from the Aleutian Islands and Bering Sea north to the shelf waters of the eastern Chukchi and western Beaufort Seas, as well as the Chukchi Borderlands. We also work in the northern Gulf of Alaska, and have had short-term projects in Behm Canal (near Ketchikan, Alaska).\n\n\n\n\n\nGoogle Earth",
+    "crumbs": [
+      "Arctic Lab Manual"
+    ]
+  },
+  {
+    "objectID": "content/TeamBerchok.html#the-research-we-do",
+    "href": "content/TeamBerchok.html#the-research-we-do",
+    "title": "Arctic Team",
+    "section": "The research we do",
+    "text": "The research we do\n\nWe primarily deploy two types of passive acoustic sensors:\n\nRecorders deployed on subsurface moorings throughout the Bering, Beaufort, and Chukchi Seas, as well as in the Gulf of Alaska. They autonomously record underwater sounds for a year at a time.\nSonobuoys for shorter-term, real-time, passive acoustic monitoring from vessels.\n\nWe also occasionally use towed arrays and have deployed sonobuoys from aircraft.\n\n\n\n\n\nLocations of all long-term passive acoustic recorder moorings",
+    "crumbs": [
+      "Arctic Lab Manual"
+    ]
+  },
+  {
+    "objectID": "content/SharedValues.html",
+    "href": "content/SharedValues.html",
+    "title": "Shared Values",
+    "section": "",
+    "text": "A shared values / lab culture page is optional but is highly recommended. Establishing these values as a team can help create a positive and inclusive environment, foster a shared vision, promote collaboration, and build team cohesion while supporting individual growth.\nSAEL example\nFaylab example"
+  },
+  {
+    "objectID": "content/FieldMethods.html",
+    "href": "content/FieldMethods.html",
+    "title": "Field Methods",
+    "section": "",
+    "text": "A field methods section is highly recommended to help your team keep track of all current and past fieldwork documentation. Things to include here can include hardware specifications, checklists for fieldwork prep, deployment and recovery methods, etc.\nYou can make this a section with subpages or link directly to a separate repository that includes more detailed methods.\nADRIFT example"
+  },
+  {
+    "objectID": "content/Hardware.html",
+    "href": "content/Hardware.html",
+    "title": "Hardware",
+    "section": "",
+    "text": "POC: Catherine/Brynn What: Instruments, Moorings (how it is all put together)",
+    "crumbs": [
+      "Arctic Lab Manual",
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "content/Hardware.html#moorings",
+    "href": "content/Hardware.html#moorings",
+    "title": "Hardware",
+    "section": "",
+    "text": "POC: Catherine/Brynn What: Instruments, Moorings (how it is all put together)",
+    "crumbs": [
+      "Arctic Lab Manual",
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "content/Hardware.html#sonobuoys",
+    "href": "content/Hardware.html#sonobuoys",
+    "title": "Hardware",
+    "section": "Sonobuoys",
+    "text": "Sonobuoys\nPOC: Jess Crance/Catherine",
+    "crumbs": [
+      "Arctic Lab Manual",
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "content/Hardware.html#towed-hydrophone-arrays",
+    "href": "content/Hardware.html#towed-hydrophone-arrays",
+    "title": "Hardware",
+    "section": "Towed hydrophone Arrays",
+    "text": "Towed hydrophone Arrays\nPOC: Jess Crance\nA hardware section is required and should include the following information;\n\nInformation on your recorders\nArray configurations and diagrams\nPlatform information (towed, moored, drifting, etc.)\nOther sensors included (GPS devices, depth senors, etc.)\n\nThis will be variable for each center and may change from project to project. You should list all hardware, present and past.\nYou can also link to a separate hardware repository if needed (SAEL example)\nThis can be a section with subpages or a qmd",
+    "crumbs": [
+      "Arctic Lab Manual",
+      "Hardware"
+    ]
+  },
+  {
+    "objectID": "content/PublicationsPresentations.html",
+    "href": "content/PublicationsPresentations.html",
+    "title": "Publications and Presentations",
+    "section": "",
+    "text": "This is an optional page but is a great opportunity to highlight some of your publications and presentations.\nSAEL example (add once this page is corrected)"
+  },
+  {
+    "objectID": "content/NMFS_OpenSciDirections/acknowledgements.html",
+    "href": "content/NMFS_OpenSciDirections/acknowledgements.html",
+    "title": "Acknowledgments",
+    "section": "",
+    "text": "This repo and GitHub Action was based on the tutorial by Openscapes quarto-website-tutorial by Julia Lowndes and Stefanie Butland.",
+    "crumbs": [
+      "NMFS Open Science Directions",
+      "Acknowledgments"
+    ]
+  },
+  {
+    "objectID": "content/NMFS_OpenSciDirections/code.html",
+    "href": "content/NMFS_OpenSciDirections/code.html",
+    "title": "Rendering with Code",
+    "section": "",
+    "text": "You can have code (R, Python or Julia) in your qmd file. You will need to have these installed on your local computer, but presumably you do already if you are adding code to your qmd files.\nx &lt;- c(5, 15, 25, 35, 45, 55)\ny &lt;- c(5, 20, 14, 32, 22, 38)\nlm(x ~ y)\n\n\nCall:\nlm(formula = x ~ y)\n\nCoefficients:\n(Intercept)            y  \n      1.056        1.326",
+    "crumbs": [
+      "NMFS Open Science Directions",
+      "Rendering with Code"
+    ]
+  },
+  {
+    "objectID": "content/NMFS_OpenSciDirections/code.html#modify-the-github-action",
+    "href": "content/NMFS_OpenSciDirections/code.html#modify-the-github-action",
+    "title": "Rendering with Code",
+    "section": "Modify the GitHub Action",
+    "text": "Modify the GitHub Action\nYou will need to change the GitHub Action in .github/workflows to install these and any needed packages in order for GitHub to be able to render your webpage. The GitHub Action install R since I used that in code.qmd. If you use Python or Julia instead, then you will need to update the GitHub Action to install those.\nIf getting the GitHub Action to work is too much hassle (and that definitely happens), you can alway render locally and publish to the gh-pages branch. If you do this, make sure to delete or rename the GitHub Action to something like\nrender-and-publish.old_yml\nso GitHub does not keep trying to run it. Nothing bad will happen if you don’t do this, but if you are not using the action (because it keeps failing), then you don’t need GitHub to run it.",
+    "crumbs": [
+      "NMFS Open Science Directions",
+      "Rendering with Code"
+    ]
+  },
+  {
+    "objectID": "content/NMFS_OpenSciDirections/code.html#render-locally-and-publish-to-gh-pages-branch",
+    "href": "content/NMFS_OpenSciDirections/code.html#render-locally-and-publish-to-gh-pages-branch",
+    "title": "Rendering with Code",
+    "section": "Render locally and publish to gh-pages branch",
+    "text": "Render locally and publish to gh-pages branch\nTo render locally and push up to the gh-pages branch, open a terminal window and then cd to the directory with the Quarto project. Type this in the terminal:\nquarto render gh-pages",
+    "crumbs": [
+      "NMFS Open Science Directions",
+      "Rendering with Code"
+    ]
+  },
+  {
+    "objectID": "content/NMFS_OpenSciDirections/customizing.html",
+    "href": "content/NMFS_OpenSciDirections/customizing.html",
+    "title": "Customization",
+    "section": "",
+    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation.",
+    "crumbs": [
+      "NMFS Open Science Directions",
+      "Customization"
+    ]
+  },
+  {
+    "objectID": "content/NMFS_OpenSciDirections/customizing.html#quarto-documentation",
+    "href": "content/NMFS_OpenSciDirections/customizing.html#quarto-documentation",
+    "title": "Customization",
+    "section": "",
+    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation.",
+    "crumbs": [
+      "NMFS Open Science Directions",
+      "Customization"
+    ]
+  },
+  {
+    "objectID": "content/NMFS_OpenSciDirections/customizing.html#examples",
+    "href": "content/NMFS_OpenSciDirections/customizing.html#examples",
+    "title": "Customization",
+    "section": "Examples",
+    "text": "Examples\nLooking at other people’s Quarto code is a great way to figure out how to do stuff. Most will have a link to a GitHub repo where you can see the raw code. Look for a link to edit page or see source code. This will usually be on the right. Or look for the GitHub icon somewhere.\n\nQuarto gallery\nnmfs-openscapes\nFaye lab manual\nquarto-titlepages Note the link to edit is broken. Go to repo and look in documentation directory.",
+    "crumbs": [
+      "NMFS Open Science Directions",
+      "Customization"
+    ]
+  },
+  {
+    "objectID": "content/NMFS_OpenSciDirections/rendering.html",
+    "href": "content/NMFS_OpenSciDirections/rendering.html",
+    "title": "Rendering",
+    "section": "",
+    "text": "The repo includes a GitHub Action that will render (build) the website automatically when you make changes to the files. It will be pushed to the gh-pages branch.\nBut when you are developing your content, you will want to render it locally.",
+    "crumbs": [
+      "NMFS Open Science Directions",
+      "Rendering"
+    ]
+  },
+  {
+    "objectID": "content/NMFS_OpenSciDirections/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
+    "href": "content/NMFS_OpenSciDirections/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
+    "title": "Rendering",
+    "section": "Step 1. Make sure you have a recent RStudio",
+    "text": "Step 1. Make sure you have a recent RStudio\nHave you updated RStudio since about August 2022? No? Then update to a newer version of RStudio. In general, you want to keep RStudio updated and it is required to have a recent version to use Quarto.",
+    "crumbs": [
+      "NMFS Open Science Directions",
+      "Rendering"
+    ]
+  },
+  {
+    "objectID": "content/NMFS_OpenSciDirections/rendering.html#step-2.-clone-and-create-rstudio-project",
+    "href": "content/NMFS_OpenSciDirections/rendering.html#step-2.-clone-and-create-rstudio-project",
+    "title": "Rendering",
+    "section": "Step 2. Clone and create RStudio project",
+    "text": "Step 2. Clone and create RStudio project\nFirst, clone the repo onto your local computer. How? You can click File &gt; New Project and then select “Version Control”. Paste in the url of the repository. That will clone the repo on to your local computer. When you make changes, you will need to push those up.",
+    "crumbs": [
+      "NMFS Open Science Directions",
+      "Rendering"
+    ]
+  },
+  {
+    "objectID": "content/NMFS_OpenSciDirections/rendering.html#step-3.-render-within-rstudio",
+    "href": "content/NMFS_OpenSciDirections/rendering.html#step-3.-render-within-rstudio",
+    "title": "Rendering",
+    "section": "Step 3. Render within RStudio",
+    "text": "Step 3. Render within RStudio\nRStudio will recognize that this is a Quarto project by the presence of the _quarto.yml file and will see the “Build” tab. Click the “Render website” button to render to the _site folder.\nPreviewing: You can either click index.html in the _site folder and specify “preview in browser” or set up RStudio to preview to the viewer panel. To do the latter, go to Tools &gt; Global Options &gt; R Markdown. Then select “Show output preview in: Viewer panel”.",
+    "crumbs": [
+      "NMFS Open Science Directions",
+      "Rendering"
+    ]
+  },
+  {
+    "objectID": "content/Reporting.html",
+    "href": "content/Reporting.html",
+    "title": "Reporting",
+    "section": "",
+    "text": "his is a required page and should include any templates you have created for reporting within NOAA or to other agencies.\nExamples include NEFSC PAM data reporting templates and standard report formats for a few different agencies/species (right whales, Australian Marine Parks).",
+    "crumbs": [
+      "Arctic Lab Manual",
+      "Reporting"
+    ]
+  },
+  {
+    "objectID": "content/Reporting.html#templates",
+    "href": "content/Reporting.html#templates",
+    "title": "Reporting",
+    "section": "",
+    "text": "his is a required page and should include any templates you have created for reporting within NOAA or to other agencies.\nExamples include NEFSC PAM data reporting templates and standard report formats for a few different agencies/species (right whales, Australian Marine Parks).",
+    "crumbs": [
+      "Arctic Lab Manual",
+      "Reporting"
+    ]
+  },
+  {
+    "objectID": "content/Reporting.html#permits",
+    "href": "content/Reporting.html#permits",
+    "title": "Reporting",
+    "section": "Permits",
+    "text": "Permits\nYou should also include any permit reporting guidelines here\n\nPermits and Permit Reporting Guidelines\n\nInclude permit numbers and links to your centers/groups permits\nInclude directions for permit reporting (Protected species, National Marine Sanctuaries, Navy, Fish and Wildlife, etc)\nYou can include links to past permit reports (these can be private google drive folders if needed)\nSAEL example",
+    "crumbs": [
+      "Arctic Lab Manual",
+      "Reporting"
+    ]
+  },
+  {
+    "objectID": "content/Overview.html",
+    "href": "content/Overview.html",
+    "title": "Overview",
+    "section": "",
+    "text": "flowchart TD\n\n    A1{Data Collection} --&gt; A2{Data Archiving}\n    A2{Data Archiving} --&gt; A3{Data Processing}\n    A3{Data Processing} --&gt; A4{Database}\n    A4{Database}--&gt; A5{Data Analysis}\n    A5{Data Analysis} --&gt; A6{Dissemenation}\n  \n      n1(Sonobuoys) --&gt; A1{Data Collection}\n        s1[Prep] --&gt; n1\n      \n      n2(Moorings) --&gt; A1{Data Collection}\n        s7[Refurbish] --&gt; n2\n        s8[Clean] --&gt; n2\n        s9[Test] --&gt; n2\n      \n      nn1(OtherPAM) --&gt; A1{Data Collection}\n      n3(Towed Array) --&gt; nn1\n      n4(Dipping Phone) --&gt; nn1",
+    "crumbs": [
+      "Arctic Lab Manual",
+      "Overview/Site Navigation"
+    ]
   }
 ]
