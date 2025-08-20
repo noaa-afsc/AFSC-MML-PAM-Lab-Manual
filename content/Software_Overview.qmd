@@ -17,7 +17,7 @@ flowchart TD
         B --> C{"New INSTINCT png reslts now in PngResultsforALL_date file"}
         C -->|"SC to compare?"| D["Run INSTINCT2SCcompare_v6r2.m"]
     C -->|"Collate to get Pngresltsforall?"| E["convert2bin_v5r4"]
-    C -->|"Collate for extracting bins/pngs?"| F["convert2bin_v5r7"]
+    C -->|"Collate for extracting bins/pngs?"| F["convert2bin_v5r8"]
     F -->|"Run for bins to plot in R/Matlab?"| G["extractBins_v1r2"]
     F -->|"Run for pngs to box/review in Raven?"| H["extractPngs_v1r3"]
     G -->|"Make plots"| I["plotLT_all_v7r2"]
